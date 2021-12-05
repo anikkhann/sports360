@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/admin_panel.css">
+    <title>Admin Panel</title>
+</head>
+<body class="adminBody">
+    <!-- SideNav bar section -->
+    <section id="menu">
+        <div class="logo">
+            <img src="assests/logo.png" alt="" class="ml-5">
+           
+        </div>
+
+        <div class="items">
+            
+            <li class=""><i class="fas fa-th-large"></i> <a href="">Dashboard</a></li>
+            <li class=""><i class="fas fa-file"></i> <a href="">Report</a></li>
+            <li class=""><i class="fas fa-baseball-ball"></i> <a href="">Teams</a></li>
+            <li class=""><i class="fas fa-user"></i> <a href="">Players</a></li>
+            <li class=""><i class="fas fa-cog"></i> <a href="">Settings</a></li>
+            <img  style="width: 5px ; height: 5px; position: absolute; top: -20px;" src="assests/stamp.png" alt="">
+            
+        </div>
+        <!-- <div class="" style="width: 5px ; height: 5px; position: absolute; top: -20px;" >
+            <img  src="assests/stamp.png" alt="">
+        </div> -->
+        <div class="stampLogo">
+            <img src="assests/stamp.png" alt="" class="ml-5">
+           
+        </div>
+       
+    </section>
+
+    <!-- Main Content Section -->
+    <section id="interface">
+        <div class="navigation">
+
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                  <input type="text" placeholder="Search Here">
+                  <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="fas fa-bell"></i>
+                <img src="assests/Abir.jpg" alt="">
+            </div>
+         
+        </div>
+     
+        <div class="values">
+            <!-- First Carousel Slider Start -->
+        <div class="">
+           
+            <div id="carouselExampleControls" class="carousel slide mt-2" data-ride="carousel">
+                <div class="carousel-inner">
+
+                <!-- First page slider start -->
+                <div class="carousel-item active">
+                    <div class="row adminCarouselCard">
+
+                        <!-- First page 4 Card Example-->
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 ">
+                            <div 
+                            class="card shadow h-100"
+                             style="background: rgb(237, 211, 211); 
+                             opacity: 2; 
+                             border-top-left-radius: 10px;
+                             border-top-right-radius: 10px;
+                             border-bottom-right-radius: 10px;
+                             border-bottom-left-radius: 10px;
+                             
+                             "
+                             >
+                               
+                                <div class="card-body">
+                                    <div class="row no-gutters ">
+                                        
+                                        <div class="col-xl-12 col-lg-12 col-md-12 ">
+
+                                            <div class="d-flex justify-content-between">
+                                                <button type="button" class="btn btn-danger btn-sm carouselCardButton"
+                                                style=
+                                                "
+                                                border-top-left-radius: 15px;
+                                                border-top-right-radius: 15px;
+                                                border-bottom-right-radius: 15px;
+                                                border-bottom-left-radius: 15px;
+                                              
+                                                "
+                                                >
+                                                    LIVE
+                                                </button>
+                                                <small style="color: gray;">27 Oct 2021</small>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                                <p>Bangladesh</p>
+                                                <p>165/4</p> 
+                                                
+                                            </div>
+
+                                            <div class="d-flex justify-content-between" style="font-weight: bold; color: gray; margin-top: -10px;">
+                                                <p>Pakistan</p>
+                                                <p>285/8</p>
+                                            </div>
+                                            <p style="color: gray;">
+                                                Overs: 31.3 (50)
+                                            </p>
+
+                                            <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                                <button type="button" class="btn btn-success btn-sm"
+                                                style=
+                                                "
+                                                border-top-left-radius: 12px;
+                                                border-top-right-radius: 12px;
+                                                border-bottom-right-radius: 12px;
+                                                border-bottom-left-radius: 12px;
+
+                                                "
+                                                
+                                                >
+                                                    ODI
+                                                </button>
+                                                <i class="fas fa-arrow-right mt-2" style="color: red; cursor: pointer; text-decoration: none;">
+                                                </i>
+                                                
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- First page 4 Card Example -->
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 cardTopMargin">
+                            <div class="card shadow h-100 " 
+                            style="background: rgb(202, 202, 218); 
+                            opacity: 2;
+                            border-top-left-radius: 10px;
+                             border-top-right-radius: 10px;
+                             border-bottom-right-radius: 10px;
+                             border-bottom-left-radius: 10px;
+                            "
+                            >
+                               
+                                <div class="card-body">
+                                    <div class="row no-gutters ">
+                                        
+                                        <div class="col-xl-12 col-lg-12 col-md-12 ">
+
+                                            <div class="d-flex justify-content-between">
+                                                <button type="button" class="btn btn-sm carouselCardButton"
+                                                 style="background-color: rgb(99, 99, 191);
+                                                  color: white;
+                                                  border-bottom-right-radius: 10px;
+                                                  border-bottom-left-radius: 10px;
+                                                  border-top-right-radius: 10px;
+                                                  border-top-left-radius: 10px;
+                                                
+                                                  ">
+                                                    Upcoming
+                                                </button>
+                                                <small style="color: gray;">27 Oct 2021</small>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                                <p>Bangladesh</p>
+                                                <p>165/4</p> 
+                                                
+                                            </div>
+
+                                            <div class="d-flex justify-content-between" style="font-weight: bold; color: gray; margin-top: -10px;">
+                                                <p>Pakistan</p>
+                                                <p>285/8</p>
+                                            </div>
+                                            <p style="color: gray;">
+                                                Overs: 31.3 (50)
+                                            </p>
+
+                                            <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                                <button type="button" class="btn btn-primary btn-sm"
+                                                style=
+                                                "
+                                                 border-top-left-radius: 12px;
+                                                border-top-right-radius: 12px;
+                                                border-bottom-right-radius: 12px;
+                                                border-bottom-left-radius: 12px;
+                                                "
+                                                >
+                                                    T20
+                                                </button>
+                                                <i class="fas fa-arrow-right mt-2" style="color: red; cursor: pointer; text-decoration: none;">
+                                                </i>
+                                                
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--First page 4 Card Example -->
+                       
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 cardTopMargin">
+                            <div class="card shadow h-100 "
+                             style="background: rgb(218, 197, 181);
+                              opacity: 2;
+                              border-top-left-radius: 10px;
+                              border-top-right-radius: 10px;
+                              border-bottom-right-radius: 10px;
+                              border-bottom-left-radius: 10px;
+                              ">
+                               
+                                <div class="card-body">
+                                    <div class="row no-gutters ">
+                                        
+                                        <div class="col-xl-12 col-lg-12 col-md-12 ">
+
+                                            <div class="d-flex justify-content-between">
+                                                <button type="button" class="btn btn-sm carouselCardButton" 
+                                                  style="background: chocolate;
+                                                   color: white;
+                                                   border-top-left-radius: 10px;
+                                                    border-top-right-radius: 10px;
+                                                    border-bottom-right-radius: 10px;
+                                                    border-bottom-left-radius: 10px;
+                                                   
+                                                   ">
+                                                    Result
+                                                </button>
+                                                <small style="color: gray;">27 Oct 2021</small>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                                <p>Bangladesh</p>
+                                                <p>165/4</p> 
+                                                
+                                            </div>
+
+                                            <div class="d-flex justify-content-between" style="font-weight: bold; color: gray; margin-top: -10px;">
+                                                <p>Pakistan</p>
+                                                <p>285/8</p>
+                                            </div>
+                                            <p style="color: gray;">
+                                                Overs: 31.3 (50)
+                                            </p>
+
+                                            <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                                <button type="button" class="btn btn-primary btn-sm"
+                                                
+                                                style=
+                                                "
+                                                 border-top-left-radius: 12px;
+                                                border-top-right-radius: 12px;
+                                                border-bottom-right-radius: 12px;
+                                                border-bottom-left-radius: 12px;
+                                                "
+                                                >
+                                                    T20
+                                                </button>
+                                                <i class="fas fa-arrow-right mt-2" style="color: red; cursor: pointer; text-decoration: none;">
+                                                </i>
+                                                
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          <!--First page 4 Card Example -->
+                          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 cardTopMargin">
+                            <div class="card shadow h-100 " style="background: rgb(237, 211, 211); 
+                             opacity: 2;
+                             border-top-left-radius: 10px;
+                             border-top-right-radius: 10px;
+                             border-bottom-right-radius: 10px;
+                             border-bottom-left-radius: 10px;
+                             ">
+                               
+                                <div class="card-body">
+                                    <div class="row no-gutters ">
+                                        
+                                        <div class="col-xl-12 col-lg-12 col-md-12 ">
+
+                                            <div class="d-flex justify-content-between">
+                                                <button type="button" class="btn btn-danger btn-sm carouselCardButton"
+                                                style=
+                                                "
+                                                border-top-left-radius: 15px;
+                                                border-top-right-radius: 15px;
+                                                border-bottom-right-radius: 15px;
+                                                border-bottom-left-radius: 15px;
+                                               
+                                                "
+                                                >
+                                                    LIVE
+                                                </button>
+                                                <small style="color: gray;">27 Oct 2021</small>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                                <p>Bangladesh</p>
+                                                <p>165/4</p> 
+                                                
+                                            </div>
+
+                                            <div class="d-flex justify-content-between" style="font-weight: bold; color: gray; margin-top: -10px;">
+                                                <p>Pakistan</p>
+                                                <p>285/8</p>
+                                            </div>
+                                            <p style="color: gray;">
+                                                Overs: 31.3 (50)
+                                            </p>
+
+                                            <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                                <button type="button" class="btn btn-success btn-sm"
+                                                style=
+                                                "
+                                                border-top-left-radius: 12px;
+                                                border-top-right-radius: 12px;
+                                                border-bottom-right-radius: 12px;
+                                                border-bottom-left-radius: 12px;
+                                                "
+                                                >
+                                                    ODI
+                                                </button>
+                                                <i class="fas fa-arrow-right mt-2" style="color: red; cursor: pointer; text-decoration: none;">
+                                                </i>
+                                                
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Second Page Slider start -->
+                <div class="carousel-item">
+                    <div class="row">
+
+                     <!-- Second page 4 Card Example-->
+                     
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 cardTopMargin">
+                        <div class="card shadow h-100 " 
+                         style="background: rgb(202, 202, 218);
+                          opacity: 2;
+                          border-top-left-radius: 10px;
+                          border-top-right-radius: 10px;
+                          border-bottom-right-radius: 10px;
+                          border-bottom-left-radius: 10px;
+                          ">
+                           
+                            <div class="card-body">
+                                <div class="row no-gutters ">
+                                    
+                                    <div class="col-xl-12 col-lg-12 col-md-12 ">
+
+                                        <div class="d-flex justify-content-between">
+                                            <button type="button" class="btn btn-sm carouselCardButton" 
+                                                style="background-color: rgb(99, 99, 191);
+                                                 color: white;
+                                                 border-top-left-radius: 10px;
+                                                    border-top-right-radius: 10px;
+                                                    border-bottom-right-radius: 10px;
+                                                    border-bottom-left-radius: 10px;
+                                                 
+                                                 ">
+                                                Upcoming
+                                            </button>
+                                            <small style="color: gray;">27 Oct 2021</small>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                            <p>Bangladesh</p>
+                                            <p>165/4</p> 
+                                            
+                                        </div>
+
+                                        <div class="d-flex justify-content-between" style="font-weight: bold; color: gray; margin-top: -10px;">
+                                            <p>Pakistan</p>
+                                            <p>285/8</p>
+                                        </div>
+                                        <p style="color: gray;">
+                                            Overs: 31.3 (50)
+                                        </p>
+
+                                        <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                            <button type="button" class="btn btn-primary btn-sm"
+                                            style=
+                                            "
+                                             border-top-left-radius: 12px;
+                                                border-top-right-radius: 12px;
+                                                border-bottom-right-radius: 12px;
+                                                border-bottom-left-radius: 12px;
+                                            "
+                                            >
+                                                T20
+                                            </button>
+                                            <i class="fas fa-arrow-right mt-2" style="color: red; cursor: pointer; text-decoration: none;">
+                                            </i>
+                                            
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second page 4 Card Example -->
+                    
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 cardTopMargin">
+                        <div class="card shadow h-100  "
+                         style="background: rgb(218, 197, 181);
+                          opacity: 2;
+                          border-top-left-radius: 10px;
+                             border-top-right-radius: 10px;
+                             border-bottom-right-radius: 10px;
+                             border-bottom-left-radius: 10px;
+                          ">
+                           
+                            <div class="card-body">
+                                <div class="row no-gutters ">
+                                    
+                                    <div class="col-xl-12 col-lg-12 col-md-12 ">
+
+                                        <div class="d-flex justify-content-between">
+                                            <button type="button" class="btn btn-sm carouselCardButton"
+                                             style="background: chocolate; 
+                                             color: white;
+                                             border-top-left-radius: 15px;
+                                                border-top-right-radius: 15px;
+                                                border-bottom-right-radius: 15px;
+                                                border-bottom-left-radius: 15px;
+                                              
+                                             ">
+                                                Result
+                                            </button>
+                                            <small style="color: gray;">27 Oct 2021</small>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                            <p>Bangladesh</p>
+                                            <p>165/4</p> 
+                                            
+                                        </div>
+
+                                        <div class="d-flex justify-content-between" style="font-weight: bold; color: gray; margin-top: -10px;">
+                                            <p>Pakistan</p>
+                                            <p>285/8</p>
+                                        </div>
+                                        <p style="color: gray;">
+                                            Overs: 31.3 (50)
+                                        </p>
+
+                                        <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                            <button type="button" class="btn btn-primary btn-sm"
+                                            style=
+                                            "
+                                            border-top-left-radius: 12px;
+                                                border-top-right-radius: 12px;
+                                                border-bottom-right-radius: 12px;
+                                                border-bottom-left-radius: 12px;
+                                            "
+                                            >
+                                                T20
+                                            </button>
+                                            <i class="fas fa-arrow-right mt-2" style="color: red; cursor: pointer; text-decoration: none;">
+                                            </i>
+                                            
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second page 4 Card Example -->
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 cardTopMargin">
+                        <div class="card shadow h-100 " 
+                         style="background: rgb(237, 211, 211);
+                          opacity: 2;
+                          border-top-left-radius: 10px;
+                          border-top-right-radius: 10px;
+                          border-bottom-right-radius: 10px;
+                          border-bottom-left-radius: 10px;
+                          ">
+                           
+                            <div class="card-body">
+                                <div class="row no-gutters ">
+                                    
+                                    <div class="col-xl-12 col-lg-12 col-md-12 ">
+
+                                        <div class="d-flex justify-content-between">
+                                            <button type="button" class="btn btn-danger btn-sm carouselCardButton"
+                                            
+                                            style=
+                                            "
+                                            border-top-left-radius: 10px;
+                                            border-top-right-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            border-bottom-left-radius: 10px;
+                                            
+                                            "
+                                            
+                                            >
+                                                LIVE
+                                            </button>
+                                            <small style="color: gray;">27 Oct 2021</small>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                            <p>Bangladesh</p>
+                                            <p>165/4</p> 
+                                            
+                                        </div>
+
+                                        <div class="d-flex justify-content-between" style="font-weight: bold; color: gray; margin-top: -10px;">
+                                            <p>Pakistan</p>
+                                            <p>285/8</p>
+                                        </div>
+                                        <p style="color: gray;">
+                                            Overs: 31.3 (50)
+                                        </p>
+
+                                        <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                            <button type="button" class="btn btn-success btn-sm"
+                                            style=
+                                            "
+                                            border-top-left-radius: 12px;
+                                                border-top-right-radius: 12px;
+                                                border-bottom-right-radius: 12px;
+                                                border-bottom-left-radius: 12px;
+                                            "
+                                            >
+                                                ODI
+                                            </button>
+                                            <i class="fas fa-arrow-right mt-2" style="color: red; cursor: pointer; text-decoration: none;">
+                                            </i>
+                                            
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                      <!--Second page 4 Card Example -->
+                      
+                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 cardTopMargin">
+                        <div class="card shadow h-100 " 
+                         style="background: rgb(202, 202, 218);
+                          opacity: 2;
+                          border-top-left-radius: 10px;
+                          border-top-right-radius: 10px;
+                          border-bottom-right-radius: 10px;
+                          border-bottom-left-radius: 10px;
+                          ">
+                           
+                            <div class="card-body">
+                                <div class="row no-gutters ">
+                                    
+                                    <div class="col-xl-12 col-lg-12 col-md-12 ">
+
+                                        <div class="d-flex justify-content-between">
+                                            <button type="button" class="btn btn-sm carouselCardButton"
+                                             style="background-color: rgb(99, 99, 191); 
+                                                color: white;
+                                                border-top-left-radius: 15px;
+                                                border-top-right-radius: 15px;
+                                                border-bottom-right-radius: 15px;
+                                                border-bottom-left-radius: 15px;
+                                              
+                                                ">
+                                                Upcoming
+                                            </button>
+                                            <small style="color: gray;">27 Oct 2021</small>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                            <p>Bangladesh</p>
+                                            <p>165/4</p> 
+                                            
+                                        </div>
+
+                                        <div class="d-flex justify-content-between" style="font-weight: bold; color: gray; margin-top: -10px;">
+                                            <p>Pakistan</p>
+                                            <p>285/8</p>
+                                        </div>
+                                        <p style="color: gray;">
+                                            Overs: 31.3 (50)
+                                        </p>
+
+                                        <div class="d-flex justify-content-between mt-4" style="font-weight: bold;">
+                                            <button type="button" class="btn btn-primary btn-sm"
+                                            style=
+                                            "
+                                             border-top-left-radius: 12px;
+                                                border-top-right-radius: 12px;
+                                                border-bottom-right-radius: 12px;
+                                                border-bottom-left-radius: 12px;
+                                            "
+                                            >
+                                                T20
+                                            </button>
+                                            <i class="fas fa-arrow-right mt-2" style="color: red; cursor: pointer; text-decoration: none;">
+                                            </i>
+                                            
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+               
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" style="display: none;" aria-hidden="true"></span>
+                <span class="sr-only" >Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" style="display: none;" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+          </div>
+
+        </div>
+           
+        </div>
+<!-- Add New Matches, Series, Contents -->
+        <div class="values2 mt-4">
+            <div class="row mb-5">
+
+                <div class="col-xl-4 col-lg-4 col-md-4 cardTopMargin">
+                   
+                      <div class="card adminCard " >
+                        <div class="card-header adminCardHeader adminCardHeader2">
+                            Upcoming Matches
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item newMatchBackground">
+                              <!-- <i class="fas fa-plus-circle" style="font-size: 20px; cursor: pointer;"></i> 
+                              <span class="ml-2">Add a New Match</span>  -->
+                              <i class="fas fa-plus-circle" style="font-size: 20px;"></i> <button type="button" class="btn ">
+                                 <span class="">Add a New Match</span> 
+                                </button>
+                            </li>
+                          <li class="list-group-item adminCardHeader">
+                              <small style="font-size: 12px; font-weight: bold;">Bangladesh U-19 VS South Africa U-19</small>
+                              <div class="d-flex">
+                                <button type="button" class="btn btn-success btn-sm odiButton">
+                                    ODI
+                                </button>
+                                <small class="ml-2 mt-2">14 Nov 2021 - SA</small>
+                                <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                              </div>
+                          </li>
+                          <li class="list-group-item newMatchBackground">
+                            <small style="font-size: 12px; font-weight: bold;">Bangladesh VS Pakistan</small>
+                            <div class="d-flex">
+                              <button type="button" class="btn btn-success btn-sm testButton">
+                                  Test
+                              </button>
+                              <small class="ml-2 mt-2">24 Nov 2021 - CTG</small>
+                              <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item adminCardHeader">
+                            <small style="font-size: 12px; font-weight: bold;">Bangladesh U-19 VS South Africa U-19</small>
+                            <div class="d-flex">
+                              <button type="button" class="btn btn-success btn-sm odiButton">
+                                  ODI
+                              </button>
+                              <small class="ml-2 mt-2">14 Nov 2021 - SA</small>
+                              <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item newMatchBackground">
+                            <small style="font-size: 12px; font-weight: bold;">Bangladesh U-19 VS South Africa U-19</small>
+                            <div class="d-flex">
+                              <button type="button" class="btn btn-success btn-sm twewntyButton">
+                                  T20
+                              </button>
+                              <small class="ml-2 mt-2">14 Nov 2021 - Dhaka</small>
+                              <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item adminCardHeader text-right">
+                            
+                          
+                             
+                              <small style="color: gray;">See more <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></small>
+                            
+                           
+                        </li>
+                        </ul>
+                      </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 cardTopMargin">
+                   
+                    <div class="card adminCard ">
+                      <div class="card-header adminCardHeader adminCardHeader2">
+                          Series
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item newMatchBackground">
+                            <!-- <i class="fas fa-plus-circle" style="font-size: 20px; cursor: pointer;"></i> 
+                            <span class="ml-2">Add a New Match</span>  -->
+                            <i class="fas fa-plus-circle" style="font-size: 20px;"></i> <button type="button" class="btn ">
+                               <span class="">Add a New Match</span> 
+                              </button>
+                          </li>
+                        <li class="list-group-item adminCardHeader">
+                            <small style="font-size: 12px; font-weight: bold;">Bangladesh U-19 VS South Africa U-19</small>
+                            <div class="d-flex">
+                              <button type="button" class="btn btn-success btn-sm odiButton">
+                                  ODI
+                              </button>
+                              <small class="ml-2 mt-2">14 Nov 2021 - SA</small>
+                              <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item newMatchBackground">
+                          <small style="font-size: 12px; font-weight: bold;">Bangladesh VS Pakistan</small>
+                          <div class="d-flex">
+                            <button type="button" class="btn btn-success btn-sm testButton">
+                                Test
+                            </button>
+                            <small class="ml-2 mt-2">24 Nov 2021 - CTG</small>
+                            <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                          </div>
+                      </li>
+                      <li class="list-group-item adminCardHeader">
+                          <small style="font-size: 12px; font-weight: bold;">Bangladesh U-19 VS South Africa U-19</small>
+                          <div class="d-flex">
+                            <button type="button" class="btn btn-success btn-sm odiButton">
+                                ODI
+                            </button>
+                            <small class="ml-2 mt-2">14 Nov 2021 - SA</small>
+                            <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                          </div>
+                      </li>
+                      <li class="list-group-item newMatchBackground">
+                          <small style="font-size: 12px; font-weight: bold;">Bangladesh U-19 VS South Africa U-19</small>
+                          <div class="d-flex">
+                            <button type="button" class="btn btn-success btn-sm twewntyButton">
+                                T20
+                            </button>
+                            <small class="ml-2 mt-2">14 Nov 2021 - Dhaka</small>
+                            <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                          </div>
+                      </li>
+                      <li class="list-group-item adminCardHeader text-right">
+                            
+                          
+                             
+                        <small style="color: gray;">See more <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></small>
+                      
+                     
+                    </li>
+                      </ul>
+                    </div>
+                
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 cardTopMargin">
+                   
+                    <div class="card adminCard ">
+                      <div class="card-header adminCardHeader adminCardHeader2">
+                          Contents
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item newMatchBackground">
+                            <!-- <i class="fas fa-plus-circle" style="font-size: 20px; cursor: pointer;"></i> 
+                            <span class="ml-2">Add a New Match</span>  -->
+                            <i class="fas fa-plus-circle" style="font-size: 20px;"></i> <button type="button" class="btn ">
+                               <span class="">Add a New Match</span> 
+                              </button>
+                          </li>
+                        <li class="list-group-item adminCardHeader">
+                            <small style="font-size: 12px; font-weight: bold;">Bangladesh U-19 VS South Africa U-19</small>
+                            <div class="d-flex">
+                              <button type="button" class="btn btn-success btn-sm odiButton">
+                                  ODI
+                              </button>
+                              <small class="ml-2 mt-2">14 Nov 2021 - SA</small>
+                              <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                            </div>
+                        </li>
+                        <li class="list-group-item newMatchBackground">
+                          <small style="font-size: 12px; font-weight: bold;">Bangladesh VS Pakistan</small>
+                          <div class="d-flex">
+                            <button type="button" class="btn btn-success btn-sm testButton">
+                                Test
+                            </button>
+                            <small class="ml-2 mt-2">24 Nov 2021 - CTG</small>
+                            <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                          </div>
+                      </li>
+                      <li class="list-group-item adminCardHeader">
+                          <small style="font-size: 12px; font-weight: bold;">Bangladesh U-19 VS South Africa U-19</small>
+                          <div class="d-flex">
+                            <button type="button" class="btn btn-success btn-sm odiButton">
+                                ODI
+                            </button>
+                            <small class="ml-2 mt-2">14 Nov 2021 - SA</small>
+                            <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                          </div>
+                      </li>
+                      <li class="list-group-item newMatchBackground">
+                          <small style="font-size: 12px; font-weight: bold;">Bangladesh U-19 VS South Africa U-19</small>
+                          <div class="d-flex">
+                            <button type="button" class="btn btn-success btn-sm twewntyButton">
+                                T20
+                            </button>
+                            <small class="ml-2 mt-2">14 Nov 2021 - Dhaka</small>
+                            <i class="fas fa-long-arrow-alt-right ml-auto mt-2" style="font-size: 17px; cursor: pointer;"></i>
+                          </div>
+                      </li>
+                      <li class="list-group-item adminCardHeader text-right">
+                            
+                          
+                             
+                        <small style="color: gray;">See more <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></small>
+                      
+                     
+                    </li>
+                      </ul>
+                    </div>
+                </div>
+
+               
+                      
+            </div>
+
+        </div>
+    </div>
+       
+    </section>
+
+
+    <script src="js/mainCstom.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+       $('.carousel').carousel({
+        interval: false,
+    });
+    </script>
+</body>
+</html>

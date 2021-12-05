@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/admin_panel.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<body>
+    
+   
+     
+            <header>
+
+                <div class="header-1">
+            
+                    <nav class="navbar sportsLogo">
+                        <ul>
+                            <li><a  href="#"></a><img src="assests/logo.png" alt=""></li>
+                            <li><a  href="#">Home</a></li>
+                            <li><a  href="#">Score</a></li>
+                            <li><a  href="#">Content</a></li>
+                            
+                        </ul>
+                    </nav>
+            
+                </div>
+            
+                <div class="header-2">
+            
+                    <div id="menu2" class="fas fa-bars" onclick="navToggle();"></div>
+            
+                    <nav class="navbar navbar-2">
+                        <ul>
+                            <li><a onclick="navToggle();" href="#">Live</a></li>
+                            <li><a onclick="navToggle();" href="#">Result</a></li>
+                            <li><a onclick="navToggle();" href="#">Upcoming</a></li>
+                        
+                        </ul>
+                    </nav>
+            
+                </div>
+              
+            
+            </header>
+    
+       
+ 
+
+
+    <section class="">
+            <!-- Carousel Slider Start -->
+            <div class="slider cardPadding mt-3">
+                <h4 style="font-weight: 600;">FEATURED MATCHES</h4>
+                <div id="carouselExampleControls" class="carousel slide mt-2" data-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+    
+                            <!-- First page 3 Card Example-->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="card shadow h-100  ">
+                                    <div class="card-header cardHeaderLive"> <i class="fas fa-circle"></i> LIVE</div>
+                                    <div class="card-body">
+                                        <div class="row no-gutters ">
+                                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/england.jpg" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">ENGLAND</p>
+    
+                                                        <p  class="ml-auto mt-1">  <small>(32.3/50)</small> <span style="font-weight: 900;"> 165/4</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                            </div>
+    
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/southafrica.png" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">SOUTH AFRICA</p>
+    
+                                                        <p  class="ml-auto mt-1"> <span style="font-weight: 900;"> 273/8</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                                    <P style="font-weight: 600; color: red;">
+                                                        
+                                                        ENGLAND NEEDS 108 RUNS TO WIN <br>
+                                                        <small style="color: #858796;">1st ODI - 04:00 PM</small>
+                                                    </P>
+                                                   
+                                               
+                                               <div class=" d-flex justify-content-between"> 
+                                                    <small style="color: #858796;">27 OCT 2021 <i class="fas fa-circle" style="font-size: 7px;"></i>  Abu Dhabi, Dubai </small>
+                                                   <a href="">
+                                                        <i class="fas fa-arrow-right fa-lg" style="color: red; cursor: pointer; text-decoration: none;">
+                                                        </i>
+                                                    </a>
+                                                </div>
+    
+    
+                                               
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- First page 3 Card Example -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="card shadow h-100 ">
+                                    <div class="card-header cardHeaderResult">RESULT</div>
+                                    <div class="card-body">
+                                        <div class="row no-gutters ">
+                                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/england.jpg" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">ENGLAND</p>
+    
+                                                        <p  class="ml-auto mt-1">  <small>(32.3/50)</small> <span style="font-weight: 900;"> 165/4</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                            </div>
+    
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/southafrica.png" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">SOUTH AFRICA</p>
+    
+                                                        <p  class="ml-auto mt-1"> <span style="font-weight: 900;"> 273/8</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                                    <P style="font-weight: 600; color: red;">
+                                                        
+                                                        ENGLAND NEEDS 108 RUNS TO WIN <br>
+                                                        <small style="color: #858796;">1st ODI - 04:00 PM</small>
+                                                    </P>
+                                                   
+                                               
+                                               <div class=" d-flex justify-content-between"> 
+                                                    <small style="color: #858796;">27 OCT 2021 <i class="fas fa-circle" style="font-size: 7px;"></i>  Abu Dhabi, Dubai </small>
+                                                   <a href="">
+                                                        <i class="fas fa-arrow-right fa-lg" style="color: red; cursor: pointer; text-decoration: none;">
+                                                        </i>
+                                                    </a>
+                                                </div>
+    
+    
+                                               
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!--First page 3 Card Example -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="card shadow h-100 ">
+                                    <div class="card-header cardHeaderUpcoming">UPCOMING</div>
+                                    <div class="card-body">
+                                        <div class="row no-gutters ">
+                                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/england.jpg" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">ENGLAND</p>
+    
+                                                        <p  class="ml-auto mt-1">  <small>(32.3/50)</small> <span style="font-weight: 900;"> 165/4</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                            </div>
+    
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/southafrica.png" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">SOUTH AFRICA</p>
+    
+                                                        <p  class="ml-auto mt-1"> <span style="font-weight: 900;"> 273/8</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                                    <P style="font-weight: 600; color: red;">
+                                                        
+                                                        ENGLAND NEEDS 108 RUNS TO WIN <br>
+                                                        <small style="color: #858796;">1st ODI - 04:00 PM</small>
+                                                    </P>
+                                                   
+                                               
+                                               <div class=" d-flex justify-content-between"> 
+                                                    <small style="color: #858796;">27 OCT 2021 <i class="fas fa-circle" style="font-size: 7px;"></i>  Abu Dhabi, Dubai </small>
+                                                   <a href="">
+                                                        <i class="fas fa-arrow-right fa-lg" style="color: red; cursor: pointer; text-decoration: none;">
+                                                        </i>
+                                                    </a>
+                                                </div>
+    
+    
+                                               
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            
+    
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+    
+                            <!-- Second page 3 Card Example-->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="card shadow h-100 ">
+                                    <div class="card-header cardHeaderLive"> <i class="fas fa-circle"></i> LIVE</div>
+                                    <div class="card-body">
+                                        <div class="row no-gutters ">
+                                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/england.jpg" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">ENGLAND</p>
+    
+                                                        <p  class="ml-auto mt-1">  <small>(32.3/50)</small> <span style="font-weight: 900;"> 165/4</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                            </div>
+    
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/southafrica.png" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">SOUTH AFRICA</p>
+    
+                                                        <p  class="ml-auto mt-1"> <span style="font-weight: 900;"> 273/8</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                                    <P style="font-weight: 600; color: red;">
+                                                        
+                                                        ENGLAND NEEDS 108 RUNS TO WIN <br>
+                                                        <small style="color: #858796;">1st ODI - 04:00 PM</small>
+                                                    </P>
+                                                   
+                                               
+                                               <div class=" d-flex justify-content-between"> 
+                                                    <small style="color: #858796;">27 OCT 2021 <i class="fas fa-circle" style="font-size: 7px;"></i>  Abu Dhabi, Dubai </small>
+                                                   <a href="">
+                                                        <i class="fas fa-arrow-right fa-lg" style="color: red; cursor: pointer; text-decoration: none;">
+                                                        </i>
+                                                    </a>
+                                                </div>
+    
+    
+                                               
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Second page 3 Card Example -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="card shadow h-100 ">
+                                    <div class="card-header cardHeaderResult">RESULT</div>
+                                    <div class="card-body">
+                                        <div class="row no-gutters ">
+                                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/england.jpg" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">ENGLAND</p>
+    
+                                                        <p  class="ml-auto mt-1">  <small>(32.3/50)</small> <span style="font-weight: 900;"> 165/4</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                            </div>
+    
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/southafrica.png" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">SOUTH AFRICA</p>
+    
+                                                        <p  class="ml-auto mt-1"> <span style="font-weight: 900;"> 273/8</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                                    <P style="font-weight: 600; color: red;">
+                                                        
+                                                        ENGLAND NEEDS 108 RUNS TO WIN <br>
+                                                        <small style="color: #858796;">1st ODI - 04:00 PM</small>
+                                                    </P>
+                                                   
+                                               
+                                               <div class=" d-flex justify-content-between"> 
+                                                    <small style="color: #858796;">27 OCT 2021 <i class="fas fa-circle" style="font-size: 7px;"></i>  Abu Dhabi, Dubai </small>
+                                                   <a href="">
+                                                        <i class="fas fa-arrow-right fa-lg" style="color: red; cursor: pointer; text-decoration: none;">
+                                                        </i>
+                                                    </a>
+                                                </div>
+    
+    
+                                               
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!--Second page 3 Card Example -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="card shadow h-100">
+                                    <div class="card-header cardHeaderUpcoming">UPCOMING</div>
+                                    <div class="card-body">
+                                        <div class="row no-gutters ">
+                                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/england.jpg" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">ENGLAND</p>
+    
+                                                        <p  class="ml-auto mt-1">  <small>(32.3/50)</small> <span style="font-weight: 900;"> 165/4</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                            </div>
+    
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/southafrica.png" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">SOUTH AFRICA</p>
+    
+                                                        <p  class="ml-auto mt-1"> <span style="font-weight: 900;"> 273/8</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                                    <P style="font-weight: 600; color: red;">
+                                                        
+                                                        ENGLAND NEEDS 108 RUNS TO WIN <br>
+                                                        <small style="color: #858796;">1st ODI - 04:00 PM</small>
+                                                    </P>
+                                                   
+                                               
+                                               <div class=" d-flex justify-content-between"> 
+                                                    <small style="color: #858796;">27 OCT 2021 <i class="fas fa-circle" style="font-size: 7px;"></i>  Abu Dhabi, Dubai </small>
+                                                   <a href="">
+                                                        <i class="fas fa-arrow-right fa-lg" style="color: red; cursor: pointer; text-decoration: none;">
+                                                        </i>
+                                                    </a>
+                                                </div>
+    
+    
+                                               
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            
+    
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+    
+                            <!-- Third page 3 Card Example-->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="card shadow h-100">
+                                    <div class="card-header cardHeaderLive"> <i class="fas fa-circle"></i> LIVE</div>
+                                    <div class="card-body">
+                                        <div class="row no-gutters ">
+                                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/england.jpg" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">ENGLAND</p>
+    
+                                                        <p  class="ml-auto mt-1">  <small>(32.3/50)</small> <span style="font-weight: 900;"> 165/4</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                            </div>
+    
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/southafrica.png" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">SOUTH AFRICA</p>
+    
+                                                        <p  class="ml-auto mt-1"> <span style="font-weight: 900;"> 273/8</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                                    <P style="font-weight: 600; color: red;">
+                                                        
+                                                        ENGLAND NEEDS 108 RUNS TO WIN <br>
+                                                        <small style="color: #858796;">1st ODI - 04:00 PM</small>
+                                                    </P>
+                                                   
+                                               
+                                               <div class=" d-flex justify-content-between"> 
+                                                    <small style="color: #858796;">27 OCT 2021 <i class="fas fa-circle" style="font-size: 7px;"></i>  Abu Dhabi, Dubai </small>
+                                                    <a href="">
+                                                        <i class="fas fa-arrow-right fa-lg" style="color: red; cursor: pointer; text-decoration: none;">
+                                                        </i>
+                                                    </a>
+                                                </div>
+    
+    
+                                               
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Tired page 3 Card Example -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="card shadow h-100 ">
+                                    <div class="card-header cardHeaderResult">RESULT</div>
+                                    <div class="card-body">
+                                        <div class="row no-gutters ">
+                                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/england.jpg" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">ENGLAND</p>
+    
+                                                        <p  class="ml-auto mt-1">  <small>(32.3/50)</small> <span style="font-weight: 900;"> 165/4</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                            </div>
+    
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/southafrica.png" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">SOUTH AFRICA</p>
+    
+                                                        <p  class="ml-auto mt-1"> <span style="font-weight: 900;"> 273/8</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                                    <P style="font-weight: 600; color: red;">
+                                                        
+                                                        ENGLAND NEEDS 108 RUNS TO WIN <br>
+                                                        <small style="color: #858796;">1st ODI - 04:00 PM</small>
+                                                    </P>
+                                                   
+                                               
+                                               <div class=" d-flex justify-content-between"> 
+                                                    <small style="color: #858796;">27 OCT 2021 <i class="fas fa-circle" style="font-size: 7px;"></i>  Abu Dhabi, Dubai </small>
+                                                    <a href="">
+                                                        <i class="fas fa-arrow-right fa-lg" style="color: red; cursor: pointer; text-decoration: none;">
+                                                        </i>
+                                                    </a>
+                                                </div>
+    
+    
+                                               
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!--Third page 3 Card Example -->
+                            <div class="col-xl-4 col-lg-4 col-md-4">
+                                <div class="card shadow h-100">
+                                    <div class="card-header cardHeaderUpcoming">UPCOMING</div>
+                                    <div class="card-body">
+                                   
+                                        <div class="row no-gutters ">
+                                            
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/england.jpg" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">ENGLAND</p>
+    
+                                                        <p  class="ml-auto mt-1">  <small>(32.3/50)</small> <span style="font-weight: 900;"> 165/4</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                            </div>
+    
+                                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                                <div class="d-flex">
+                                                  
+                                                        <img src="assests/southafrica.png" alt="" style="width: 55px; height: 30px; border: 1px solid gray;">
+                                                   
+                                                 
+                                                  
+                                                        <p class="text-start ml-2 mt-1" style="font-weight: 600;">SOUTH AFRICA</p>
+    
+                                                        <p  class="ml-auto mt-1"> <span style="font-weight: 900;"> 273/8</span></p>
+                                                
+                                                    
+                                                </div>
+                                               
+                                                    <P style="font-weight: 600; color: red;">
+                                                        
+                                                        ENGLAND NEEDS 108 RUNS TO WIN <br>
+                                                        <small style="color: #858796;">1st ODI - 04:00 PM</small>
+                                                    </P>
+                                                   
+                                               
+                                               <div class=" d-flex justify-content-between"> 
+                                                    <small style="color: #858796;">27 OCT 2021 <i class="fas fa-circle" style="font-size: 7px;"></i>  Abu Dhabi, Dubai </small>
+                                                   <a href="">
+                                                        <i class="fas fa-arrow-right fa-lg" style="color: red; cursor: pointer; text-decoration: none;">
+                                                        </i>
+                                                    </a>
+                                                </div>
+    
+    
+                                               
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            
+    
+                        </div>
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+              </div>
+    
+            </div>
+    
+            <!--International Card Start-->
+               <!-- Content Row -->
+                    <div  class="mt-4 cardPadding">
+                        <div class="row">
+    
+                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                <div class="card shadow " style="border-top: 5px solid red;">
+                                    <div class="d-flex px-3 py-2 justify-content-between">
+                                        <div class="w-9/12 text-left ">
+                                            <h4>
+                                                <strong>
+                                                    INTERNATIONAL
+    
+                                                </strong>
+                                            </h4>
+                                        </div>
+                                    
+                                        <div class="w-3/12 text-right">
+                                            <a href="#" class="" style="color: #858796; text-decoration: none; cursor: pointer;" >
+                                                View more <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i>
+                                            </a>
+                                        </div>
+    
+                                    
+                                    </div>
+                                    <hr>
+                                    
+                                        <div class="row">
+                                        
+                                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                                <div class="px-3 d-flex justify-content-between">
+                                                    <p class="" style="font-weight: bold;">New Zealand Tour of India</p>
+                                                    <button type="button" class="btn" style="color: red; background-color: rgb(248, 180, 180); font-size: 15px; font-weight: bold;">
+                                                        <i class="fas fa-circle">
+                                                            
+                                                        </i> 
+                                                        LIVE
+                                                    </button>
+                                                </div>
+                                                <div class="p-3">
+                                                    <small style="color: #858796; font-weight: 700;">
+                                                        2nd T20I <i class="fas fa-circle" style="font-size: 7px;"></i> 19:00 (IST) <br>
+                                                        19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> JSCA International Stadium Complex, Ranchi
+                                                    </small>
+                                                </div>
+                                                <!-- <div class="row px-3">
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex">
+                                                        <img src="assests/india.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                                        <div>
+                                                            
+                                                            <p style="font-weight: 600; font-size: 13px;">
+                                                                INDIA <br>
+                                                                <span style="font-weight: 600; font-size: 13px;"> 
+                                                                    16/0 
+                                                                    <small class="" style="font-size: 11px; font-weight: 600;">
+                                                                        (2.0 OVR)
+                                                                    </small>
+                                                                </span> 
+                                                            </p>
+                                                          
+                                                         
+                                                           
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
+                                                        <img src="sports-360 resources/home/Group 6269.png" alt="">
+                                                    </div>
+    
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex">
+                                                       
+                                                        <div>
+                                                            
+                                                            <p style="font-weight: 600; font-size: 13px;">
+                                                                INDIA <br>
+                                                                <span style="font-weight: 600; font-size: 13px;"> 
+                                                                    16/0 
+                                                                    <small class="" style="font-size: 11px; font-weight: 600;">
+                                                                        (2.0 OVR)
+                                                                    </small>
+                                                                </span> 
+                                                            </p>
+                                                          
+                                                         
+                                                           
+                                                        </div>
+                                                        <img src="assests/newzelandd.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                                    </div>
+    
+                                                </div> -->
+                                                <div class=" justify-content-between" >
+                                                    <div class="d-flex p-3" style="line-height: 1.5px;">
+                                                        <img src="assests/india.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                                    
+                                                    
+                                                        <div class="mt-2 ml-2">
+                                                            <p style="font-weight: 600; font-size: 13px;">
+                                                                INDIA
+                                                            
+                                                            </p>
+                                                            <span style="font-weight: 600; font-size: 13px;"> 
+                                                                16/0
+                                                            </span> 
+                                                            <small class="" style="font-size: 11px; font-weight: 600;">
+                                                                (2.0 OVR)
+                                                            </small>
+                                                        </div>
+    
+                                                        <div >
+                                                            <span class="dot" style=" height: 45px;
+                                                            width: 45px;
+                                                            background-color: red !important;
+                                                            border-radius: 50%;
+                                                            display: inline-block;">
+                                                            <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">Vs</small> 
+                                                        </span>
+                                                            
+                                                        </div>
+    
+                                                        <div class="mt-2 ml-auto">
+                                                            <p class="mr-2" style="font-weight: 600; font-size: 13px; color: #858796;">
+                                                                MEW ZEALAND
+                                                            
+                                                            </p>
+                                                            <span style="font-weight: 600; font-size: 13px; color: #858796;"> 
+                                                                153/6
+                                                            </span> 
+                                                            <small class="mr-2" style="font-size: 11px; font-weight: 600;color: #858796;">
+                                                                (20.0 OVR)
+                                                            </small>
+                                                        </div>
+                                                        <img src="assests/newzelandd.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                                    </div>
+                                                
+                                                        
+                                                </div> 
+    
+                                                <div class="p-3">
+                                                    <button type="button" class="btn btn-sm " style="background-color: rgb(16, 16, 99); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
+                                                        <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
+                                                        </i>
+                                                    </a></button>
+                                                </div>
+                                            
+                                         
+                                            </div>
+    
+                                            <!-- <div class="" style=" border-left: 2px solid rgb(230, 227, 227);
+                                                height: 250px; margin-top: -16px;">
+                                                    
+                                            </div> -->
+    
+                                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                                <div class="px-3 d-flex justify-content-between">
+                                                    <p class="" style="font-weight: bold;">Pakistan Tour of Bangladesh</p>
+                                                    <button type="button" class="btn btn-sm" style="color: rgb(16, 16, 99); background-color: rgb(173, 169, 177); font-size: 15px; font-weight: bold;">
+                                                        
+                                                        RESULT
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="p-3">
+                                                    <small style="color: #858796; font-weight: 700;">
+                                                        1st T20I <i class="fas fa-circle" style="font-size: 7px;"></i> 04:00 (BDT) <br>
+                                                        19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Mirpur, Dhaka
+                                                    </small>
+                                                </div>
+    
+                                                <div class=" justify-content-between" >
+                                                    <div class="d-flex p-3" style="line-height: 1.5px;">
+                                                        <img src="assests/bd-flag.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                                    
+                                                    
+                                                        <div class="mt-2 ml-2">
+                                                            <p style="font-weight: 600; font-size: 13px; color: gray;">
+                                                                Bangladesh
+                                                            
+                                                            </p>
+                                                            <span style="font-weight: 600; font-size: 13px; color: gray;"> 
+                                                                127/7
+                                                            </span> 
+                                                            <small class="" style="font-size: 11px; font-weight: 600; color: gray;">
+                                                                (20.0 OVR)
+                                                            </small>
+                                                        </div>
+    
+                                                        <div style="padding-left: 8rem !important;">
+                                                            <span class="dot" style=" height: 45px;
+                                                            width: 45px;
+                                                            background-color: red !important;
+                                                            border-radius: 50%;
+                                                            display: inline-block;">
+                                                            <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">Vs</small> 
+                                                        </span>
+                                                        </div>
+    
+                                                        <div class="mt-2 ml-auto">
+                                                            <p class="mr-1" style="font-weight: 600; font-size: 13px; ">
+                                                                Pakistan
+                                                            
+                                                            </p>
+                                                            <span style="font-weight: 600; font-size: 13px;"> 
+                                                                132/6
+                                                            </span> 
+                                                            <small class="mr-2" style="font-size: 11px; font-weight: 600;">
+                                                                (19.2 OVR)
+                                                            </small>
+                                                        </div>
+                                                        <img src="assests/pakistan.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                                    </div>
+                                                
+                                                        
+                                                </div>
+    
+                                                <div class="p-3">
+                                                    <button type="button" class="btn btn-sm " style="background-color: rgb(16, 16, 99); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
+                                                        <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
+                                                        </i>
+                                                    </a></button>
+                                                </div>
+                                            
+                                            
+                                                
+                                            </div>
+                                        
+                                        </div>
+    
+                                        <div class="" style=" border-left: 2px solid rgb(230, 227, 227);
+                                        height: 270px; margin-left: 630px; margin-top: -270px;">
+                                            
+                                        </div>
+                                        
+                                    </div>
+    
+                            </div>
+                                
+                                
+                        </div>
+    
+                    </div>
+          
+            <!-- Content Row -->
+    
+    <!--Domestic Card Start-->
+               <!-- Content Row -->
+                    <div  class="cardPadding">
+                        <div class="row">
+    
+                            <div class="col-xl-12 col-lg-12 col-md-12">
+                                <div class="card shadow mt-4" style="border-top: 5px solid red;">
+                                    <div class="d-flex px-3 py-2 justify-content-between">
+                                        <div class="w-9/12 text-left ">
+                                            <h4>
+                                                <strong>
+                                                    DOMESTIC
+    
+                                                </strong>
+                                            </h4>
+                                        </div>
+                                    
+                                        <div class="w-3/12 text-right">
+                                            <a href="#" class="" style="color: #858796; text-decoration: none; cursor: pointer;" >
+                                                View more <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i>
+                                            </a>
+                                        </div>
+    
+                                    
+                                    </div>
+                                    <hr>
+                                    
+                                        <div class="row">
+                                        
+                                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                                <div class="px-3 d-flex justify-content-between">
+                                                    <p class="" style="font-weight: bold;">Dhaka First Division Cricket League 2020/2021</p>
+                                                    <button type="button" class="btn" style="color: red; background-color: rgb(248, 180, 180); font-size: 15px; font-weight: bold;">
+                                                        <i class="fas fa-circle">
+                                                            
+                                                        </i> 
+                                                        LIVE
+                                                    </button>
+                                                </div>
+                                                <div class="p-3">
+                                                    <small style="color: #858796; font-weight: 700;">
+                                                        Match - 12th ODI - <i class="fas fa-circle" style="font-size: 7px;"></i> 10:00 (BDT) <br>
+                                                        19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Bangabandhu National Stadium, Dhaka
+                                                    </small>
+                                                </div>
+    
+                                                <div class=" justify-content-between" >
+                                                    <div class="d-flex p-3" style="line-height: 1.5px;">
+                                                        <img src="assests/india.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                                    
+                                                    
+                                                        <div class="mt-2 ml-2">
+                                                            <p style="font-weight: 600; font-size: 13px;">
+                                                                UTTARA CC
+                                                            
+                                                            </p>
+                                                            <span style="font-weight: 600; font-size: 13px;"> 
+                                                                16/0
+                                                            </span> 
+                                                            <small class="" style="font-size: 11px; font-weight: 600;">
+                                                                (2.0 OVR)
+                                                            </small>
+                                                        </div>
+    
+                                                        <div style="padding-left: 8rem !important;">
+                                                            <span class="dot" style=" height: 45px;
+                                                            width: 45px;
+                                                            background-color: red !important;
+                                                            border-radius: 50%;
+                                                            display: inline-block;">
+                                                            <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">VS</small> 
+                                                        </span>
+                                                        </div>
+    
+                                                        <div class="mt-2 ml-auto">
+                                                            <p class="mr-2" style="font-weight: 600; font-size: 13px; color: #858796;">
+                                                                CITY CLUB
+                                                            
+                                                            </p>
+                                                            <span style="font-weight: 600; font-size: 13px; color: #858796;"> 
+                                                                153/6
+                                                            </span> 
+                                                            <small class="mr-2" style="font-size: 11px; font-weight: 600;color: #858796;">
+                                                                (20.0 OVR)
+                                                            </small>
+                                                        </div>
+                                                        <img src="assests/newzelandd.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                                    </div>
+                                                
+                                                        
+                                                </div>
+    
+                                                <div class="p-3">
+                                                    <button type="button" class="btn btn-sm " style="background-color: rgb(16, 16, 99); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
+                                                        <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
+                                                        </i>
+                                                    </a></button>
+                                                </div>
+                                            
+                                                
+                                            
+                                            </div>
+    
+                                            <!-- <div class="" style=" border-left: 2px solid rgb(230, 227, 227);
+                                                height: 250px; margin-top: -16px;">
+                                                    
+                                            </div> -->
+    
+                                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                                <div class="px-3 d-flex justify-content-between">
+                                                    <p class="" style="font-weight: bold;">Dhaka First Division Cricket League 2020/2021</p>
+                                                    <button type="button" class="btn" style="color: red; background-color: rgb(248, 180, 180); font-size: 15px; font-weight: bold;">
+                                                        <i class="fas fa-circle">
+                                                            
+                                                        </i> 
+                                                        LIVE
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="p-3">
+                                                    <small style="color: #858796; font-weight: 700;">
+                                                        1st T20I <i class="fas fa-circle" style="font-size: 7px;"></i> 04:00 (BDT) <br>
+                                                        19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Mirpur, Dhaka
+                                                    </small>
+                                                </div>
+    
+                                                <div class=" justify-content-between" >
+                                                    <div class="d-flex p-3" style="line-height: 1.5px;">
+                                                        <img src="assests/bd-flag.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                                    
+                                                    
+                                                        <div class="mt-2 ml-2">
+                                                            <p style="font-weight: 600; font-size: 13px; color: gray;">
+                                                                Bangladesh
+                                                            
+                                                            </p>
+                                                            <span style="font-weight: 600; font-size: 13px; color: gray;"> 
+                                                                127/7
+                                                            </span> 
+                                                            <small class="" style="font-size: 11px; font-weight: 600; color: gray;">
+                                                                (20.0 OVR)
+                                                            </small>
+                                                        </div>
+    
+                                                        <div style="padding-left: 8rem !important;">
+                                                            <span class="dot" style=" height: 45px;
+                                                            width: 45px;
+                                                            background-color: red !important;
+                                                            border-radius: 50%;
+                                                            display: inline-block;">
+                                                            <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">VS</small> 
+                                                        </span>
+                                                        </div>
+    
+                                                        <div class="mt-2 ml-auto">
+                                                            <p class="mr-1" style="font-weight: 600; font-size: 13px; ">
+                                                                Pakistan
+                                                            
+                                                            </p>
+                                                            <span style="font-weight: 600; font-size: 13px;"> 
+                                                                132/6
+                                                            </span> 
+                                                            <small class="mr-2" style="font-size: 11px; font-weight: 600;">
+                                                                (19.2 OVR)
+                                                            </small>
+                                                        </div>
+                                                        <img src="assests/pakistan.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                                    </div>
+                                                
+                                                        
+                                                </div>
+    
+                                                <div class="p-3">
+                                                    <button type="button" class="btn btn-sm " style="background-color: rgb(16, 16, 99); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
+                                                        <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
+                                                        </i>
+                                                    </a></button>
+                                                </div>
+                                            
+                                                
+                                                
+                                            </div>
+                                        
+                                        </div>
+    
+                                        <div class="" style=" border-left: 2px solid rgb(230, 227, 227);
+                                        height: 270px; margin-left: 630px; margin-top: -270px;">
+                                            
+                                        </div>
+                                        
+                                    </div>
+    
+                            </div>
+                                
+                                
+                        </div>
+    
+                    </div>
+          
+            <!-- Content Row -->
+    
+            <!-- Dream Team Start -->
+            <div class=" mt-5 cardPadding">
+                <div class="row">
+    
+                    <!-- Table CSS One -->
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="card shadow p-3" style="background-color: rgb(16, 16, 99);">
+                           <div class="container d-flex justify-content-around">
+                              
+                                  <div>
+                                        <h3 style="color: white;">
+                                            Create your <span>Dream Team</span> with us and 
+                                            <br>
+                                            win <span>Amazing Prizes...</span>
+                                        </h3>
+    
+                                        <button type="button" class="btn btn-sm px-2 py-2 mt-3 " style="background-color: white ; color: rgb(16, 16, 99) ; font-weight: 600;">
+                                        Learn more about <span>Fantasy League</span> 
+                                            <a href="">
+                                            
+                                                <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: rgb(16, 16, 99);">
+                                                </i>
+                                            </a>
+                                        </button>
+                                  </div>
+                                            
+                                    <div>
+                                        <img style="height: 200px; width: 200px; margin-top: -50px;" src="assests/Abir.jpg" alt="">
+                                    </div>
+                               
+                           </div>
+                        
+                        
+                        </div>
+    
+                    </div>
+    
+    
+    
+                </div>
+            </div>
+    
+            <!-- Local Start -->
+            <div  class="cardPadding">
+                <div class="row">
+    
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="card shadow mt-4" style="border-top: 5px solid red;">
+                            <div class="d-flex px-3 py-2 justify-content-between">
+                                <div class="w-9/12 text-left ">
+                                    <h4>
+                                        <strong>
+                                            LOCAL
+    
+                                        </strong>
+                                    </h4>
+                                </div>
+                            
+                                <div class="w-3/12 text-right">
+                                    <a href="#" class="" style="color: #858796; text-decoration: none; cursor: pointer;" >
+                                        View more <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+    
+                            
+                            </div>
+                            <hr>
+                            
+                                <div class="row">
+                                
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="px-3 d-flex justify-content-between">
+                                            <p class="" style="font-weight: bold;">Dhaka First Division Cricket League 2020/2021</p>
+                                            <button type="button" class="btn" style="color: red; background-color: rgb(248, 180, 180); font-size: 15px; font-weight: bold;">
+                                                <i class="fas fa-circle">
+                                                    
+                                                </i> 
+                                                LIVE
+                                            </button>
+                                        </div>
+                                        <div class="p-3">
+                                            <small style="color: #858796; font-weight: 700;">
+                                                Match - 12th ODI - <i class="fas fa-circle" style="font-size: 7px;"></i> 10:00 (BDT) <br>
+                                                19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Bangabandhu National Stadium, Dhaka
+                                            </small>
+                                        </div>
+    
+                                        <div class=" justify-content-between" >
+                                            <div class="d-flex p-3" style="line-height: 1.5px;">
+                                                <img src="assests/india.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                            
+                                            
+                                                <div class="mt-2 ml-2">
+                                                    <p style="font-weight: 600; font-size: 13px;">
+                                                        UTTARA CC
+                                                    
+                                                    </p>
+                                                    <span style="font-weight: 600; font-size: 13px;"> 
+                                                        16/0
+                                                    </span> 
+                                                    <small class="" style="font-size: 11px; font-weight: 600;">
+                                                        (2.0 OVR)
+                                                    </small>
+                                                </div>
+    
+                                                <div style="padding-left: 8rem !important;">
+                                                    <span class="dot" style=" height: 45px;
+                                                    width: 45px;
+                                                    background-color: red !important;
+                                                    border-radius: 50%;
+                                                    display: inline-block;">
+                                                    <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">Vs</small> 
+                                                </span>
+                                                </div>
+    
+                                                <div class="mt-2 ml-auto">
+                                                    <p class="mr-2" style="font-weight: 600; font-size: 13px; color: #858796;">
+                                                        CITY CLUB
+                                                    
+                                                    </p>
+                                                    <span style="font-weight: 600; font-size: 13px; color: #858796;"> 
+                                                        153/6
+                                                    </span> 
+                                                    <small class="mr-2" style="font-size: 11px; font-weight: 600;color: #858796;">
+                                                        (20.0 OVR)
+                                                    </small>
+                                                </div>
+                                                <img src="assests/newzelandd.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                            </div>
+                                        
+                                                
+                                        </div>
+    
+                                        <div class="p-3">
+                                            <button type="button" class="btn btn-sm " style="background-color: rgb(16, 16, 99); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
+                                                <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
+                                                </i>
+                                            </a></button>
+                                        </div>
+                                    
+                                        
+                                    
+                                    </div>
+    
+                                    <!-- <div class="" style=" border-left: 2px solid rgb(230, 227, 227);
+                                        height: 250px; margin-top: -16px;">
+                                            
+                                    </div> -->
+    
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="px-3 d-flex justify-content-between">
+                                            <p class="" style="font-weight: bold;">Dhaka First Division Cricket League 2020/2021</p>
+                                            <button type="button" class="btn" style="color: red; background-color: rgb(248, 180, 180); font-size: 15px; font-weight: bold;">
+                                                <i class="fas fa-circle">
+                                                    
+                                                </i> 
+                                                LIVE
+                                            </button>
+                                            
+                                        </div>
+                                        <div class="p-3">
+                                            <small style="color: #858796; font-weight: 700;">
+                                                1st T20I <i class="fas fa-circle" style="font-size: 7px;"></i> 04:00 (BDT) <br>
+                                                19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Mirpur, Dhaka
+                                            </small>
+                                        </div>
+    
+                                        <div class=" justify-content-between" >
+                                            <div class="d-flex p-3" style="line-height: 1.5px;">
+                                                <img src="assests/bd-flag.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                            
+                                            
+                                                <div class="mt-2 ml-2">
+                                                    <p style="font-weight: 600; font-size: 13px; color: gray;">
+                                                        Bangladesh
+                                                    
+                                                    </p>
+                                                    <span style="font-weight: 600; font-size: 13px; color: gray;"> 
+                                                        127/7
+                                                    </span> 
+                                                    <small class="" style="font-size: 11px; font-weight: 600; color: gray;">
+                                                        (20.0 OVR)
+                                                    </small>
+                                                </div>
+    
+                                                <div style="padding-left: 8rem !important;">
+                                                    <span class="dot" style=" height: 45px;
+                                                    width: 45px;
+                                                    background-color: red !important;
+                                                    border-radius: 50%;
+                                                    display: inline-block;">
+                                                    <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">VS</small> 
+                                                </span>
+                                                </div>
+    
+                                                <div class="mt-2 ml-auto">
+                                                    <p class="mr-1" style="font-weight: 600; font-size: 13px; ">
+                                                        Pakistan
+                                                    
+                                                    </p>
+                                                    <span style="font-weight: 600; font-size: 13px;"> 
+                                                        132/6
+                                                    </span> 
+                                                    <small class="mr-2" style="font-size: 11px; font-weight: 600;">
+                                                        (19.2 OVR)
+                                                    </small>
+                                                </div>
+                                                <img src="assests/pakistan.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
+                                            </div>
+                                        
+                                                
+                                        </div>
+    
+                                        <div class="p-3">
+                                            <button type="button" class="btn btn-sm " style="background-color: rgb(16, 16, 99); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
+                                                <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
+                                                </i>
+                                            </a></button>
+                                        </div>
+                                    
+                                        
+                                        
+                                    </div>
+                                
+                                </div>
+    
+                                <div class="" style=" border-left: 2px solid rgb(230, 227, 227);
+                                height: 270px; margin-left: 630px; margin-top: -270px;">
+                                    
+                                </div>
+                                
+                            </div>
+    
+                    </div>
+                        
+                        
+                </div>
+    
+            </div>
+    
+            <!-- footer start -->
+            <div  class="cardPadding" >
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <footer class="mt-5" style="background-color: rgb(16, 16, 99);">
+                            <!-- <a class="rounded-btn d-flex justify-content-end " id="scrollToTopBtn" href="#page-top">
+                                <i class="fas fa-arrow-circle-up"></i>
+                                
+                            </a> -->
+                            <div class="standard_social_links">
+                                <div class="d-flex justify-content-end" >
+                                <li class="rounded-btn btn-facebook"><a href="#" id="scrollToTopBtn" style="font-size: 30px; color: white;"> <i class="fas fa-arrow-circle-up"></i></a>
+                        
+                                </li>
+                                
+                            
+                            
+                                </div>
+                            </div> 
+                            <div class="footer-wrap">
+                               
+                            <div class="container first_class" style="padding: 10px 90px;">
+                                <div class="row">
+                                <div class="col-md-4 col-sm-6 sportsLogo">
+                                    <img src="assests/logo.png" alt="">
+                                    
+                                    <p class="mt-2" style="color: rgb(150, 147, 147); ">Get all the latest information on Cricket Events, Fairs. Sign up for our newsletter today.</p>
+                                    <p style="color: rgb(150, 147, 147);">+8802-9860352, +8802-9860352,</p>
+                                </div>
+                
+                                <div class="col-md-4 col-sm-6" >
+                                    <!-- <div class="clearfix"></div> -->
+                                        <h5 style="color: white;" class="ml-5"> Find us at</h5>
+                                        <div class="col-md-12">
+                                            <div class="standard_social_links">
+                                                <div class="d-flex" >
+                                                <li class=" btn-facebook"><a href="#" style="font-size: 30px;"><i class="fab fa-facebook-f ml-3"style="color: white;"></i></a>
+                                        
+                                                </li>
+                                                
+                                                <li class=" btn-instagram"><a href="#"style="font-size: 30px;"><i class="fab fa-instagram ml-3" style="color: white;" aria-hidden="true"></i></a>
+                                        
+                                                </li>
+    
+                                                <li class=" btn-twitter"><a href="#"style="font-size: 30px;"><i class="fab fa-twitter  ml-4" style="color: white;" aria-hidden="true"></i></a>
+                                        
+                                                </li>
+                                            
+                                            
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    
+                                </div>
+                
+                                <div class="col-md-4 col-sm-6">
+                                <form class="newsletter">
+                                    <h5 style="color: white;">NEWSLETTER</h5>
+                                    <input type="text" placeholder="Email Address"> 
+                                        <button class="newsletter_submit_btn btn-primary btn-sm mt-4" type="submit">
+                                            SEND
+                                        </button>  
+                                </form>
+                                   
+                                        <div class=" mt-3" style="color: rgb(150, 147, 147);"> 
+                                        <p>
+                                            <i class="far fa-copyright"></i> Copyright 2021 | All Rights Reserved by Sports360
+                                        </p>
+                                           
+                                        </div>
+                                   
+                                </div>
+                            
+                                </div>
+                            </div>
+                          
+                            <!-- <div class="row">
+                                
+                                <div class="container-fluid">
+                                <div class="copyright"> Copyright 2019 | All Rights Reserved by TRIEDGE Solutions Pvt. Ltd.</div>
+                                </div>
+                                
+                            </div> -->
+                            </div>
+                            
+                            </footer>
+                    </div>
+                    
+                </div>
+            </div>
+              <!--footer end-->
+    
+    </section>
+
+
+<script src="js/mainCstom.js"></script>
+<script src="jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script>
+    $('.carousel').carousel({
+         interval: false,
+     });
+ </script>
+</body>
+</html>
