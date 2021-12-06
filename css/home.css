@@ -1,0 +1,615 @@
+/* *{
+  margin:0; padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.content{
+  min-height: 130vh;
+  background:url(bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+header .header-1{
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  background: rgb(16, 16, 99);
+  width: 100%;
+  padding:8px 20px;
+  z-index: 9;
+}
+
+header .header-1 .navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header .header-1 .navbar ul li{
+  margin: 10px;
+}
+
+header .header-1 .navbar ul li a{
+  color:#fff;
+  font-size: 20px;
+}
+
+header .header-1 .navbar ul li a:hover{
+  color:#fff8;
+}
+
+.sportsLogo img{
+  width: 9rem;
+}
+
+header .header-2{
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  background:crimson;
+  width: 100%;
+  padding:5px 20px;
+  z-index: 9;
+}
+.bodyContent{
+  z-index: 1;
+ 
+}
+header .header-2 .navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header .header-2 .navbar ul li{
+  margin:10px;
+}
+
+header .header-2 .navbar ul li a{
+  color:#fff;
+  font-size: 20px;
+}
+
+header .header-2 .navbar ul li a:hover{
+  color:#fff8;
+}
+
+header .header-2 .icons a{
+  font-size: 20px;
+  color:#fff;
+  margin:10px;
+}
+
+header .header-2 .icons a:hover{
+  color:#fff8;
+}
+
+#menu2{
+  font-size: 30px;
+  color:#fff;
+  cursor: pointer;
+  display: none;
+}
+
+header .header-2.sticky{
+  position: fixed;
+  top: 0; left: 0;
+  box-shadow: 0 3px 5px #333;
+}
+.dreamCardImage{
+  margin-top: -119px;
+  /* padding: -5px 0px; */
+  transform: translate(30px,16px);
+}
+.dreamCardParagraph{
+  transform: translate(110px,50px);
+}
+.cardHeaderLive{
+  background-color:  red !important;
+  color: white;
+}
+.cardHeaderResult{
+  background-color:  rgb(16, 16, 99) !important;
+  color: white;
+}
+.cardHeaderUpcoming{
+  background-color:  #1cc88a !important;
+  color: white;
+}
+
+.cardPadding{
+  padding: 0px 45px;
+} 
+ /* media queries  */
+.featured{
+  font-weight: 600;
+}
+.england{
+  font-weight: 600;
+}
+.internationalCard{
+  border-top: 5px solid red;
+}
+.indiaParagraph{
+  font-weight: 600; 
+  font-size: 13px;
+}
+.over{
+  font-weight: 600; 
+  font-size: 11px;
+}
+.uttaraParagraph{
+  font-weight: 600; 
+  font-size: 13px;
+}
+.uttaraOver{
+  font-weight: 600; 
+  font-size: 11px;
+}
+.newZeleandParagraph{
+  font-weight: 600; 
+  font-size: 13px;
+  color: #858796;
+}
+.newZeleandParagraphOvr{
+  font-size: 11px; 
+  font-weight: 600;
+  color: #858796;
+}
+.cityParagraph{
+  font-weight: 600; 
+  font-size: 13px;
+  color: #858796;
+}
+.cityOver{
+  font-size: 11px; 
+  font-weight: 600;
+  color: #858796;
+}
+.cardButton{
+  color: red; 
+  background-color: rgb(248, 180, 180); 
+  font-size: 15px; 
+  font-weight: bold;
+}
+.cardButtonResult{
+  color: rgb(16, 16, 99);
+  background-color: rgb(173, 169, 177); 
+  font-size: 15px; 
+  font-weight: bold;
+}
+.horizontal-line{
+  height: 300px;
+  border-right: 2px solid #000900;
+  position: absolute;
+  right: 50%;
+}
+/* .horizontal-line2{
+  height: 60px;
+  border-right: 2px solid #000900;
+  position: absolute;
+  right: 50%;
+} */
+@media (max-width:991px){
+
+  header .header-1 form #search{
+    width: 100%;
+  }
+  header .header-2 {
+    background: crimson;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 9;
+}
+/* .boddyWidth{
+  width: 100% !important;
+} */
+
+}
+/* .dreamCard{
+  position: relative;
+} */
+
+
+@media (max-width:768px){
+
+  header .header-2 #menu2{
+    display: block;
+  }
+
+  header .header-2 .navbar{
+    position: fixed;
+    top:-1000px; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  header .header-2 .navbar ul{
+    flex-flow: column;
+    width: 250px;
+    border-radius: 5px;
+    padding:30px 10px;
+    background:crimson;
+    box-shadow: 0 0 0 100vh rgba(0,0,0,.5),
+    0 3px 5px #000;
+  }
+
+  header .header-2 .navbar ul li{
+    width:100%;
+    text-align: center;
+  }
+
+  header .header-2 .navbar ul li a{
+    font-size: 25px;
+    display: block;
+  }
+
+  header .header-2 .navbar.nav-toggle{
+    top:55%;
+    opacity: 1;
+    z-index: 9;
+  }
+ 
+ 
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.resultCard{
+  margin-top: 1rem;
+}
+.upcomingCard{
+  margin-top: 2rem;
+}
+
+.sportsLogo img {
+  width: 4rem;
+}
+.navbar {
+
+  padding: 0rem 0rem;
+}
+.featured{
+  font-size: 15px;
+}
+/* .england{
+  font-size: 15px;
+} */
+.cardPadding {
+  padding: 0px 20px;
+}
+.internationalCard{
+  font-size: 13px;
+}
+.VsImage img{
+  height: 32px;
+}
+.indiaParagraph{
+  font-weight: 0;
+  font-size: 8px;
+}
+.over{
+  font-weight: 0;
+font-size: 6px !important;
+}
+.uttaraParagraph{
+  font-size: 8px;
+}
+.uttaraOver{
+  font-size: 6px;
+}
+.newZeleandParagraph{
+  font-size: 8px !important;
+}
+.newZeleandParagraphOvr{
+  font-size: 6px !important;
+}
+.cityParagraph{
+  font-size: 8px !important;
+}
+.cityOver{
+  font-size: 6px !important;
+}
+.cardTitle{
+  font-size: 15px;
+}
+.cardButton{
+
+  font-size: 8px !important; 
+ 
+}
+.cardButtonResult{
+  font-size: 8px !important; 
+}
+
+.domesticDivision{
+  font-size: 10px;
+}
+.dreamCardParagraph {
+  transform: translate(0px,0px);
+}
+.dreamCardImage {
+  margin-top: 0px;
+  transform: translate(-140px, 16px);
+}
+.createYourTeam{
+  font-size: 15px;
+}
+.horizontal-line {
+ display: none;
+}
+.horizontal-line2 {
+display: none;
+}
+
+}
+
+
+@media (max-width:500px){
+
+  header .header-1{
+    flex-flow: column;
+  }
+}
+
+@media (max-width:360px){
+  footer .newsletter input[type="text"] {
+    width: 154px !important;
+    background: #fff;
+    color: #333;
+    border: 1px solid #222;
+    padding: 10px 1px;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+.newsletter .newsletter_submit_btn {
+  background-color: rgb(62, 62, 119);
+  position: absolute;
+  right: 6px !important;
+  border: 0;
+  top: 31px !important;
+  font-size: 11px !important;
+  color: rgb(230, 223, 223);
+}
+}
+
+@media (max-width:320px){
+  .resultCard{
+    margin-top: 1rem;
+  }
+  .upcomingCard{
+    margin-top: 2rem;
+  }
+  
+  .sportsLogo img {
+    width: 4rem;
+  }
+  header .header-1 .navbar ul li {
+    margin: 6px;
+}
+  .navbar {
+  
+    padding: 0rem 0rem;
+  }
+  .allImage{
+    width: 43px !important;
+  }
+  .featured{
+    font-size: 15px;
+  }
+  .england{
+    font-size: 13px;
+  }
+  .cardPadding {
+    padding: 0px 20px;
+  }
+  .internationalCard{
+    font-size: 13px;
+  }
+  .VsImage img{
+    height: 25px;
+  }
+  .indiaParagraph{
+    font-weight: 0;
+    font-size: 8px;
+  }
+  .over{
+    font-weight: 0;
+  font-size: 6px !important;
+  }
+  .uttaraParagraph{
+    font-size: 8px;
+  }
+  .uttaraOver{
+    font-size: 6px;
+  }
+  .newZeleandParagraph{
+    font-size: 8px !important;
+  }
+  .newZeleandParagraphOvr{
+    font-size: 4px !important;
+  }
+  .cityParagraph{
+    font-size: 8px !important;
+  }
+  .cityOver{
+    font-size: 6px !important;
+  }
+  .cardTitle{
+    font-size: 15px;
+  }
+  .cardButton{
+  
+    font-size: 8px !important; 
+   
+  }
+  .cardButtonResult{
+    font-size: 8px !important; 
+  }
+  
+  .domesticDivision{
+    font-size: 10px;
+  }
+  .dreamCardParagraph {
+    transform: translate(0px,0px);
+  }
+  .dreamCardImage {
+    margin-top: 0px;
+    transform: translate(-94px, 16px);
+  }
+  .dreamCardImage img{
+    width: 437px;
+  }
+  .createYourTeam{
+    font-size: 15px;
+  }
+  .horizontal-line {
+   display: none;
+  }
+  .horizontal-line2 {
+  display: none;
+  }
+  footer .newsletter input[type="text"] {
+    width: 154px !important;
+    background: #fff;
+    color: #333;
+    border: 1px solid #222;
+    padding: 10px 1px;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+.newsletter .newsletter_submit_btn {
+  background-color: rgb(62, 62, 119);
+  position: absolute;
+  right: -31px !important;
+  border: 0;
+  top: 31px !important;
+  font-size: 11px !important;
+  color: rgb(230, 223, 223);
+}
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+  .horizontal-line {
+    height: 291px;
+    border-right: 1px solid #dde3dd;
+    position: absolute;
+    right: 50%;
+    top: 17%;
+}
+.horizontal-line2 {
+  height: 283px;
+  border-right: 1px solid #dde3dd;
+  position: absolute;
+  right: 50%;
+  top: 17%;
+}
+.england{
+  font-size: 10px;
+}
+.englandOver{
+  font-size: 10px;
+}
+.sportsLogo img {
+  width: 4rem;
+}
+.navbar {
+
+  padding: 0rem 0rem;
+}
+.featured{
+  font-size: 15px;
+}
+
+.cardPadding {
+  padding: 0px 20px;
+}
+.internationalCard{
+  font-size: 16px;
+}
+.VsImage img{
+  height: 32px;
+}
+.indiaParagraph{
+  font-weight: 0;
+  font-size: 10px;
+}
+.over{
+  font-weight: 0;
+font-size: 8px !important;
+}
+.uttaraParagraph{
+  font-size: 10px;
+}
+.uttaraOver{
+  font-size: 8px;
+}
+.newZeleandParagraph{
+  font-size: 10px !important;
+}
+.newZeleandParagraphOvr{
+  font-size: 8px !important;
+}
+.cityParagraph{
+  font-size: 10px !important;
+}
+.cityOver{
+  font-size: 8px !important;
+}
+.cardTitle{
+  font-size: 21px;
+}
+.cardButton{
+
+  font-size: 8px !important; 
+ 
+}
+.cardButtonResult{
+  font-size: 8px !important; 
+}
+
+.domesticDivision{
+  font-size: 11px;
+}
+.dreamCardParagraph {
+  transform: translate(14px,52px);
+}
+.dreamCardImage {
+  margin-top: -122px;
+  transform: translate(-140px, 16px);
+}
+.createYourTeam{
+  font-size: 15px;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .horizontal-line {
+    height: 284px;
+    border-right: 1px solid #dde3dd;
+    position: absolute;
+    right: 50%;
+    top: 20%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .horizontal-line {
+    height: 284px;
+    border-right: 1px solid #dde3dd;
+    position: absolute;
+    right: 50%;
+    top: 20%;
+}
+}

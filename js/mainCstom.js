@@ -1,27 +1,5 @@
 //Header Function Work 
-// let menu = document.querySelector('#menu')
-// let navbar = document.querySelector('.navbar');
-// let lowerHeader = document.querySelector('.lowerHeader');
 
-
-// function navToggle(){
-//     menu.classList.toggle('fa-times');
-//     navbar.classList.toggle('nav-toggle');
-// }
-
-// window.addEventListener('scroll',function(){
-
-//     menu.classList.remove('fa-times');
-//     navbar.classList.remove('nav-toggle');
-
-//     if(window.scrollY > 60){
-//         lowerHeader.classList.add('sticky');
-      
-//     }else{
-//         lowerHeader.classList.remove('sticky');
-//     }
-
-// });
 let menu2 = document.querySelector('#menu2')
 let navbar = document.querySelector('.navbar-2');
 let header2 = document.querySelector('.header-2');
@@ -53,7 +31,7 @@ $(document).on('click', '.items li', function () {
   $(this).addClass('active').siblings().removeClass('active')
 })
 
-//navigation menu button click and show sidebar in small screen
+//Admin Panel navigation menu button click and show sidebar in small screen
 $('#menu-btn').click(function () {
   $('#menu').toggleClass('active')
 })
