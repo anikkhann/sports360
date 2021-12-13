@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/admin_panel.css">
+    <link rel="stylesheet" href="css/score_card.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Score Card</title>
+</head>
+<body class="">
+    
+     
+        <header>
+
+                <div class="header-1">
+            
+                    <nav class="navbar sportsLogo">
+                        <ul>
+                            <li><a  href="#"></a><img src="assests/logo.png" alt=""></li>
+                            <li><a  href="#">Home</a></li>
+                            <li><a  href="#">Score</a></li>
+                            <li><a  href="#">Content</a></li>
+                            
+                        </ul>
+                    </nav>
+            
+                </div>
+            
+                <div class="header-2">
+            
+                    <div id="menu2" class="fas fa-bars" onclick="navToggle();"></div>
+            
+                    <nav class="navbar navbar-2">
+                        <ul>
+                            <li><a onclick="navToggle();" href="#">Live</a></li>
+                            <li><a onclick="navToggle();" href="#">Result</a></li>
+                            <li><a onclick="navToggle();" href="#">Upcoming</a></li>
+                        
+                        </ul>
+                    </nav>
+            
+                </div>
+
+               
+              
+           
+        </header>
+
+        <section>
+           
+            <!-- score and wicket start -->
+            <div class="scoreCard1Color">
+                 
+                <p class="scoreParagraph">
+                        Bangladesh v Pakistan T20I - Men <i class="fas fa-circle circle"></i> 2nd T20I <i class="fas fa-circle circle"></i> Sher-e-Bangla National Cricket Stadium, Mirpur 
+                </p>
+
+                
+                <div class="d-flex justify-content-around picturesOfCountries bdParagraph">
+                    <div class="d-flex">
+                        <div>
+                            <img class="bdImage" src="assests/bd-flag.jpg" alt="">
+                            <h4 class="mt-3 text-center">
+                               BANGLADESH  <br>
+                                <span class="men">(MEN)</span>
+                            </h4>
+                        </div>
+                        <div>
+                            <h3 class="ml-3 mt-2">
+                            
+                                177 - 7 
+                                <br>
+                              <span class="menOvr ml-2">20.0 OVR</span>  
+    
+                            </h3>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <button type="button" class="btn  liveButton mt-5">
+                            <i class="fas fa-circle liveCircle">
+                                
+                            </i> 
+                            LIVE
+                        </button>
+                    </div>
+
+                    
+                        <div class="d-flex">
+                            <div>
+                                <h3 class="run mr-3 mt-2">
+                                
+                                    32 - 1 
+                                    <br>
+                                  <span class="menOvr ml-4 ">5.3 OVR</span>  
+    
+                                </h3>
+                            </div>
+                            
+                            <div>
+                                <img class="bdImage" src="assests/pakistan.jpg" alt="">
+                                <h4 class="mt-3 text-center">PAKISTAN
+                                    <br>
+                                   <span class="men">(MEN)</span> 
+                                </h4>
+                            </div>
+                           
+                          
+                       </div>
+                    
+                </div>
+                
+                <p class="scoreParagraph2">
+                    Pakistan Need 77 runs from 77 balls
+                </p>
+            </div>
+
+            <!-- table card start -->
+            <div class="scoreCardPadding" >
+               
+                <div class="card shadow scoretable">
+                    <div class="row tableRow">
+                        <div class="column column1 ">
+                            <table class="table table-responsive">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Batting</th>
+                                    <th scope="col" class="theading">R</th>
+                                    <th scope="col" class="theading">B</th>
+                                    <th scope="col" class="theading">4s</th>
+                                    <th scope="col" class="theading">6s</th>
+                                    <th scope="col" class="theading">SR</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row" class="nameColor">Mohammad Rizwan(RHB)</th>
+                                    <td class="theading">35</td>
+                                    <td class="theading">27</td>
+                                    <td class="theading">03</td>
+                                    <td class="theading">01</td>
+                                    <td class="theading">144.22</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"class="nameColor">Fakhar Zaman (RHB)</th>
+                                    <td class="theading">22</td>
+                                    <td class="theading">14</td>
+                                    <td class="theading">02</td>
+                                    <td class="theading">01</td>
+                                    <td class="theading">132.87</td>
+                                  </tr>
+                                
+                                </tbody>
+                              </table>
+                        </div>
+
+                        <div class="column column2 ">
+                            <table class="table table-responsive">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Bowling</th>
+                                    <th scope="col" class="theading">O</th>
+                                    <th scope="col" class="theading">M</th>
+                                    <th scope="col" class="theading">R</th>
+                                    <th scope="col" class="theading">W</th>
+                                    <th scope="col" class="theading">ECON</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row" class="nameColor">Taskin Ahmed(RHF)</th>
+                                    <td class="theading">3.3</td>
+                                    <td class="theading">0</td>
+                                    <td class="theading">17</td>
+                                    <td class="theading">0</td>
+                                    <td class="theading">144.22</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" class="nameColor">Mustafizur Rahman (LMF)</th>
+                                    <td class="theading">3</td>
+                                    <td class="theading">0</td>
+                                    <td class="theading">21</td>
+                                    <td class="theading">1</td>
+                                    <td class="theading">132.87</td>
+                                  </tr>
+                                
+                                </tbody>
+                              </table>
+                          </div>
+                   
+                </div>
+                    <p class="PakRr">
+                        PAK RR: 5.33 <i class="fas fa-circle circle2"></i> Required Run Rate: 5.8 <i class="fas fa-circle circle2"></i> Current Partnership: 12 Runs (16 Balls)
+                    </p>
+               
+                </div>
+
+
+            </div>
+            <!-- nav of Scorecard, Commentary, stats and tables-->
+          
+            <div class="scoreCardPadding scoreCardPadding2">
+              <nav class="nav1">
+                <a href="#" class="active">Scorecard</a>
+                <a href="#">Commentary</a>
+                <a href="#">Stats</a>
+                <!-- <a href="#">Portfolio</a>
+                <a href="#">Contact</a> -->
+                <div class="animation start-home"></div>
+              </nav>
+
+                <div class="splitButton mt-3 d-flex justify-content-center">
+                      <p class="mr-4 innings1 mt-1 mb-1">
+                        2nd Innings
+                        <br>
+                        <small class="ml-3" style="font-size: 8px;">
+                          PAK 152-9
+                        </small>
+      
+                      </p>
+                    
+                    
+                      <p class="innings2 mt-1 ml-4 mb-1">
+                        1st Innings
+                        <br>
+                        <small class="ml-3" style="font-size: 8px;">
+                          BAN 177-7
+                        </small>
+      
+                      </p>
+                </div>
+                  
+                <div class="row battingTable">
+                    <div class="col-xl-12 col-lg-12 col-md-12 sm-12 table-responsive">
+                      <table class="table table-md btable ">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="tBattingHeading" style="padding-left: 0px !important;">
+                              <div class="d-flex">
+                                <img class="batImage" src="sports-360 resources/score card/noun_cricket bat_2005489.png" alt="">
+                                <span class="ml-2 bating">Batting</span>
+                              </div>
+                            </th>
+                            <th scope="col" class="tBattingHeading"></th>
+                            <th scope="col" class="tBattingHeading">R</th>
+                            <th scope="col" class="tBattingHeading">B</th>
+                            <th scope="col" class="tBattingHeading">4s</th>
+                            <th scope="col" class="tBattingHeading">6s</th>
+                            <th scope="col" class="tBattingHeading">SR</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="cricketTableRow">
+                            <th scope="row">Mohammad Rizwan <small>(SHB)</small></th>
+                            <td class="tBatingData">
+                                <div class="d-flex">
+                                  <span>c: Yadav</span> 
+                                  <span  class="ml-1">b: Chahal</span>
+                                </div>
+                            </td>
+                            <td class="tBatingData">35</td>
+                            <td class="tBatingData">27</td>
+                            <td class="tBatingData">03</td>
+                            <td class="tBatingData">01</td>
+                            <td class="tBatingData">144.22</td>
+                          </tr>
+
+                          <tr class="cricketTableRow">
+                            <th scope="row">Fakhar Zaman <small>(RHB)</small></th>
+                            <td class="tBatingData">
+                                b: Axar Patel
+                            </td>
+                            <td class="tBatingData">22</td>
+                            <td class="tBatingData">14</td>
+                            <td class="tBatingData">02</td>
+                            <td class="tBatingData">01</td>
+                            <td class="tBatingData">132.87</td>
+                          </tr>
+
+                          <tr class="cricketTableRow">
+                            <th scope="row">Mohammad Rizwan <small>(SHB)</small></th>
+                            <td class="tBatingData">
+                                <div class="d-flex">
+                                  <span>c: Yadav</span> 
+                                  <span class="ml-1">b: Chahal</span>
+                                </div>
+                            </td>
+                            <td class="tBatingData">35</td>
+                            <td class="tBatingData">27</td>
+                            <td class="tBatingData">03</td>
+                            <td class="tBatingData">01</td>
+                            <td class="tBatingData">144.22</td>
+                          </tr>
+
+                          <tr class="cricketTableRow">
+                            <th scope="row">Fakhar Zaman <small>(RHB)</small></th>
+                            <td class="tBatingData">
+                                b: Axar Patel
+                            </td>
+                            <td class="tBatingData">22</td>
+                            <td class="tBatingData">14</td>
+                            <td class="tBatingData">02</td>
+                            <td class="tBatingData">01</td>
+                            <td class="tBatingData">132.87</td>
+                          </tr>
+
+                          <tr class="cricketTableRow">
+                            <th scope="row">Mohammad Rizwan <small>(SHB)</small></th>
+                            <td class="tBatingData">
+                                <div class="d-flex">
+                                  <span>c: Yadav</span> 
+                                  <span class="ml-1">b: Chahal</span>
+                                </div>
+                            </td>
+                            <td class="tBatingData">35</td>
+                            <td class="tBatingData">27</td>
+                            <td class="tBatingData">03</td>
+                            <td class="tBatingData">01</td>
+                            <td class="tBatingData">144.22</td>
+                          </tr>
+
+                          <tr class="cricketTableRow">
+                            <th scope="row">Fakhar Zaman <small>(RHB)</small></th>
+                            <td class="tBatingData">
+                                b: Axar Patel
+                            </td>
+                            <td  class="tBatingData">22</td>
+                            <td class="tBatingData">14</td>
+                            <td class="tBatingData">02</td>
+                            <td class="tBatingData">01</td>
+                            <td class="tBatingData">132.87</td>
+                          </tr>
+
+                          
+                          <tr class="cricketTableRow">
+                            <th scope="row">Mohammad Rizwan <small>(SHB)</small></th>
+                            <td class="tBatingData">
+                                <div class="d-flex">
+                                  <span>c: Yadav</span> 
+                                  <span class="ml-1">b: Chahal</span>
+                                </div>
+                            </td>
+                            <td class="tBatingData">35</td>
+                            <td class="tBatingData">27</td>
+                            <td class="tBatingData">03</td>
+                            <td class="tBatingData">01</td>
+                            <td  class="tBatingData">144.22</td>
+                          </tr>
+
+                          <tr class="cricketTableRow">
+                            <th scope="row">Fakhar Zaman <small>(RHB)</small></th>
+                            <td class="tBatingData">
+                                b: Axar Patel
+                            </td>
+                            <td class="tBatingData">22</td>
+                            <td class="tBatingData">14</td>
+                            <td class="tBatingData">02</td>
+                            <td class="tBatingData">01</td>
+                            <td class="tBatingData">132.87</td>
+                          </tr>
+
+                          <tr class="cricketTableRow">
+                            <th scope="row">Mohammad Rizwan <small>(SHB)</small></th>
+                            <td class="tBatingData">
+                                <div class="d-flex">
+                                  <span>c: Yadav</span> 
+                                  <span class="ml-1">b: Chahal</span>
+                                </div>
+                            </td>
+                            <td class="tBatingData">35</td>
+                            <td class="tBatingData">27</td>
+                            <td class="tBatingData">03</td>
+                            <td class="tBatingData">01</td>
+                            <td class="tBatingData">144.22</td>
+                          </tr>
+
+                          <tr class="cricketTableRow">
+                            <th scope="row" style="color: rgb(16, 16, 99)!important;">Fakhar Zaman <small>(RHB)</small> </th>
+                            <td class="tBatingData">
+                                <span style="color: rgb(16, 16, 99)!important;">NOT OUT</span>
+                            </td>
+                            <td class="tBatingData">22</td>
+                            <td class="tBatingData">14</td>
+                            <td class="tBatingData">02</td>
+                            <td class="tBatingData">01</td>
+                            <td class="tBatingData">132.87</td>
+                          </tr>
+
+                          <tr class="cricketTableRow">
+                            <th scope="row"  style="color: rgb(16, 16, 99) !important">Mohammad Rizwan <small>(SHB)</small></th>
+                            <td class="tBatingData">
+                                <span style="color: rgb(16, 16, 99) !important;">NOT OUT</span>
+                            </td>
+                            <td class="tBatingData">35</td>
+                            <td class="tBatingData">27</td>
+                            <td class="tBatingData">03</td>
+                            <td class="tBatingData">01</td>
+                            <td class="tBatingData">144.22</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+
+                        <div class="d-flex">
+                          <div >
+                            <p class="extra">EXTRAS: 1 (1Wd, 0NB, 0LB, 0B)</p>
+                          </div>
+                          <div class="d-flex totalOvers">
+                              <p class="ml-5" style="font-size: 12px; font-weight: 600;">TOTAL: 153/9</p> 
+                              <p class="ml-5" style="font-size: 12px; font-weight: 600;">OVERS: 19.2</p>
+                          </div>
+                        </div>
+                         
+                    </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <p class="fallOfWicket">
+                      Yet to Bat:-
+                    </p>
+                      <p class="fallOfWicket">
+                        Fall of wickets: 1-21 
+                        Daryl Mitchell (c: Harshal Patel b: Axar Patel, 2.1 OV),
+                        2-22 Mark Chapman (st: Pant b: Axar Patel, 2.6 OV),
+                        3-30 Glenn Phillips (b: Axar Patel, 4.4 OV), 
+                        4-69 Martin Guptil (c: Yadav b: Chahal, 10.3 OV), 
+                        5-76 Tim Selfert (run out (Kishan), 11.4 OV), 
+                        6-76 James Neesham (c: Pant b: Harshal Patel, 12.3 OV), 
+                        7-84 Mitchel Santner (run out (Kishan), 13.1 OV), 
+                        8-93 Admin Milne (c: Sharma b: Venkatesh Iyer, 15.1 OV), 
+                        9-95 Ish Sodhi (c: Yadav b: Harshal Patel, 16.1 OV), 10-111 Lockie Ferguson (c&b: Chahar, 12.2 OV)
+                      </p>
+                  </div>
+                </div>
+
+              <!-- Bowling Table Start -->
+                <div class="row ">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 table-responsive">
+                    <table class="table  table-responsive-md table-responsive-lg table-responsive-sm btable">
+                      <thead>
+                      <tr class="cricketTableRow">
+                          <th class="tbowlHeading" style="padding-left: 0px !important;">
+                            <!-- <img class="batImage" src="sports-360 resources/score card/noun_Cricket Ball_3598749.png" alt="">
+                            <span>Bowling</span>  -->
+                            <div class="d-flex">
+                              <img class="batImage" src="sports-360 resources/score card/noun_Cricket Ball_3598749.png" alt="">
+                              <span class="ml-2 bating">Bowling</span>
+                            </div>
+                          </th>
+                          <th class="tbowlHeading">O</th>
+                          <th class="tbowlHeading">M</th>
+                          <th class="tbowlHeading">R</th>
+                          <th class="tbowlHeading">W</th>
+                          <th class="tbowlHeading">Wd</th>
+                          <th class="tbowlHeading">No</th>
+                          <th class="tbowlHeading">ECON</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr class="cricketTableRow">
+                          <td class="tbowlPlayerName">
+                            Mohammad Rizwan <small>(SHB)</small>
+                          </td>
+                          <td class="tBowlData">4</td>
+                          <td class="tBowlData">0</td>
+                          <td class="tBowlData">35</td>
+                          <td class="tBowlData">2</td>
+                          <td class="tBowlData">03</td>
+                          <td class="tBowlData">01</td>
+                          <td class="tBowlData">144.22</td>
+                          
+                      </tr>
+    
+                      <tr class="cricketTableRow">
+                        <td  class="tbowlPlayerName">
+                          Fakhar Zaman <small>(RHB)</small>
+                        </td>
+                        <td class="tBowlData">4</td>
+                        <td class="tBowlData">0</td>
+                        <td class="tBowlData">35</td>
+                        <td class="tBowlData">2</td>
+                        <td class="tBowlData">03</td>
+                        <td class="tBowlData">01</td>
+                        <td class="tBowlData">144.22</td>
+                        
+                    </tr>
+    
+                    <tr class="cricketTableRow">
+                      <td class="tbowlPlayerName">
+                        Mohammad Rizwan <small>(SHB)</small>
+                      </td>
+                      <td class="tBowlData">4</td>
+                      <td class="tBowlData">0</td>
+                      <td class="tBowlData">35</td>
+                      <td class="tBowlData">2</td>
+                      <td class="tBowlData">03</td>
+                      <td class="tBowlData">01</td>
+                      <td class="tBowlData">144.22</td>
+                      
+                  </tr>
+    
+                  <tr class="cricketTableRow">
+                    <td class="tbowlPlayerName">
+                      Fakhar Zaman <small>(RHB)</small>
+                    </td>
+                    <td class="tBowlData">4</td>
+                    <td class="tBowlData">0</td>
+                    <td class="tBowlData">35</td>
+                    <td class="tBowlData">2</td>
+                    <td class="tBowlData">03</td>
+                    <td class="tBowlData">01</td>
+                    <td class="tBowlData">144.22</td>
+                    
+                </tr>
+                <tr class="cricketTableRow">
+                  <td class="tbowlPlayerName">
+                   <span style="color: rgb(16, 16, 99) !important;">Mohammad Rizwan</span> <small>(SHB)</small>
+                  </td>
+                  <td class="tBowlData">4</td>
+                  <td class="tBowlData">0</td>
+                  <td class="tBowlData">35</td>
+                  <td class="tBowlData">2</td>
+                  <td class="tBowlData">03</td>
+                  <td class="tBowlData">01</td>
+                  <td class="tBowlData">144.22</td>
+                  
+              </tr>
+                      </tbody>
+                  </table>
+    
+                      
+                </div>
+                </div> 
+               
+                <!-- Match Details Start -->
+                <div class="row mt-2">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 table-responsive">
+                    <table class="table  btable">
+                      <thead>
+                      <tr class="cricketTableRow">
+                          <th class="tMatchDetailsHeading" style="padding-left: 0px !important;">
+                            <!-- <img class="batImage" src="sports-360 resources/score card/noun_Cricket Ball_3598749.png" alt="">
+                            <span>Bowling</span>  -->
+                            <div class="d-flex">
+                              <img class="batImage" src="sports-360 resources/score card/info.png" alt="">
+                              <span class="ml-2 bating">MATCH DETAILS</span>
+                            </div>
+                          </th>
+                          <th class="tMatchDetailsHeading"></th>
+                        
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr class="cricketTableRow">
+                          <td class="tbowlPlayerName">
+                            <span style="color: rgb(16, 16, 99) !important;">Toss</span>
+                          </td>
+                          <td class="tMatchDetailData">BANGLADESH won the toss and elected to bat.</td>
+                         
+                          
+                      </tr>
+    
+                      <tr class="cricketTableRow">
+                        <td  class="tbowlPlayerName">
+                          <span style="color: rgb(16, 16, 99) !important;">Umpires</span>
+                        </td>
+                        <td class="tMatchDetailData">Ananthapadmanabhan, K N & Sharma, V K</td>
+                       
+                        
+                    </tr>
+    
+                    <tr class="cricketTableRow">
+                      <td class="tbowlPlayerName">
+                      <span style="color: rgb(16, 16, 99) !important;">Venue</span>
+                      </td>
+                      <td class="tMatchDetailData">Dhaka, Mirpur</td>
+                 
+                      
+                  </tr>
+    
+                  <tr class="cricketTableRow">
+                    <td class="tbowlPlayerName">
+                     <span style="color: rgb(16, 16, 99) !important;">Match days</span>
+                    </td>
+                    <td class="tMatchDetailData">22 NOV 2021 - T20</td>
+                    
+                    
+                </tr>
+                <tr class="cricketTableRow">
+                  <td class="tbowlPlayerName">
+                    <span style="color: rgb(16, 16, 99) !important;">Series</span>
+                  </td>
+                  <td class="tMatchDetailData">Zaa n Zee T20 Series 2021</td>
+                 
+                  
+              </tr>
+                      </tbody>
+                  </table>
+    
+                      
+                </div>
+                </div> 
+
+                <!-- Gallery Start -->
+                <div class="row">
+            
+                  <div class="col-xl-12 col-lg-12 col-md-12">
+                     
+                      <div class="card shadow internationalCard  mt-4">
+                          
+                        <div class="px-3" style="padding-top: 25px;">
+                          <div class="w-9/12 text-left ">
+                              <h4 class="cardTitle">
+                                  <strong>
+                                      GALLERY
+
+                                  </strong>
+                                
+                              </h4>
+                          </div>
+                      
+                      
+                        </div>
+                        <hr>
+                          
+                        <div id="carouselExampleControls" class="carousel slide " data-ride="carousel" style="padding: 0px  15px">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- <div class="row">
+            
+                                
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                      <div class="card" style="width: 18rem;">
+                                        <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+            
+                            
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                      <div class="card" style="width: 18rem;">
+                                        <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+            
+                                
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                      <div class="card" style="width: 18rem;">
+                                        <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                      <div class="card" style="width: 18rem;">
+                                        <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+            
+                                    
+            
+                                </div> -->
+                                <div class="card-deck">
+                                  <div class="card cardBorder">
+                                    <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                     <p class="card-text">
+                                       <strong>
+                                         <span style="font-size: 16px;">
+                                           BANGLADESH
+                                          </span>
+                                          won the toss 
+                                          <br>
+                                          and elected to bat.
+                                        </strong>
+                                        <br>
+                                        <small>
+                                          20 min ago
+                                        </small>
+                                      </p>
+                                   
+                                    </div>
+                                  </div>
+                                  <div class="card cardBorder">
+                                    <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                     
+                                      <p class="card-text">
+                                        <strong>
+                                          <span style="font-size: 16px;">
+                                            BANGLADESH
+                                           </span>
+                                           won the toss 
+                                           <br>
+                                           and elected to bat.
+                                         </strong>
+                                         <br>
+                                         <small>
+                                           20 min ago
+                                         </small>
+                                       </p>
+                                    </div>
+                                  </div>
+                                  <div class="card cardBorder">
+                                    <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                     
+                                      <p class="card-text">
+                                        <strong>
+                                          <span style="font-size: 16px;">
+                                            BANGLADESH
+                                           </span>
+                                           won the toss 
+                                           <br>
+                                           and elected to bat.
+                                         </strong>
+                                         <br>
+                                         <small>
+                                           20 min ago
+                                         </small>
+                                       </p>
+                                    </div>
+                                  </div>
+                                  <div class="card cardBorder">
+                                    <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <p class="card-text">
+                                        <strong>
+                                          <span style="font-size: 16px;">
+                                            BANGLADESH
+                                           </span>
+                                           won the toss 
+                                           <br>
+                                           and elected to bat.
+                                         </strong>
+                                         <br>
+                                         <small>
+                                           20 min ago
+                                         </small>
+                                       </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            <div class="carousel-item"> 
+                                <!-- <div class="row">
+            
+                                    
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                      <div class="card" style="width: 18rem;">
+                                        <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+            
+                                
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                      <div class="card" style="width: 18rem;">
+                                        <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+            
+                                
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                      <div class="card" style="width: 18rem;">
+                                        <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-lg-3 col-md-3">
+                                      <div class="card" style="width: 18rem;">
+                                        <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+            
+                                    
+            
+                                </div> -->
+                                <div class="card-deck">
+                                  <div class="card cardBorder">
+                                    <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                     
+                                      <p class="card-text">
+                                        <strong>
+                                          <span style="font-size: 16px;">
+                                            BANGLADESH
+                                           </span>
+                                           won the toss 
+                                           <br>
+                                           and elected to bat.
+                                         </strong>
+                                         <br>
+                                         <small>
+                                           20 min ago
+                                         </small>
+                                       </p>
+                                    </div>
+                                  </div>
+                                  <div class="card cardBorder">
+                                    <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                     
+                                      <p class="card-text">
+                                        <strong>
+                                          <span style="font-size: 16px;">
+                                            BANGLADESH
+                                           </span>
+                                           won the toss 
+                                           <br>
+                                           and elected to bat.
+                                         </strong>
+                                         <br>
+                                         <small>
+                                           20 min ago
+                                         </small>
+                                       </p>
+                                    </div>
+                                  </div>
+                                  <div class="card cardBorder">
+                                    <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                     
+                                      <p class="card-text">
+                                        <strong>
+                                          <span style="font-size: 16px;">
+                                            BANGLADESH
+                                           </span>
+                                           won the toss 
+                                           <br>
+                                           and elected to bat.
+                                         </strong>
+                                         <br>
+                                         <small>
+                                           20 min ago
+                                         </small>
+                                       </p>
+                                    </div>
+                                  </div>
+                                  <div class="card cardBorder">
+                                    <img src="assests/bangladesh1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                     
+                                      <p class="card-text">
+                                        <strong>
+                                          <span style="font-size: 16px;">
+                                            BANGLADESH
+                                           </span>
+                                           won the toss 
+                                           <br>
+                                           and elected to bat.
+                                         </strong>
+                                         <br>
+                                         <small>
+                                           20 min ago
+                                         </small>
+                                       </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                          </a>
+                  </div>
+                              
+                      </div>
+
+                     
+
+                  </div>
+                      
+                      
+              </div>  
+
+              <!-- Commentary page start -->
+              <div class="row">
+            
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                   <!-- First Wicket Card -->
+                    <div class="card scrollCard mt-4" >
+                        <div class="overwithWicket">
+                            <h3 class="over ml-2 mt-2">
+                              OVER 6 <br> 
+                              <span class="runWc">9 Runs, 1 Wicket</span> 
+                            </h3>
+                            
+                           
+                        </div>
+
+                        <div class="d-flex px-3 mt-2">
+                            <span>
+                              <img src="sports-360 resources/Stats/Ellipse 77.png" alt="">
+                            </span>
+                            <p class="ml-4 point">6.6</p>
+                            <p class="ml-4 pointParagraph">
+                             <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                             <span class="pointParagraph2">
+                              , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                              <br>
+                              before dribbling to fine leg
+                             </span> 
+                            </p>
+                        </div>
+
+                        <div class="d-flex px-3">
+                          <span>
+                            <img class="image" src="sports-360 resources/commentary//Group 6533.png" alt="">
+                          </span>
+                          <p class="ml-3 point">6.5</p>
+                          <p class="ml-4 pointParagraph">
+                           <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                           <span class="pointParagraph2">
+                            , <span style="color: green !important;">Four</span>, easy pickings for  <strong>Rahim - Shaheen</strong> hasn't got his line right with the
+                            <br>
+                            second new ball, strays once again on the pads and it's neatly flicked, very fine and into the long leg <br> boundary
+                           </span> 
+                          </p>
+                      </div>
+
+                      <div class="d-flex px-3">
+                        <span>
+                          <img class="image" src="sports-360 resources/commentary//Group 6535.png" alt="">
+                        </span>
+                        <p class="ml-3 point">6.4</p>
+                        <p class="ml-4 pointParagraph">
+                         <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                         <span class="pointParagraph2">
+                          , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                          <br>
+                          before dribbling to fine leg
+                         </span> 
+                        </p>
+                      </div>
+
+                      <div class="d-flex px-3">
+                        <span>
+                          <img class="image" src="sports-360 resources/commentary//Group 6537.png" alt="">
+                        </span>
+                        <p class="ml-3 point">6.4</p>
+                        <p class="ml-4 pointParagraph">
+                         <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                         <span class="pointParagraph2">
+                          , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                          <br>
+                          before dribbling to fine leg
+                         </span> 
+                        </p>
+                      </div>
+
+                      <div class="d-flex px-3 mt-2">
+                        <span>
+                          <img src="sports-360 resources/Stats/Ellipse 77.png" alt="">
+                        </span>
+                        <p class="ml-4 point">6.3</p>
+                        <p class="ml-4 pointParagraph">
+                         <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                         <span class="pointParagraph2">
+                          ,no run,nicely tossed up on off, defended to the on side 
+                         
+                         </span> 
+                        </p>
+                      </div>
+
+                    <div class="d-flex px-3 mt-2">
+                      <span class="ml-2">
+                        1
+                      </span>
+                      <p class="ml-4 point">6.2</p>
+                      <p class="ml-4 pointParagraph">
+                       <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                       <span class="pointParagraph2">
+                        , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                        <br>
+                        before dribbling to fine leg
+                       </span> 
+                      </p>
+                    </div>
+
+                    <div class="d-flex px-3 mt-2">
+                      <span class="ml-2">
+                        2
+                      </span>
+                      <p class="ml-4 point">6.1</p>
+                      <p class="ml-4 pointParagraph">
+                       <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Liton Das.</strong> 
+                       <span class="pointParagraph2">
+                        Length ball, down leg side on the back foot working to deep mind wicket for 2 
+                        <br>
+                        runs, fielded by Ali.  
+                       </span> 
+                      </p>
+                    </div>
+
+                    <hr style="border: 1px solid rgb(95, 93, 93);">
+
+                    <!-- Second Wicket Card -->
+                    <p class="px-3" style="font-size: 13px;"><strong>Shaheen Afridi [15.0-4-37-1] is back into the attack</strong></p>
+
+                    
+                    <div class="overwithWicket">
+                      <h3 class="over ml-2 mt-2">
+                        OVER 6 <br> 
+                        <span class="runWc">9 Runs, 1 Wicket</span> 
+                      </h3>
+                      
+                     
+                  </div>
+
+                  <div class="d-flex px-3 mt-2">
+                      <span>
+                        <img src="sports-360 resources/Stats/Ellipse 77.png" alt="">
+                      </span>
+                      <p class="ml-4 point">6.6</p>
+                      <p class="ml-4 pointParagraph">
+                       <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                       <span class="pointParagraph2">
+                        , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                        <br>
+                        before dribbling to fine leg
+                       </span> 
+                      </p>
+                  </div>
+
+                    <div class="d-flex px-3">
+                      <span>
+                        <img class="image" src="sports-360 resources/commentary//Group 6533.png" alt="">
+                      </span>
+                      <p class="ml-3 point">6.5</p>
+                      <p class="ml-4 pointParagraph">
+                      <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                      <span class="pointParagraph2">
+                        , <span style="color: green !important;">Four</span>, easy pickings for  <strong>Rahim - Shaheen</strong> hasn't got his line right with the
+                        <br>
+                        second new ball, strays once again on the pads and it's neatly flicked, very fine and into the long leg <br> boundary
+                      </span> 
+                      </p>
+                  </div>
+
+                  <div class="d-flex px-3">
+                    <span>
+                      <img class="image" src="sports-360 resources/commentary//Group 6535.png" alt="">
+                    </span>
+                    <p class="ml-3 point">6.4</p>
+                    <p class="ml-4 pointParagraph">
+                    <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                    <span class="pointParagraph2">
+                      , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                      <br>
+                      before dribbling to fine leg
+                    </span> 
+                    </p>
+                  </div>
+
+                  <div class="d-flex px-3">
+                    <span>
+                      <img class="image" src="sports-360 resources/commentary//Group 6537.png" alt="">
+                    </span>
+                    <p class="ml-3 point">6.4</p>
+                    <p class="ml-4 pointParagraph">
+                    <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                    <span class="pointParagraph2">
+                      , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                      <br>
+                      before dribbling to fine leg
+                    </span> 
+                    </p>
+                  </div>
+
+                  <div class="d-flex px-3 mt-2">
+                    <span>
+                      <img src="sports-360 resources/Stats/Ellipse 77.png" alt="">
+                    </span>
+                    <p class="ml-4 point">6.3</p>
+                    <p class="ml-4 pointParagraph">
+                    <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                    <span class="pointParagraph2">
+                      ,no run,nicely tossed up on off, defended to the on side 
+                    
+                    </span> 
+                    </p>
+                  </div>
+
+                <div class="d-flex px-3 mt-2">
+                  <span class="ml-2">
+                    1
+                  </span>
+                  <p class="ml-4 point">6.2</p>
+                  <p class="ml-4 pointParagraph">
+                  <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                  <span class="pointParagraph2">
+                    , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                    <br>
+                    before dribbling to fine leg
+                  </span> 
+                  </p>
+                </div>
+
+                <div class="d-flex px-3 mt-2">
+                  <span class="ml-2">
+                    2
+                  </span>
+                  <p class="ml-4 point">6.1</p>
+                  <p class="ml-4 pointParagraph">
+                  <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Liton Das.</strong> 
+                  <span class="pointParagraph2">
+                    Length ball, down leg side on the back foot working to deep mind wicket for 2 
+                    <br>
+                    runs, fielded by Ali.  
+                  </span> 
+                  </p>
+                </div>
+                  
+                <hr style="border: 1px solid rgb(95, 93, 93);">
+
+                <p class="px-3" style="font-size: 13px;"><strong>Shaheen Afridi [15.0-4-37-1] is back into the attack</strong></p>
+
+                <!-- Third Wickt Card -->
+
+                <div class="overwithWicket">
+                  <h3 class="over ml-2 mt-2">
+                    OVER 6 <br> 
+                    <span class="runWc">9 Runs, 1 Wicket</span> 
+                  </h3>
+                  
+                 
+              </div>
+
+              <div class="d-flex px-3 mt-2">
+                  <span>
+                    <img src="sports-360 resources/Stats/Ellipse 77.png" alt="">
+                  </span>
+                  <p class="ml-4 point">6.6</p>
+                  <p class="ml-4 pointParagraph">
+                   <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                   <span class="pointParagraph2">
+                    , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                    <br>
+                    before dribbling to fine leg
+                   </span> 
+                  </p>
+              </div>
+
+                <div class="d-flex px-3">
+                  <span>
+                    <img class="image" src="sports-360 resources/commentary//Group 6533.png" alt="">
+                  </span>
+                  <p class="ml-3 point">6.5</p>
+                  <p class="ml-4 pointParagraph">
+                  <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                  <span class="pointParagraph2">
+                    , <span style="color: green !important;">Four</span>, easy pickings for  <strong>Rahim - Shaheen</strong> hasn't got his line right with the
+                    <br>
+                    second new ball, strays once again on the pads and it's neatly flicked, very fine and into the long leg <br> boundary
+                  </span> 
+                  </p>
+              </div>
+
+              <div class="d-flex px-3">
+                <span>
+                  <img class="image" src="sports-360 resources/commentary//Group 6535.png" alt="">
+                </span>
+                <p class="ml-3 point">6.4</p>
+                <p class="ml-4 pointParagraph">
+                <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                <span class="pointParagraph2">
+                  , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                  <br>
+                  before dribbling to fine leg
+                </span> 
+                </p>
+              </div>
+
+              <div class="d-flex px-3">
+                <span>
+                  <img class="image" src="sports-360 resources/commentary//Group 6537.png" alt="">
+                </span>
+                <p class="ml-3 point">6.4</p>
+                <p class="ml-4 pointParagraph">
+                <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                <span class="pointParagraph2">
+                  , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                  <br>
+                  before dribbling to fine leg
+                </span> 
+                </p>
+              </div>
+
+              <div class="d-flex px-3 mt-2">
+                <span>
+                  <img src="sports-360 resources/Stats/Ellipse 77.png" alt="">
+                </span>
+                <p class="ml-4 point">6.3</p>
+                <p class="ml-4 pointParagraph">
+                <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                <span class="pointParagraph2">
+                  ,no run,nicely tossed up on off, defended to the on side 
+                
+                </span> 
+                </p>
+              </div>
+
+            <div class="d-flex px-3 mt-2">
+              <span class="ml-2">
+                1
+              </span>
+              <p class="ml-4 point">6.2</p>
+              <p class="ml-4 pointParagraph">
+              <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+              <span class="pointParagraph2">
+                , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                <br>
+                before dribbling to fine leg
+              </span> 
+              </p>
+            </div>
+
+            <div class="d-flex px-3 mt-2">
+              <span class="ml-2">
+                2
+              </span>
+              <p class="ml-4 point">6.1</p>
+              <p class="ml-4 pointParagraph">
+              <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Liton Das.</strong> 
+              <span class="pointParagraph2">
+                Length ball, down leg side on the back foot working to deep mind wicket for 2 
+                <br>
+                runs, fielded by Ali.  
+              </span> 
+              </p>
+            </div>
+              
+            <hr style="border: 1px solid rgb(95, 93, 93);"> 
+
+            <p class="px-3" style="font-size: 13px;"><strong>Shaheen Afridi [15.0-4-37-1] is back into the attack</strong></p>
+
+            <!-- Fourth Wicket card -->
+
+                      <div class="overwithWicket">
+                        <h3 class="over ml-2 mt-2">
+                          OVER 6 <br> 
+                          <span class="runWc">9 Runs, 1 Wicket</span> 
+                        </h3>
+                        
+                      
+                    </div>
+
+                    <div class="d-flex px-3 mt-2">
+                        <span>
+                          <img src="sports-360 resources/Stats/Ellipse 77.png" alt="">
+                        </span>
+                        <p class="ml-4 point">6.6</p>
+                        <p class="ml-4 pointParagraph">
+                        <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                        <span class="pointParagraph2">
+                          , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                          <br>
+                          before dribbling to fine leg
+                        </span> 
+                        </p>
+                    </div>
+
+                      <div class="d-flex px-3">
+                        <span>
+                          <img class="image" src="sports-360 resources/commentary//Group 6533.png" alt="">
+                        </span>
+                        <p class="ml-3 point">6.5</p>
+                        <p class="ml-4 pointParagraph">
+                        <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                        <span class="pointParagraph2">
+                          , <span style="color: green !important;">Four</span>, easy pickings for  <strong>Rahim - Shaheen</strong> hasn't got his line right with the
+                          <br>
+                          second new ball, strays once again on the pads and it's neatly flicked, very fine and into the long leg <br> boundary
+                        </span> 
+                        </p>
+                    </div>
+
+                    <div class="d-flex px-3">
+                      <span>
+                        <img class="image" src="sports-360 resources/commentary//Group 6535.png" alt="">
+                      </span>
+                      <p class="ml-3 point">6.4</p>
+                      <p class="ml-4 pointParagraph">
+                      <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                      <span class="pointParagraph2">
+                        , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                        <br>
+                        before dribbling to fine leg
+                      </span> 
+                      </p>
+                    </div>
+
+                    <div class="d-flex px-3">
+                      <span>
+                        <img class="image" src="sports-360 resources/commentary//Group 6537.png" alt="">
+                      </span>
+                      <p class="ml-3 point">6.4</p>
+                      <p class="ml-4 pointParagraph">
+                      <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                      <span class="pointParagraph2">
+                        , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                        <br>
+                        before dribbling to fine leg
+                      </span> 
+                      </p>
+                    </div>
+
+                    <div class="d-flex px-3 mt-2">
+                      <span>
+                        <img src="sports-360 resources/Stats/Ellipse 77.png" alt="">
+                      </span>
+                      <p class="ml-4 point">6.3</p>
+                      <p class="ml-4 pointParagraph">
+                      <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                      <span class="pointParagraph2">
+                        ,no run,nicely tossed up on off, defended to the on side 
+                      
+                      </span> 
+                      </p>
+                    </div>
+
+                  <div class="d-flex px-3 mt-2">
+                    <span class="ml-2">
+                      1
+                    </span>
+                    <p class="ml-4 point">6.2</p>
+                    <p class="ml-4 pointParagraph">
+                    <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Mushfiqur</strong> 
+                    <span class="pointParagraph2">
+                      , 1 run, in-drifter, Mushfiqur is forward to block and the ball trims the inside edge 
+                      <br>
+                      before dribbling to fine leg
+                    </span> 
+                    </p>
+                  </div>
+
+                  <div class="d-flex px-3 mt-2">
+                    <span class="ml-2">
+                      2
+                    </span>
+                    <p class="ml-4 point">6.1</p>
+                    <p class="ml-4 pointParagraph">
+                    <strong>Shaheen Afridi</strong> <span class="pointParagraph2">to</span> <strong>Liton Das.</strong> 
+                    <span class="pointParagraph2">
+                      Length ball, down leg side on the back foot working to deep mind wicket for 2 
+                      <br>
+                      runs, fielded by Ali.  
+                    </span> 
+                    </p>
+                  </div>
+                    
+                  <hr style="border: 1px solid rgb(95, 93, 93);">
+                  <p class="px-3" style="font-size: 13px;"><strong>Shaheen Afridi [15.0-4-37-1] is back into the attack</strong></p>
+
+              </div>
+                    
+                    
+                </div>  
+              
+
+              </div>
+
+              <!-- Stats Page Start -->
+              <div class="row">
+            
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                   <!-- Partnership card start -->
+                  <div class="row">
+                      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                        <div class="accordion" id="accordionExample">
+                          <div class="card shadow internationalCard mt-2">
+                            <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                <!-- <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Collapsible Group Item #1
+                                </button> -->
+                                <h4 class="mt-1 btn-link btn-block text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <strong>
+                                    PARTNERSHIPS
+                                  </strong>
+                                </h4>
+                              </h2>
+                            </div>
+                        
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+
+                                <div class="d-flex justify-content-between">
+                                  <p class="batsmanName ml-2">
+                                    Liton Das
+                                    <br>
+                                    <span class="runWithBall">12 (8)</span> 
+                                  </p>
+                                  <div >
+                                    <p class="progressRun">19 (7)</p>
+                                    <div class="progress">
+                                       
+                                      <div class="progress-bar progressBackground1" role="progressbar" style="width: 55%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar  progressBackground2" role="progressbar" style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                       
+                                    </div>
+                                  </div>
+                                  
+                                  <p class="batsmanName mr-2">
+                                    Shommo Sharker
+                                    <br>
+                                   <span class="runWithBall" id="runWithBall">7 (9)</span> 
+                                  </p>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                  <p class="batsmanName ml-2">
+                                    Liton Das
+                                    <br>
+                                    <span class="runWithBall">12 (8)</span> 
+                                  </p>
+                                  <div >
+                                    <p class="progressRun">19 (7)</p>
+                                    <div class="progress">
+                                       
+                                      <div class="progress-bar  progressBackground1" role="progressbar" style="width: 55%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar progressBackground2" role="progressbar" style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                       
+                                    </div>
+                                  </div>
+                                  
+                                  <p class="batsmanName mr-2">
+                                    Shommo Sharker
+                                    <br>
+                                   <span class="runWithBall" id="runWithBall">7 (9)</span> 
+                                  </p>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                  <p class="batsmanName ml-2">
+                                    Liton Das
+                                    <br>
+                                    <span class="runWithBall">12 (8)</span> 
+                                  </p>
+                                  <div >
+                                    <p class="progressRun">19 (7)</p>
+                                    <div class="progress">
+                                       
+                                      <div class="progress-bar progressBackground1" role="progressbar" style="width: 55%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar  progressBackground2" role="progressbar" style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                       
+                                    </div>
+                                  </div>
+                                  
+                                  <p class="batsmanName mr-2">
+                                    Shommo Sharker
+                                    <br>
+                                   <span class="runWithBall" id="runWithBall">7 (9)</span> 
+                                  </p>
+                                </div>
+                                 
+                                <div class="d-flex justify-content-between partnershipBorder">
+                                  <p class="batsmanName ml-2">
+                                    Liton Das
+                                    <br>
+                                    <span class="runWithBall">12 (8)</span> 
+                                  </p>
+                                  <div >
+                                    <p class="progressRun">19 (7)</p>
+                                    <div class="progress">
+                                       
+                                      <div class="progress-bar  progressBackground1" role="progressbar" style="width: 55%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar  progressBackground2" role="progressbar" style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                       
+                                    </div>
+                                  </div>
+                                  
+                                  <p class="batsmanName mr-2">
+                                    Shommo Sharker
+                                    <br>
+                                   <span class="runWithBall" id="runWithBall">7 (9)</span> 
+                                  </p>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                          
+                      </div>
+                  </div>
+
+                    <!--Manhatan  card start-->
+                    <div class="row">
+                      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                        <div class="accordion" id="accordionExample">
+                          <div class="card shadow internationalCard mt-2">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <!-- <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Collapsible Group Item #1
+                                </button> -->
+                                <h4 class="mt-1 manhatan_btn-link btn-block text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
+                                  <strong>
+                                    MANHATAN
+                                  </strong>
+                                </h4>
+                              </h2>
+                            </div>
+                        
+                            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div class="card-body">
+  
+                                <div>
+                                  <canvas id="myChart" height="400"></canvas>
+                                </div>
+                                <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+  
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                      </div>
+  
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                          
+                      </div>
+                    </div> 
+
+                  <!-- Warm card start -->
+                  <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                      <div class="accordion" id="accordionExample">
+                        <div class="card shadow internationalCard mt-2">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <!-- <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Collapsible Group Item #1
+                              </button> -->
+                              <h4 class="mt-1 worm_btn-link btn-block text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <strong>
+                                  WORM
+                                </strong>
+                              </h4>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+
+                              <div>
+                                <canvas id="myChart" height="400"></canvas>
+                              </div>
+                              <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+
+                            </div>
+                          </div>
+                        </div>
+                      
+                      </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                        
+                    </div>
+                  </div> 
+
+
+                </div>
+                    
+                    
+            </div> 
+
+            </div>
+
+            <div>
+          
+            </div>
+                  <!-- footer start -->
+                  <div  class="cardPadding mt-4" >
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+                            <footer class="mt-5" style="background-color: rgb(16, 16, 99);">
+                              
+                                <div class="standard_social_links">
+                                    <div class="d-flex justify-content-end" >
+                                    <li class="rounded-btn btn-facebook">
+                                        <a href="#" id="scrollToTopBtn" style="font-size: 30px; color: white;">
+                                         <i class="fas fa-arrow-circle-up"></i>
+                                        </a>
+                            
+                                    </li>
+                                    
+                                
+                                
+                                    </div>
+                                </div> 
+                                <div class="footer-wrap">
+                                
+                                <div class="container first_class" style="padding: 10px 90px;">
+                                    <div class="row">
+                                    <div class="col-md-4 col-sm-6 sportsLogo">
+                                        <img src="assests/logo.png" alt="">
+                                        
+                                        <p class="mt-2" style="color: rgb(150, 147, 147); ">Get all the latest information on Cricket Events, Fairs. Sign up for our newsletter today.</p>
+                                        <p style="color: rgb(150, 147, 147);">+8802-9860352, +8802-9860352,</p>
+                                    </div>
+                    
+                                    <div class="col-md-4 col-sm-6" >
+                                        <!-- <div class="clearfix"></div> -->
+                                            <h5 style="color: white;" class="ml-5"> Find us at</h5>
+                                            <div class="col-md-12">
+                                                <div class="standard_social_links">
+                                                    <div class="d-flex" >
+                                                    <li class=" btn-facebook"><a href="#" style="font-size: 30px;"><i class="fab fa-facebook-f ml-3"style="color: white;"></i></a>
+                                            
+                                                    </li>
+                                                    
+                                                    <li class=" btn-instagram"><a href="#"style="font-size: 30px;"><i class="fab fa-instagram ml-3" style="color: white;" aria-hidden="true"></i></a>
+                                            
+                                                    </li>
+        
+                                                    <li class=" btn-twitter"><a href="#"style="font-size: 30px;"><i class="fab fa-twitter  ml-4" style="color: white;" aria-hidden="true"></i></a>
+                                            
+                                                    </li>
+                                                
+                                                
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        
+                                    </div>
+                    
+                                    <div class="col-md-4 col-sm-6">
+                                    <form class="newsletter">
+                                        <h5 style="color: white;">NEWSLETTER</h5>
+                                        <input type="text" placeholder=""> 
+                                            <button class="newsletter_submit_btn btn-primary btn-sm mt-4" type="submit">
+                                                SEND
+                                            </button>  
+                                    </form>
+                                    
+                                            <div class=" mt-3" style="color: rgb(150, 147, 147);"> 
+                                            <p>
+                                                <i class="far fa-copyright"></i> Copyright 2021 | All Rights Reserved by Sports360
+                                            </p>
+                                            
+                                            </div>
+                                    
+                                    </div>
+                                
+                                    </div>
+                                </div>
+                            
+                               
+                                </div>
+                                
+                                </footer>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--footer end-->
+           
+
+         
+          
+                
+        </section>
+    
+      
+        
+
+    
+    
+   
+<script src="js/mainCstom.js"></script>
+<script src="jquery.min.js"></script>
+<script src="js/barChart.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+<script src="js/chart.min.js"></script>
+
+<script>
+    $('.carousel').carousel({
+         interval: false,
+     });
+
+     
+  
+ </script>
+</body>
+</html>

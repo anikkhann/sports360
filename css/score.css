@@ -1,0 +1,116 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .horizontal-line3{
+  
+        height: 823px;
+        border-right: 1px solid #dde3dd;
+        position: absolute;
+        right: 50%;
+        top: 9%;
+      
+      }
+      .horizontal-line4 {
+      height: 549px;
+      border-right: 1px solid #dde3dd;
+      position: absolute;
+      right: 50%;
+      top: 0%;
+      overflow-y: hidden;
+      }
+}
+@media (min-width: 873px){
+    .horizontal-line4 {
+        height: 505px;
+        border-right: 1px solid #dde3dd;
+        position: absolute;
+        right: 50%;
+        top: 0%;
+        }
+}
+@media (min-width: 961px){
+    .horizontal-line3{
+  
+        height: 757px;
+        border-right: 1px solid #dde3dd;
+        position: absolute;
+        right: 50%;
+        top: 9%;
+      
+      }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .horizontal-line3{
+  
+        height: 757px;
+        border-right: 1px solid #dde3dd;
+        position: absolute;
+        right: 50%;
+        top: 9%;
+      
+      }
+      .horizontal-line4 {
+      height: 505px;
+      border-right: 1px solid #dde3dd;
+      position: absolute;
+      right: 50%;
+      top: 0%;
+      }
+}
+
+@media (min-width: 1025px) { 
+    .horizontal-line3{
+  
+        height: 810px;
+        border-right: 1px solid #dde3dd;
+        position: absolute;
+        right: 50%;
+        top: 9%;
+      
+      }
+      .horizontal-line4 {
+      height: 595px;
+      border-right: 1px solid #dde3dd;
+      position: absolute;
+      right: 50%;
+      top: 0%;
+      }
+}
+@media (min-width: 1055px) { 
+    
+      .horizontal-line4 {
+      height: 550px;
+      border-right: 1px solid #dde3dd;
+      position: absolute;
+      right: 50%;
+      top: 0%;
+      }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .horizontal-line3{
+  
+        height: 809px;
+        border-right: 1px solid #dde3dd;
+        position: absolute;
+        right: 50%;
+        top: 9%;
+    
+    }
+    .horizontal-line4 {
+      height: 537px;
+      border-right: 1px solid #dde3dd;
+      position: absolute;
+      right: 50%;
+      top: 0%;
+    }
+ }
+
+
+

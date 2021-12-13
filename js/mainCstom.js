@@ -3,7 +3,7 @@
 let menu2 = document.querySelector('#menu2')
 let navbar = document.querySelector('.navbar-2');
 let header2 = document.querySelector('.header-2');
-
+const items = document.querySelectorAll(".scoreCardPadding .nav1 a");
 function navToggle(){
     menu2.classList.toggle('fa-times');
     navbar.classList.toggle('nav-toggle');
@@ -22,9 +22,14 @@ window.addEventListener('scroll',function(){
 
 });
 
-$('.carousel').carousel({
-  interval: false,
-});
+// Score card, Commentary nav work
+
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    document.querySelector("a.active").classList.remove("active");
+    item.classList.add("active");
+  });
+}); 
 
 //menu item active work
 $(document).on('click', '.items li', function () {
@@ -35,7 +40,6 @@ $(document).on('click', '.items li', function () {
 $('#menu-btn').click(function () {
   $('#menu').toggleClass('active')
 })
-
 
 
 // $(".slider").owlCarousel({
@@ -79,3 +83,5 @@ function scrollToTop() {
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
+
+
