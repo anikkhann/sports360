@@ -1,0 +1,127 @@
+/*--- Mobile portrait ---*/
+@media only screen and (min-width: 320px) and (max-width: 379px) {
+  #contentWrapper {
+    height: 420vh;
+  }
+
+  .totalOvers {
+    padding: 0px 160px;
+  }
+  .totalRunOver {
+    font-size: 10px !important;
+  }
+  .extra {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 380px) and (max-width: 496px) {
+  #contentWrapper {
+    height: 450vh;
+  }
+
+  .totalOvers {
+    padding: 0px 160px;
+  }
+  .totalRunOver {
+    font-size: 10px !important;
+  }
+  .extra {
+    font-size: 10px !important;
+  }
+  .table-responsive-sm {
+    display: inline-table;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+/*--- Mobile landscape ---*/
+@media only screen and (min-width: 497px) and (max-width: 560px) {
+  #contentWrapper {
+    height: 473vh;
+  }
+  .table-responsive-sm {
+    display: inline-table;
+    width: 100%;
+    overflow-x: auto;
+    /* display: inline-block; */
+  }
+}
+@media only screen and (min-width: 561px) and (max-width: 574px) {
+  #contentWrapper {
+    height: 480vh;
+  }
+
+  .table-responsive-sm {
+    display: inline-table;
+    width: 100%;
+    overflow-x: auto;
+    /* display: inline-block; */
+  }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 594px) {
+  #contentWrapper {
+    height: 305vh;
+  }
+  .card-text {
+    font-size: 10px;
+  }
+  .column1 {
+    flex: 100%;
+  }
+  .column2 {
+    flex: 100%;
+  }
+  .table-responsive-sm {
+    display: inline-table;
+    width: 100%;
+    overflow-x: auto;
+    /* display: inline-block; */
+  }
+}
+/*--- Small tablet portrait ---*/
+@media only screen and (min-width: 595px) and (max-width: 690px) {
+  #contentWrapper {
+    height: 300vh;
+  }
+  .card-text {
+    font-size: 10px;
+  }
+}
+/*--- Tablet portrait ---*/
+@media only screen and (min-width: 691px) and (max-width: 800px) {
+  #contentWrapper {
+    height: 300vh;
+  }
+  .card-text {
+    font-size: 10px;
+  }
+}
+/*--- Small tablet landscape ---*/
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  #contentWrapper {
+    height: 300vh;
+  }
+  .card-text {
+    font-size: 10px;
+  }
+}
+/*--- Tablet landscape --- */
+@media only screen and (min-width: 1024px) and (max-width: 1224px) {
+  #contentWrapper {
+    height: 300vh;
+  }
+  .card-text {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 1225px) {
+  /* #contentWrapper{
+       height: 280vh !important;
+    } */
+  /* .card-text{
+        font-size: 10px;
+    } */
+}

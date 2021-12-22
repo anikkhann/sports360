@@ -1,182 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/admin_panel.css">
-    <link rel="stylesheet" href="css/score.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/admin_panel.css" />
+    <link rel="stylesheet" href="css/score.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Score</title>
-</head>
-<body class="">
-    
-     
-        <header>
+  </head>
+  <body class="">
+    <header>
+      <div class="header-1">
+        <nav class="navbar sportsLogo">
+          <ul>
+            <li><a href="#"></a><img src="assests/logo.png" alt="" /></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Score</a></li>
+            <li><a href="#">Content</a></li>
+          </ul>
+        </nav>
+      </div>
 
-                <div class="header-1">
-            
-                    <nav class="navbar sportsLogo">
-                        <ul>
-                            <li><a  href="#"></a><img src="assests/logo.png" alt=""></li>
-                            <li><a  href="#">Home</a></li>
-                            <li><a  href="#">Score</a></li>
-                            <li><a  href="#">Content</a></li>
-                            
-                        </ul>
-                    </nav>
-            
+      <div class="header-2">
+        <div id="menu2" class="fas fa-bars" onclick="navToggle();"></div>
+
+        <nav class="navbar navbar-2">
+          <ul>
+            <li><a onclick="navToggle();" href="#">International</a></li>
+            <li><a onclick="navToggle();" href="#">Domestic</a></li>
+            <li><a onclick="navToggle();" href="#">Local</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <!--International Card Start-->
+      <!-- Content Row -->
+      <div class="cardPadding">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="card shadow mt-4">
+              <div class="horizontal-line3"></div>
+              <div
+                class="d-flex px-3 justify-content-between"
+                style="padding-top: 31px"
+              >
+                <div class="w-9/12 text-left">
+                  <h4 class="cardTitle">
+                    <strong> INTERNATIONAL </strong>
+                    <span class="ml-3">
+                      <small class="matchesFont"> (24 Matches) </small>
+                    </span>
+                  </h4>
                 </div>
-            
-                <div class="header-2">
-            
-                    <div id="menu2" class="fas fa-bars" onclick="navToggle();"></div>
-            
-                    <nav class="navbar navbar-2">
-                        <ul>
-                            <li><a onclick="navToggle();" href="#">International</a></li>
-                            <li><a onclick="navToggle();" href="#">Domestic</a></li>
-                            <li><a onclick="navToggle();" href="#">Local</a></li>
-                        
-                        </ul>
-                    </nav>
-            
+
+                <div class="w-3/12 text-right">
+                  <div class="form-group">
+                    <select id="inputState" class="form-control">
+                      <option value="javascript">Type: ALL</option>
+                      <option value="php">PHP</option>
+                      <option value="java">Java</option>
+                      <option value="golang">Golang</option>
+                      <option value="python">Python</option>
+                      <option value="c#">C#</option>
+                      <option value="C++">C++</option>
+                      <option value="erlang">Erlang</option>
+                    </select>
+                  </div>
                 </div>
-              
-            
-        </header>
-    
-        <section>
-                   
-                    <!--International Card Start-->
-                    <!-- Content Row -->
-                            <div  class="cardPadding">
-                               
-                                <div class="row">
-            
-                                    <div class="col-xl-12 col-lg-12 col-md-12">
-                                        
-                                        <div class="card shadow mt-4">
-                                            <div class="horizontal-line3" >
-                                                    
-                                            </div>
-                                            <div class="d-flex px-3 justify-content-between" style="padding-top: 31px;">
-                                                <div class="w-9/12 text-left ">
-                                                    <h4 class="cardTitle">
-                                                        <strong>
-                                                            INTERNATIONAL 
-            
-                                                        </strong>
-                                                        <span class="ml-3">
-                                                            <small class="matchesFont">
-                                                                (24 Matches)
-                                                            </small>
-                                                        </span>
-                                                    </h4>
-                                                </div>
-                                            
-                                                <div class="w-3/12 text-right">
-                                                    
-                                                  <div class="form-group ">
-                                                   
-                                                    <select id="inputState" class="form-control">
-                                                    
-                                                      <option value="javascript">Type: ALL</option>
-                                                          <option value="php">PHP</option>
-                                                          <option value="java">Java</option>
-                                                          <option value="golang">Golang</option>
-                                                          <option value="python">Python</option>
-                                                          <option value="c#">C#</option>
-                                                          <option value="C++">C++</option>
-                                                          <option value="erlang">Erlang</option>
-                                                    </select>
-                                                  </div>
-                                                 
-                                                      
-                                                </div>
-            
-                                            
-                                            </div>
-                                            <hr class="internationalBottomLine">
-                                            
-                                                <div class="row">
-                                                
-                                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                                        <!-- first col-6 1st card start-->
-                                                        <div class="px-3 d-flex justify-content-between">
-                                                            <p class="domesticDivision" style="font-weight: bold;">New Zealand Tour of India</p>
-                                                            <button type="button" class="btn cardButton">
-                                                                <i class="fas fa-circle">
-                                                                    
-                                                                </i> 
-                                                                LIVE
-                                                            </button>
-                                                        </div>
-                                                        <div class="p-3">
-                                                            <small style="color: #858796; font-weight: 700;">
-                                                                2nd T20I <i class="fas fa-circle" style="font-size: 7px;"></i> 19:00 (IST) <br>
-                                                                19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> JSCA International Stadium Complex, Ranchi
-                                                            </small>
-                                                        </div>
-                                                      
-                                                        <!-- <div class=" " > -->
-                                                            <div class="d-flex justify-content-between p-3" style="line-height: 1.5px;">
-                                                                
-                                                            
-                                                            <div class="d-flex">
-                                                                <img src="assests/india.jpg" alt="" class="allImage" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                           
-                                                                <div class="mt-2 ml-2">
-                                                                    
-                                                                    <p class="indiaParagraph">
-                                                                        INDIA 
-                                                                      
-                                                                    
-                                                                    </p> 
-                                                                    <span class="indiaParagraph"> 
-                                                                        16/0
-                                                                    </span> 
-                                                                    <small class="over">
-                                                                        (2.0 OVR)
-                                                                    </small>
-                                                                </div>
-                                                            </div>
-                                                                <div class="VsImage">
-                                                                    <!-- <span class="dot" style=" height: 45px;
+              </div>
+              <hr class="internationalBottomLine" />
+
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <!-- first col-6 1st card start-->
+                  <div class="px-3 d-flex justify-content-between">
+                    <p class="domesticDivision" style="font-weight: bold">
+                      New Zealand Tour of India
+                    </p>
+                    <button type="button" class="btn cardButton">
+                      <i class="fas fa-circle"> </i>
+                      LIVE
+                    </button>
+                  </div>
+                  <div class="p-3">
+                    <small style="color: #858796; font-weight: 700">
+                      2nd T20I
+                      <i class="fas fa-circle" style="font-size: 7px"></i> 19:00
+                      (IST) <br />
+                      19 November, 2021
+                      <i class="fas fa-circle" style="font-size: 7px"></i> JSCA
+                      International Stadium Complex, Ranchi
+                    </small>
+                  </div>
+
+                  <!-- <div class=" " > -->
+                  <div
+                    class="d-flex justify-content-between p-3"
+                    style="line-height: 1.5px"
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="assests/india.jpg"
+                        alt=""
+                        class="allImage"
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+
+                      <div class="mt-2 ml-2">
+                        <p class="indiaParagraph">INDIA</p>
+                        <span class="indiaParagraph"> 16/0 </span>
+                        <small class="over"> (2.0 OVR) </small>
+                      </div>
+                    </div>
+                    <div class="VsImage">
+                      <!-- <span class="dot" style=" height: 45px;
                                                                     width: 45px;
                                                                     background-color: red !important;
                                                                     border-radius: 50%;
                                                                     display: inline-block;">
                                                                     <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">Vs</small> 
                                                                 </span> -->
-                                                                <img src="sports-360 resources/home/Group 6269.png"  alt="">
-                                                                    
-                                                                </div>
-                                                                <div class="d-flex">
-                                                                    
-                                                               
-                                                                    <div class="mt-2 ml-2">
-                                                                        
-                                                                        <p class="mr-2 newZeleandParagraph">
-                                                                            NEW ZEALAND
-                                                                        
-                                                                        </p>
-                                                                        <span class="newZeleandParagraph"> 
-                                                                            153/6
-                                                                        </span> 
-                                                                        <small class="mr-2 newZeleandParagraphOvr">
-                                                                            (20.0 OVR)
-                                                                        </small>
-                                                                    </div>
-                                                                    <img src="assests/newzelandd.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                                </div>
-            
-                                                                <!-- <div class="mt-2 ">
+                      <img
+                        src="sports-360 resources/home/Group 6269.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="d-flex">
+                      <div class="mt-2 ml-2">
+                        <p class="mr-2 newZeleandParagraph">NEW ZEALAND</p>
+                        <span class="newZeleandParagraph"> 153/6 </span>
+                        <small class="mr-2 newZeleandParagraphOvr">
+                          (20.0 OVR)
+                        </small>
+                      </div>
+                      <img
+                        src="assests/newzelandd.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                    </div>
+
+                    <!-- <div class="mt-2 ">
                                                                     <p class="mr-2" style="font-weight: 600; font-size: 13px; color: #858796;">
                                                                         MEW ZEALAND
                                                                     
@@ -189,91 +178,116 @@
                                                                     </small>
                                                                 </div>
                                                                 <img src="assests/newzelandd.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;"> -->
-                                                            </div>
-                                                        
-                                                                
-                                                        <!-- </div>  -->
-            
-                                                        <div class="p-3">
-                                                            <button type="button" class="btn btn-sm " style="background-color: rgb(78 78 143); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
-                                                                <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
-                                                                </i>
-                                                            </a></button>
-                                                        </div>
+                  </div>
 
-                                                        <!-- first col-6 1st card end -->
+                  <!-- </div>  -->
 
-                                                        <!--first col-6 2nd card start  -->
+                  <div class="p-3">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="
+                        background-color: rgb(78 78 143);
+                        color: white;
+                        font-weight: 600;
+                      "
+                    >
+                      VIEW FULL SCORE CARD
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
 
-                                                        <div class="px-3 d-flex justify-content-between">
-                                                            <p class="domesticDivision" style="font-weight: bold;">New Zealand Tour of India</p>
-                                                            <button type="button" class="btn cardButton">
-                                                                <i class="fas fa-circle">
-                                                                    
-                                                                </i> 
-                                                                LIVE
-                                                            </button>
-                                                        </div>
-                                                        <div class="p-3">
-                                                            <small style="color: #858796; font-weight: 700;">
-                                                                2nd T20I <i class="fas fa-circle" style="font-size: 7px;"></i> 19:00 (IST) <br>
-                                                                19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> JSCA International Stadium Complex, Ranchi
-                                                            </small>
-                                                        </div>
-                                                      
-                                                        <!-- <div class=" " > -->
-                                                            <div class="d-flex justify-content-between p-3" style="line-height: 1.5px;">
-                                                                
-                                                            
-                                                            <div class="d-flex">
-                                                                <img src="assests/india.jpg" alt="" class="allImage" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                           
-                                                                <div class="mt-2 ml-2">
-                                                                    
-                                                                    <p class="indiaParagraph">
-                                                                        INDIA 
-                                                                      
-                                                                    
-                                                                    </p> 
-                                                                    <span class="indiaParagraph"> 
-                                                                        16/0
-                                                                    </span> 
-                                                                    <small class="over">
-                                                                        (2.0 OVR)
-                                                                    </small>
-                                                                </div>
-                                                            </div>
-                                                                <div class="VsImage">
-                                                                    <!-- <span class="dot" style=" height: 45px;
+                  <!-- first col-6 1st card end -->
+
+                  <!--first col-6 2nd card start  -->
+
+                  <div class="px-3 d-flex justify-content-between">
+                    <p class="domesticDivision" style="font-weight: bold">
+                      New Zealand Tour of India
+                    </p>
+                    <button type="button" class="btn cardButton">
+                      <i class="fas fa-circle"> </i>
+                      LIVE
+                    </button>
+                  </div>
+                  <div class="p-3">
+                    <small style="color: #858796; font-weight: 700">
+                      2nd T20I
+                      <i class="fas fa-circle" style="font-size: 7px"></i> 19:00
+                      (IST) <br />
+                      19 November, 2021
+                      <i class="fas fa-circle" style="font-size: 7px"></i> JSCA
+                      International Stadium Complex, Ranchi
+                    </small>
+                  </div>
+
+                  <!-- <div class=" " > -->
+                  <div
+                    class="d-flex justify-content-between p-3"
+                    style="line-height: 1.5px"
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="assests/india.jpg"
+                        alt=""
+                        class="allImage"
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+
+                      <div class="mt-2 ml-2">
+                        <p class="indiaParagraph">INDIA</p>
+                        <span class="indiaParagraph"> 16/0 </span>
+                        <small class="over"> (2.0 OVR) </small>
+                      </div>
+                    </div>
+                    <div class="VsImage">
+                      <!-- <span class="dot" style=" height: 45px;
                                                                     width: 45px;
                                                                     background-color: red !important;
                                                                     border-radius: 50%;
                                                                     display: inline-block;">
                                                                     <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">Vs</small> 
                                                                 </span> -->
-                                                                <img src="sports-360 resources/home/Group 6269.png"  alt="">
-                                                                    
-                                                                </div>
-                                                                <div class="d-flex">
-                                                                    
-                                                               
-                                                                    <div class="mt-2 ml-2">
-                                                                        
-                                                                        <p class="mr-2 newZeleandParagraph">
-                                                                            NEW ZEALAND
-                                                                        
-                                                                        </p>
-                                                                        <span class="newZeleandParagraph"> 
-                                                                            153/6
-                                                                        </span> 
-                                                                        <small class="mr-2 newZeleandParagraphOvr">
-                                                                            (20.0 OVR)
-                                                                        </small>
-                                                                    </div>
-                                                                    <img src="assests/newzelandd.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                                </div>
-            
-                                                                <!-- <div class="mt-2 ">
+                      <img
+                        src="sports-360 resources/home/Group 6269.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="d-flex">
+                      <div class="mt-2 ml-2">
+                        <p class="mr-2 newZeleandParagraph">NEW ZEALAND</p>
+                        <span class="newZeleandParagraph"> 153/6 </span>
+                        <small class="mr-2 newZeleandParagraphOvr">
+                          (20.0 OVR)
+                        </small>
+                      </div>
+                      <img
+                        src="assests/newzelandd.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                    </div>
+
+                    <!-- <div class="mt-2 ">
                                                                     <p class="mr-2" style="font-weight: 600; font-size: 13px; color: #858796;">
                                                                         MEW ZEALAND
                                                                     
@@ -286,90 +300,114 @@
                                                                     </small>
                                                                 </div>
                                                                 <img src="assests/newzelandd.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;"> -->
-                                                            </div>
-                                                        
-                                                                
-                                                        <!-- </div>  -->
-            
-                                                        <div class="p-3">
-                                                            <button type="button" class="btn btn-sm " style="background-color: rgb(78 78 143); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
-                                                                <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
-                                                                </i>
-                                                            </a></button>
-                                                        </div>
-                                                        <!--first col-6 2nd card end  -->
+                  </div>
 
-                                                        
-                                                        <!--first col-6 3rd card start  -->
-                                                        <div class="px-3 d-flex justify-content-between">
-                                                            <p class="domesticDivision" style="font-weight: bold;">New Zealand Tour of India</p>
-                                                            <button type="button" class="btn cardButton">
-                                                                <i class="fas fa-circle">
-                                                                    
-                                                                </i> 
-                                                                LIVE
-                                                            </button>
-                                                        </div>
-                                                        <div class="p-3">
-                                                            <small style="color: #858796; font-weight: 700;">
-                                                                2nd T20I <i class="fas fa-circle" style="font-size: 7px;"></i> 19:00 (IST) <br>
-                                                                19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> JSCA International Stadium Complex, Ranchi
-                                                            </small>
-                                                        </div>
-                                                      
-                                                        <!-- <div class=" " > -->
-                                                            <div class="d-flex justify-content-between p-3" style="line-height: 1.5px;">
-                                                                
-                                                            
-                                                            <div class="d-flex">
-                                                                <img src="assests/india.jpg" alt="" class="allImage" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                           
-                                                                <div class="mt-2 ml-2">
-                                                                    
-                                                                    <p class="indiaParagraph">
-                                                                        INDIA 
-                                                                      
-                                                                    
-                                                                    </p> 
-                                                                    <span class="indiaParagraph"> 
-                                                                        16/0
-                                                                    </span> 
-                                                                    <small class="over">
-                                                                        (2.0 OVR)
-                                                                    </small>
-                                                                </div>
-                                                            </div>
-                                                                <div class="VsImage">
-                                                                    <!-- <span class="dot" style=" height: 45px;
+                  <!-- </div>  -->
+
+                  <div class="p-3">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="
+                        background-color: rgb(78 78 143);
+                        color: white;
+                        font-weight: 600;
+                      "
+                    >
+                      VIEW FULL SCORE CARD
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
+                  <!--first col-6 2nd card end  -->
+
+                  <!--first col-6 3rd card start  -->
+                  <div class="px-3 d-flex justify-content-between">
+                    <p class="domesticDivision" style="font-weight: bold">
+                      New Zealand Tour of India
+                    </p>
+                    <button type="button" class="btn cardButton">
+                      <i class="fas fa-circle"> </i>
+                      LIVE
+                    </button>
+                  </div>
+                  <div class="p-3">
+                    <small style="color: #858796; font-weight: 700">
+                      2nd T20I
+                      <i class="fas fa-circle" style="font-size: 7px"></i> 19:00
+                      (IST) <br />
+                      19 November, 2021
+                      <i class="fas fa-circle" style="font-size: 7px"></i> JSCA
+                      International Stadium Complex, Ranchi
+                    </small>
+                  </div>
+
+                  <!-- <div class=" " > -->
+                  <div
+                    class="d-flex justify-content-between p-3"
+                    style="line-height: 1.5px"
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="assests/india.jpg"
+                        alt=""
+                        class="allImage"
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+
+                      <div class="mt-2 ml-2">
+                        <p class="indiaParagraph">INDIA</p>
+                        <span class="indiaParagraph"> 16/0 </span>
+                        <small class="over"> (2.0 OVR) </small>
+                      </div>
+                    </div>
+                    <div class="VsImage">
+                      <!-- <span class="dot" style=" height: 45px;
                                                                     width: 45px;
                                                                     background-color: red !important;
                                                                     border-radius: 50%;
                                                                     display: inline-block;">
                                                                     <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">Vs</small> 
                                                                 </span> -->
-                                                                <img src="sports-360 resources/home/Group 6269.png"  alt="">
-                                                                    
-                                                                </div>
-                                                                <div class="d-flex">
-                                                                    
-                                                               
-                                                                    <div class="mt-2 ml-2">
-                                                                        
-                                                                        <p class="mr-2 newZeleandParagraph">
-                                                                            NEW ZEALAND
-                                                                        
-                                                                        </p>
-                                                                        <span class="newZeleandParagraph"> 
-                                                                            153/6
-                                                                        </span> 
-                                                                        <small class="mr-2 newZeleandParagraphOvr">
-                                                                            (20.0 OVR)
-                                                                        </small>
-                                                                    </div>
-                                                                    <img src="assests/newzelandd.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                                </div>
-            
-                                                                <!-- <div class="mt-2 ">
+                      <img
+                        src="sports-360 resources/home/Group 6269.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="d-flex">
+                      <div class="mt-2 ml-2">
+                        <p class="mr-2 newZeleandParagraph">NEW ZEALAND</p>
+                        <span class="newZeleandParagraph"> 153/6 </span>
+                        <small class="mr-2 newZeleandParagraphOvr">
+                          (20.0 OVR)
+                        </small>
+                      </div>
+                      <img
+                        src="assests/newzelandd.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                    </div>
+
+                    <!-- <div class="mt-2 ">
                                                                     <p class="mr-2" style="font-weight: 600; font-size: 13px; color: #858796;">
                                                                         MEW ZEALAND
                                                                     
@@ -382,305 +420,406 @@
                                                                     </small>
                                                                 </div>
                                                                 <img src="assests/newzelandd.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;"> -->
-                                                            </div>
-                                                        
-                                                                
-                                                        <!-- </div>  -->
-            
-                                                        <div class="p-3">
-                                                            <button type="button" class="btn btn-sm " style="background-color: rgb(78 78 143); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
-                                                                <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
-                                                                </i>
-                                                            </a></button>
-                                                        </div>
-                                                         <!--first col-6 3rd card end  -->
-                                                
-                                                    </div>
-            
-                                                    <!-- <div class="" style=" border-left: 2px solid rgb(230, 227, 227);
+                  </div>
+
+                  <!-- </div>  -->
+
+                  <div class="p-3">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="
+                        background-color: rgb(78 78 143);
+                        color: white;
+                        font-weight: 600;
+                      "
+                    >
+                      VIEW FULL SCORE CARD
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
+                  <!--first col-6 3rd card end  -->
+                </div>
+
+                <!-- <div class="" style=" border-left: 2px solid rgb(230, 227, 227);
                                                         height: 250px; margin-top: -16px;">
                                                             
                                                     </div> -->
-            
-                                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                                        <!-- Second col-6 first card start -->
-                                                        <div class="px-3 d-flex justify-content-between">
-                                                            <p class="domesticDivision" style="font-weight: bold;">Pakistan Tour of Bangladesh</p>
-                                                            <button type="button" class="btn btn-sm cardButtonResult">
-                                                        
-                                                                RESULT
-                                                            </button>
-                                                            
-                                                        </div>
-                                                        <div class="p-3">
-                                                            <small style="color: #858796; font-weight: 700;">
-                                                                1st T20I <i class="fas fa-circle" style="font-size: 7px;"></i> 04:00 (BDT) <br>
-                                                                19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Mirpur, Dhaka
-                                                            </small>
-                                                        </div>
-            
-                                                        
-                                                            <div class="d-flex justify-content-between p-3" style="line-height: 1.5px;">
-                                                               
-                                    
-                                                                <div class="d-flex">
-                                                                    <img src="assests/bd-flag.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                               
-                                                                    <div class="mt-2 ml-2">
-                                                                        
-                                                                        <p class="newZeleandParagraph">
-                                                                            Bangladesh
-                                                                        
-                                                                        </p>
-                                                                        <span class="newZeleandParagraph"> 
-                                                                            127/7
-                                                                        </span> 
-                                                                        <small class="newZeleandParagraphOvr" style="font-size: 11px; font-weight: 600; color: gray;">
-                                                                            (20.0 OVR)
-                                                                        </small>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                <div class="VsImage">
-                                                                  
-                                                                    <img src="sports-360 resources/home/Group 6269.png"  alt="">
-                                                                </div>
-                                                                <div class="d-flex">
-                                                                    
-                                                               
-                                                                    <div class="mt-2 ml-2">
-                                                                        
-                                                                        <p class=" text-right mr-2 indiaParagraph">
-                                                                            Pakistan
-                                                                        
-                                                                        </p>
-                                                                        <span class="indiaParagraph"> 
-                                                                            132/6
-                                                                        </span> 
-                                                                        <small class="mr-2 over">
-                                                                            (19.2 OVR)
-                                                                        </small>
-                                                                    </div>
-                                                                    <img src="assests/pakistan.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;"> 
-                                                                </div>
-                                                               
-                                                            </div>
-                                                        
-                                                                
-                                                       
-            
-                                                        <div class="p-3">
-                                                            <button type="button" class="btn btn-sm " style="background-color: rgb(78 78 143); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
-                                                                <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
-                                                                </i>
-                                                            </a></button>
-                                                        </div>
-                                                    
-                                                    <!-- Second col-6 first card end -->
-                                                        
-                                                    <!-- Second col-6  second card start-->
-                                                    <div class="px-3 d-flex justify-content-between">
-                                                        <p class="domesticDivision" style="font-weight: bold;">Pakistan Tour of Bangladesh</p>
-                                                        <button type="button" class="btn btn-sm cardButtonResult">
-                                                        
-                                                            RESULT
-                                                        </button>
-                                                        
-                                                    </div>
-                                                    <div class="p-3">
-                                                        <small style="color: #858796; font-weight: 700;">
-                                                            1st T20I <i class="fas fa-circle" style="font-size: 7px;"></i> 04:00 (BDT) <br>
-                                                            19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Mirpur, Dhaka
-                                                        </small>
-                                                    </div>
-        
-                                                    
-                                                        <div class="d-flex justify-content-between p-3" style="line-height: 1.5px;">
-                                                           
-                                
-                                                            <div class="d-flex">
-                                                                <img src="assests/bd-flag.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                           
-                                                                <div class="mt-2 ml-2">
-                                                                    
-                                                                    <p class="newZeleandParagraph">
-                                                                        Bangladesh
-                                                                    
-                                                                    </p>
-                                                                    <span class="newZeleandParagraph"> 
-                                                                        127/7
-                                                                    </span> 
-                                                                    <small class="newZeleandParagraphOvr" style="font-size: 11px; font-weight: 600; color: gray;">
-                                                                        (20.0 OVR)
-                                                                    </small>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                            <div class="VsImage">
-                                                              
-                                                                <img src="sports-360 resources/home/Group 6269.png"  alt="">
-                                                            </div>
-                                                            <div class="d-flex">
-                                                                
-                                                           
-                                                                <div class="mt-2 ml-2">
-                                                                    
-                                                                    <p class=" text-right mr-2 indiaParagraph">
-                                                                        Pakistan
-                                                                    
-                                                                    </p>
-                                                                    <span class="indiaParagraph"> 
-                                                                        132/6
-                                                                    </span> 
-                                                                    <small class="mr-2 over">
-                                                                        (19.2 OVR)
-                                                                    </small>
-                                                                </div>
-                                                                <img src="assests/pakistan.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;"> 
-                                                            </div>
-                                                           
-                                                        </div>
-                                                    
-                                                            
-                                                   
-        
-                                                    <div class="p-3">
-                                                        <button type="button" class="btn btn-sm " style="background-color: rgb(78 78 143); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
-                                                            <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
-                                                            </i>
-                                                        </a></button>
-                                                    </div>
-                                                    <!-- Second col-6  second card end-->
 
-                                                    <!-- Second col-6  third card start-->
-                                                    <div class="px-3 d-flex justify-content-between">
-                                                        <p class="domesticDivision" style="font-weight: bold;">Pakistan Tour of Bangladesh</p>
-                                                        <button type="button" class="btn btn-sm cardButtonResult">
-                                                        
-                                                            RESULT
-                                                        </button>
-                                                        
-                                                    </div>
-                                                    <div class="p-3">
-                                                        <small style="color: #858796; font-weight: 700;">
-                                                            1st T20I <i class="fas fa-circle" style="font-size: 7px;"></i> 04:00 (BDT) <br>
-                                                            19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Mirpur, Dhaka
-                                                        </small>
-                                                    </div>
-        
-                                                    
-                                                        <div class="d-flex justify-content-between p-3" style="line-height: 1.5px;">
-                                                           
-                                
-                                                            <div class="d-flex">
-                                                                <img src="assests/bd-flag.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                           
-                                                                <div class="mt-2 ml-2">
-                                                                    
-                                                                    <p class="newZeleandParagraph">
-                                                                        Bangladesh
-                                                                    
-                                                                    </p>
-                                                                    <span class="newZeleandParagraph"> 
-                                                                        127/7
-                                                                    </span> 
-                                                                    <small class="newZeleandParagraphOvr" style="font-size: 11px; font-weight: 600; color: gray;">
-                                                                        (20.0 OVR)
-                                                                    </small>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                            <div class="VsImage">
-                                                              
-                                                                <img src="sports-360 resources/home/Group 6269.png"  alt="">
-                                                            </div>
-                                                            <div class="d-flex">
-                                                                
-                                                           
-                                                                <div class="mt-2 ml-2">
-                                                                    
-                                                                    <p class=" text-right mr-2 indiaParagraph">
-                                                                        Pakistan
-                                                                    
-                                                                    </p>
-                                                                    <span class="indiaParagraph"> 
-                                                                        132/6
-                                                                    </span> 
-                                                                    <small class="mr-2 over">
-                                                                        (19.2 OVR)
-                                                                    </small>
-                                                                </div>
-                                                                <img src="assests/pakistan.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;"> 
-                                                            </div>
-                                                           
-                                                        </div>
-                                                    
-                                                            
-                                                   
-        
-                                                    <div class="p-3">
-                                                        <button type="button" class="btn btn-sm " style="background-color: rgb(78 78 143); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
-                                                            <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
-                                                            </i>
-                                                        </a></button>
-                                                    </div>
-                                                    <!-- Second col-6  third card end-->
-                                                        
-                                                    </div>
-                                                
-                                                </div>
-                                                
-                                                
-                                            </div>
-            
-                                    </div>
-                                        
-                                        
-                                </div>
-            
-                            </div>
-                
-                    <!-- Content Row -->
-            
-         
-            
-                    <!-- Dream Team Start -->
-                    <div class="cardPadding" style="margin-top: 4rem;">
-                        <div class="row">
-            
-                           <div class="col-xl-12 col-lg-12 col-md-12">
-                               <div class="card p-3 shadow" style="background-color: rgb(92, 163, 121)">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                            <div class="dreamCardParagraph">
-                                                <h3 class="createYourTeam" style="color: white;">
-                                                    Create your <span style="font-weight: 600; font-size: larger;">Dream Team</span> with us and 
-                                                    <br>
-                                                    win <span style="font-weight: 600; font-size: larger;">Amazing Prizes...</span>
-                                                </h3>
-            
-                                                <button type="button" class="btn btn-sm p-2 mt-3 " style="background-color: white ; color: rgb(16, 16, 99) ; font-weight: 600; font-size: 16px;">
-                                                Learn more about <span style="font-size: 18px;">Fantasy League</span> 
-                                                    <a href="">
-                                                    
-                                                        <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: rgb(16, 16, 99);">
-                                                        </i>
-                                                    </a>
-                                                </button>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                            <div class="dreamCardImage">
-                                                <img src="sports-360 resources/home/content1.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                               </div>
-                              
-                           </div>
-                            
-                            <!-- <div class="col-xl-12 col-lg-12 col-md-12">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                  <!-- Second col-6 first card start -->
+                  <div class="px-3 d-flex justify-content-between">
+                    <p class="domesticDivision" style="font-weight: bold">
+                      Pakistan Tour of Bangladesh
+                    </p>
+                    <button type="button" class="btn btn-sm cardButtonResult">
+                      RESULT
+                    </button>
+                  </div>
+                  <div class="p-3">
+                    <small style="color: #858796; font-weight: 700">
+                      1st T20I
+                      <i class="fas fa-circle" style="font-size: 7px"></i> 04:00
+                      (BDT) <br />
+                      19 November, 2021
+                      <i class="fas fa-circle" style="font-size: 7px"></i>
+                      Mirpur, Dhaka
+                    </small>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between p-3"
+                    style="line-height: 1.5px"
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="assests/bd-flag.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+
+                      <div class="mt-2 ml-2">
+                        <p class="newZeleandParagraph">Bangladesh</p>
+                        <span class="newZeleandParagraph"> 127/7 </span>
+                        <small
+                          class="newZeleandParagraphOvr"
+                          style="font-size: 11px; font-weight: 600; color: gray"
+                        >
+                          (20.0 OVR)
+                        </small>
+                      </div>
+                    </div>
+                    <div class="VsImage">
+                      <img
+                        src="sports-360 resources/home/Group 6269.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="d-flex">
+                      <div class="mt-2 ml-2">
+                        <p class="text-right mr-2 indiaParagraph">Pakistan</p>
+                        <span class="indiaParagraph"> 132/6 </span>
+                        <small class="mr-2 over"> (19.2 OVR) </small>
+                      </div>
+                      <img
+                        src="assests/pakistan.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                    </div>
+                  </div>
+
+                  <div class="p-3">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="
+                        background-color: rgb(78 78 143);
+                        color: white;
+                        font-weight: 600;
+                      "
+                    >
+                      VIEW FULL SCORE CARD
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
+
+                  <!-- Second col-6 first card end -->
+
+                  <!-- Second col-6  second card start-->
+                  <div class="px-3 d-flex justify-content-between">
+                    <p class="domesticDivision" style="font-weight: bold">
+                      Pakistan Tour of Bangladesh
+                    </p>
+                    <button type="button" class="btn btn-sm cardButtonResult">
+                      RESULT
+                    </button>
+                  </div>
+                  <div class="p-3">
+                    <small style="color: #858796; font-weight: 700">
+                      1st T20I
+                      <i class="fas fa-circle" style="font-size: 7px"></i> 04:00
+                      (BDT) <br />
+                      19 November, 2021
+                      <i class="fas fa-circle" style="font-size: 7px"></i>
+                      Mirpur, Dhaka
+                    </small>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between p-3"
+                    style="line-height: 1.5px"
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="assests/bd-flag.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+
+                      <div class="mt-2 ml-2">
+                        <p class="newZeleandParagraph">Bangladesh</p>
+                        <span class="newZeleandParagraph"> 127/7 </span>
+                        <small
+                          class="newZeleandParagraphOvr"
+                          style="font-size: 11px; font-weight: 600; color: gray"
+                        >
+                          (20.0 OVR)
+                        </small>
+                      </div>
+                    </div>
+                    <div class="VsImage">
+                      <img
+                        src="sports-360 resources/home/Group 6269.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="d-flex">
+                      <div class="mt-2 ml-2">
+                        <p class="text-right mr-2 indiaParagraph">Pakistan</p>
+                        <span class="indiaParagraph"> 132/6 </span>
+                        <small class="mr-2 over"> (19.2 OVR) </small>
+                      </div>
+                      <img
+                        src="assests/pakistan.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                    </div>
+                  </div>
+
+                  <div class="p-3">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="
+                        background-color: rgb(78 78 143);
+                        color: white;
+                        font-weight: 600;
+                      "
+                    >
+                      VIEW FULL SCORE CARD
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
+                  <!-- Second col-6  second card end-->
+
+                  <!-- Second col-6  third card start-->
+                  <div class="px-3 d-flex justify-content-between">
+                    <p class="domesticDivision" style="font-weight: bold">
+                      Pakistan Tour of Bangladesh
+                    </p>
+                    <button type="button" class="btn btn-sm cardButtonResult">
+                      RESULT
+                    </button>
+                  </div>
+                  <div class="p-3">
+                    <small style="color: #858796; font-weight: 700">
+                      1st T20I
+                      <i class="fas fa-circle" style="font-size: 7px"></i> 04:00
+                      (BDT) <br />
+                      19 November, 2021
+                      <i class="fas fa-circle" style="font-size: 7px"></i>
+                      Mirpur, Dhaka
+                    </small>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between p-3"
+                    style="line-height: 1.5px"
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="assests/bd-flag.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+
+                      <div class="mt-2 ml-2">
+                        <p class="newZeleandParagraph">Bangladesh</p>
+                        <span class="newZeleandParagraph"> 127/7 </span>
+                        <small
+                          class="newZeleandParagraphOvr"
+                          style="font-size: 11px; font-weight: 600; color: gray"
+                        >
+                          (20.0 OVR)
+                        </small>
+                      </div>
+                    </div>
+                    <div class="VsImage">
+                      <img
+                        src="sports-360 resources/home/Group 6269.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="d-flex">
+                      <div class="mt-2 ml-2">
+                        <p class="text-right mr-2 indiaParagraph">Pakistan</p>
+                        <span class="indiaParagraph"> 132/6 </span>
+                        <small class="mr-2 over"> (19.2 OVR) </small>
+                      </div>
+                      <img
+                        src="assests/pakistan.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                    </div>
+                  </div>
+
+                  <div class="p-3">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="
+                        background-color: rgb(78 78 143);
+                        color: white;
+                        font-weight: 600;
+                      "
+                    >
+                      VIEW FULL SCORE CARD
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
+                  <!-- Second col-6  third card end-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Row -->
+
+      <!-- Dream Team Start -->
+      <div class="cardPadding" style="margin-top: 4rem">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <div
+              class="card p-3 shadow"
+              style="background-color: rgb(92, 163, 121)"
+            >
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="dreamCardParagraph">
+                    <h3 class="createYourTeam" style="color: white">
+                      Create your
+                      <span style="font-weight: 600; font-size: larger"
+                        >Dream Team</span
+                      >
+                      with us and
+                      <br />
+                      win
+                      <span style="font-weight: 600; font-size: larger"
+                        >Amazing Prizes...</span
+                      >
+                    </h3>
+
+                    <button
+                      type="button"
+                      class="btn btn-sm p-2 mt-3"
+                      style="
+                        background-color: white;
+                        color: rgb(16, 16, 99);
+                        font-weight: 600;
+                        font-size: 16px;
+                      "
+                    >
+                      Learn more about
+                      <span style="font-size: 18px">Fantasy League</span>
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: rgb(16, 16, 99);
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="dreamCardImage">
+                    <img src="sports-360 resources/home/content1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-xl-12 col-lg-12 col-md-12">
                                 <div class="card dreamCard shadow p-3" style="background-color: rgb(78 78 143);">
                                 <div class="container d-flex justify-content-between">
                                     
@@ -711,192 +850,95 @@
                                 </div>
             
                             </div> -->
-            
-            
-            
-                        </div>
-                    </div>
-            
-                    <!-- Local Start -->
-                  
-                    <div  class="mt-4 cardPadding">
-                        <div class="row">
-    
-                            <div class="col-xl-12 col-lg-12 col-md-12">
-                                <div class="card shadow">
-                                    <div class="horizontal-line4" >
-                                                    
-                                    </div>
-                                    
-                                    
-                                        <div class="row">
-                                        
-                                            <div class="col-xl-6 col-lg-6 col-md-6 mt-2">
-                                                <!-- First col-6 first local card start-->
-                                                <div class="px-3 d-flex justify-content-between">
-                                                    <p class="domesticDivision" style="font-weight: bold;">Dhaka First Division Cricket League 2020/2021</p>
-                                                    <button type="button" class="btn cardButton">
-                                                        <i class="fas fa-circle">
-                                                            
-                                                        </i> 
-                                                        LIVE
-                                                    </button>
-                                                </div>
-                                                <div class="p-3">
-                                                    <small style="color: #858796; font-weight: 700;">
-                                                        Match - 12th ODI <i class="fas fa-circle" style="font-size: 7px;"></i> 10:00 (BDT) <br>
-                                                        19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Bangabandhu National Stadium, Dhaka
-                                                    </small>
-                                                </div>
-                                              
-                                                <!-- <div class=" " > -->
-                                                    <div class="d-flex justify-content-between p-3" style="line-height: 1.5px;">
-                                                        
-                                                    
-                                                    <div class="d-flex">
-                                                        <img src="assests/india.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                   
-                                                        <div class="mt-2 ml-2">
-                                                            
-                                                            <p class="uttaraParagraph">
-                                                                UTTARA CC
-                                                              
-                                                            
-                                                            </p> 
-                                                            <span class="uttaraParagraph"> 
-                                                                16/0
-                                                            </span> 
-                                                            <small class="uttaraOver">
-                                                                (2.0 OVR)
-                                                            </small>
-                                                        </div>
-                                                    </div>
-                                                        <div class="VsImage img">
-                                                            <!-- <span class="dot" style=" height: 45px;
-                                                            width: 45px;
-                                                            background-color: red !important;
-                                                            border-radius: 50%;
-                                                            display: inline-block;">
-                                                            <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">Vs</small> 
-                                                        </span> -->
-                                                        <img src="sports-360 resources/home/Group 6269.png"  alt="">
-                                                            
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            
-                                                       
-                                                            <div class="mt-2 ml-2">
-                                                                
-                                                                <p class="text-right mr-2 cityParagraph" >
-                                                                    CITY CLUB
-                                                                
-                                                                </p>
-                                                                <span class="cityParagraph" > 
-                                                                    153/6
-                                                                </span> 
-                                                                <small class="mr-2 cityOver">
-                                                                    (20.0 OVR)
-                                                                </small>
-                                                            </div>
-                                                            <img src="assests/newzelandd.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                        </div>
-    
-                                                        <!-- <div class="mt-2 ">
-                                                            <p class="mr-2" style="font-weight: 600; font-size: 13px; color: #858796;">
-                                                                MEW ZEALAND
-                                                            
-                                                            </p>
-                                                            <span style="font-weight: 600; font-size: 13px; color: #858796;"> 
-                                                                153/6
-                                                            </span> 
-                                                            <small class="mr-2" style="font-size: 11px; font-weight: 600;color: #858796;">
-                                                                (20.0 OVR)
-                                                            </small>
-                                                        </div>
-                                                        <img src="assests/newzelandd.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;"> -->
-                                                    </div>
-                                                
-                                                        
-                                                <!-- </div>  -->
-    
-                                                <div class="p-3">
-                                                    <button type="button" class="btn btn-sm " style="background-color: rgb(78 78 143); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
-                                                        <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
-                                                        </i>
-                                                    </a></button>
-                                                </div>
-                                                 <!-- First col-6 first local card end-->
+        </div>
+      </div>
 
-                                                  <!-- First col-6 second local start -->
-                                                  <div class="px-3 d-flex justify-content-between">
-                                                    <p class="domesticDivision" style="font-weight: bold;">Dhaka First Division Cricket League 2020/2021</p>
-                                                    <button type="button" class="btn cardButton">
-                                                        <i class="fas fa-circle">
-                                                            
-                                                        </i> 
-                                                        LIVE
-                                                    </button>
-                                                </div>
-                                                <div class="p-3">
-                                                    <small style="color: #858796; font-weight: 700;">
-                                                        Match - 12th ODI <i class="fas fa-circle" style="font-size: 7px;"></i> 10:00 (BDT) <br>
-                                                        19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Bangabandhu National Stadium, Dhaka
-                                                    </small>
-                                                </div>
-                                              
-                                                <!-- <div class=" " > -->
-                                                    <div class="d-flex justify-content-between p-3" style="line-height: 1.5px;">
-                                                        
-                                                    
-                                                    <div class="d-flex">
-                                                        <img src="assests/india.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                   
-                                                        <div class="mt-2 ml-2">
-                                                            
-                                                            <p class="uttaraParagraph">
-                                                                UTTARA CC
-                                                              
-                                                            
-                                                            </p> 
-                                                            <span class="uttaraParagraph"> 
-                                                                16/0
-                                                            </span> 
-                                                            <small class="uttaraOver">
-                                                                (2.0 OVR)
-                                                            </small>
-                                                        </div>
-                                                    </div>
-                                                        <div class="VsImage img">
-                                                            <!-- <span class="dot" style=" height: 45px;
+      <!-- Local Start -->
+
+      <div class="mt-4 cardPadding">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="card shadow">
+              <div class="horizontal-line4"></div>
+
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 mt-2">
+                  <!-- First col-6 first local card start-->
+                  <div class="px-3 d-flex justify-content-between">
+                    <p class="domesticDivision" style="font-weight: bold">
+                      Dhaka First Division Cricket League 2020/2021
+                    </p>
+                    <button type="button" class="btn cardButton">
+                      <i class="fas fa-circle"> </i>
+                      LIVE
+                    </button>
+                  </div>
+                  <div class="p-3">
+                    <small style="color: #858796; font-weight: 700">
+                      Match - 12th ODI
+                      <i class="fas fa-circle" style="font-size: 7px"></i> 10:00
+                      (BDT) <br />
+                      19 November, 2021
+                      <i class="fas fa-circle" style="font-size: 7px"></i>
+                      Bangabandhu National Stadium, Dhaka
+                    </small>
+                  </div>
+
+                  <!-- <div class=" " > -->
+                  <div
+                    class="d-flex justify-content-between p-3"
+                    style="line-height: 1.5px"
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="assests/india.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+
+                      <div class="mt-2 ml-2">
+                        <p class="uttaraParagraph">UTTARA CC</p>
+                        <span class="uttaraParagraph"> 16/0 </span>
+                        <small class="uttaraOver"> (2.0 OVR) </small>
+                      </div>
+                    </div>
+                    <div class="VsImage img">
+                      <!-- <span class="dot" style=" height: 45px;
                                                             width: 45px;
                                                             background-color: red !important;
                                                             border-radius: 50%;
                                                             display: inline-block;">
                                                             <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">Vs</small> 
                                                         </span> -->
-                                                        <img src="sports-360 resources/home/Group 6269.png"  alt="">
-                                                            
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            
-                                                       
-                                                            <div class="mt-2 ml-2">
-                                                                
-                                                                <p class="text-right mr-2 cityParagraph" >
-                                                                    CITY CLUB
-                                                                
-                                                                </p>
-                                                                <span class="cityParagraph" > 
-                                                                    153/6
-                                                                </span> 
-                                                                <small class="mr-2 cityOver">
-                                                                    (20.0 OVR)
-                                                                </small>
-                                                            </div>
-                                                            <img src="assests/newzelandd.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                        </div>
-    
-                                                        <!-- <div class="mt-2 ">
+                      <img
+                        src="sports-360 resources/home/Group 6269.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="d-flex">
+                      <div class="mt-2 ml-2">
+                        <p class="text-right mr-2 cityParagraph">CITY CLUB</p>
+                        <span class="cityParagraph"> 153/6 </span>
+                        <small class="mr-2 cityOver"> (20.0 OVR) </small>
+                      </div>
+                      <img
+                        src="assests/newzelandd.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                    </div>
+
+                    <!-- <div class="mt-2 ">
                                                             <p class="mr-2" style="font-weight: 600; font-size: 13px; color: #858796;">
                                                                 MEW ZEALAND
                                                             
@@ -909,301 +951,477 @@
                                                             </small>
                                                         </div>
                                                         <img src="assests/newzelandd.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;"> -->
-                                                    </div>
-                                                
-                                                        
-                                                <!-- </div>  -->
-    
-                                                <div class="p-3">
-                                                    <button type="button" class="btn btn-sm " style="background-color: rgb(78 78 143); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
-                                                        <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
-                                                        </i>
-                                                    </a></button>
-                                                </div>
-                                                   <!-- First col-6 second local card end-->
-                                        
-                                            </div>
-    
-                                            <!-- <div class="" style=" border-left: 2px solid rgb(230, 227, 227);
+                  </div>
+
+                  <!-- </div>  -->
+
+                  <div class="p-3">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="
+                        background-color: rgb(78 78 143);
+                        color: white;
+                        font-weight: 600;
+                      "
+                    >
+                      VIEW FULL SCORE CARD
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
+                  <!-- First col-6 first local card end-->
+
+                  <!-- First col-6 second local start -->
+                  <div class="px-3 d-flex justify-content-between">
+                    <p class="domesticDivision" style="font-weight: bold">
+                      Dhaka First Division Cricket League 2020/2021
+                    </p>
+                    <button type="button" class="btn cardButton">
+                      <i class="fas fa-circle"> </i>
+                      LIVE
+                    </button>
+                  </div>
+                  <div class="p-3">
+                    <small style="color: #858796; font-weight: 700">
+                      Match - 12th ODI
+                      <i class="fas fa-circle" style="font-size: 7px"></i> 10:00
+                      (BDT) <br />
+                      19 November, 2021
+                      <i class="fas fa-circle" style="font-size: 7px"></i>
+                      Bangabandhu National Stadium, Dhaka
+                    </small>
+                  </div>
+
+                  <!-- <div class=" " > -->
+                  <div
+                    class="d-flex justify-content-between p-3"
+                    style="line-height: 1.5px"
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="assests/india.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+
+                      <div class="mt-2 ml-2">
+                        <p class="uttaraParagraph">UTTARA CC</p>
+                        <span class="uttaraParagraph"> 16/0 </span>
+                        <small class="uttaraOver"> (2.0 OVR) </small>
+                      </div>
+                    </div>
+                    <div class="VsImage img">
+                      <!-- <span class="dot" style=" height: 45px;
+                                                            width: 45px;
+                                                            background-color: red !important;
+                                                            border-radius: 50%;
+                                                            display: inline-block;">
+                                                            <small class="text-center ml-3" style="font-weight: 600; color: white; position: absolute; margin-top: 23px;">Vs</small> 
+                                                        </span> -->
+                      <img
+                        src="sports-360 resources/home/Group 6269.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="d-flex">
+                      <div class="mt-2 ml-2">
+                        <p class="text-right mr-2 cityParagraph">CITY CLUB</p>
+                        <span class="cityParagraph"> 153/6 </span>
+                        <small class="mr-2 cityOver"> (20.0 OVR) </small>
+                      </div>
+                      <img
+                        src="assests/newzelandd.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                    </div>
+
+                    <!-- <div class="mt-2 ">
+                                                            <p class="mr-2" style="font-weight: 600; font-size: 13px; color: #858796;">
+                                                                MEW ZEALAND
+                                                            
+                                                            </p>
+                                                            <span style="font-weight: 600; font-size: 13px; color: #858796;"> 
+                                                                153/6
+                                                            </span> 
+                                                            <small class="mr-2" style="font-size: 11px; font-weight: 600;color: #858796;">
+                                                                (20.0 OVR)
+                                                            </small>
+                                                        </div>
+                                                        <img src="assests/newzelandd.jpg" alt="" style="width: 60px; height: 38px; border: 1px solid gray;"> -->
+                  </div>
+
+                  <!-- </div>  -->
+
+                  <div class="p-3">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="
+                        background-color: rgb(78 78 143);
+                        color: white;
+                        font-weight: 600;
+                      "
+                    >
+                      VIEW FULL SCORE CARD
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
+                  <!-- First col-6 second local card end-->
+                </div>
+
+                <!-- <div class="" style=" border-left: 2px solid rgb(230, 227, 227);
                                                 height: 250px; margin-top: -16px;">
                                                     
                                             </div> -->
-    
-                                            <div class="col-xl-6 col-lg-6 col-md-6 mt-2">
-                                                <!-- 2nd local col-6 first card -->
-                                                <div class="px-3 d-flex justify-content-between">
-                                                    <p class="domesticDivision" style="font-weight: bold;">Dhaka First Division Cricket League 2020/2021</p>
-                                                    <button type="button" class="btn cardButton">
-                                                        <i class="fas fa-circle">
-                                                            
-                                                        </i> 
-                                                        LIVE
-                                                    </button>
-                                                    
-                                                </div>
-                                                <div class="p-3">
-                                                    <small style="color: #858796; font-weight: 700;">
-                                                        Match - 12th ODI <i class="fas fa-circle" style="font-size: 7px;"></i> 10:00 (BDT) <br>
-                                                        19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Bangabandhu National Stadium, Dhaka
-                                                    </small>
-                                                </div>
-    
-                                                
-                                                    <div class="d-flex justify-content-between p-3" style="line-height: 1.5px;">
-                                                       
-                                               
-                                                      
-                                                        <div class="d-flex">
-                                                            
-                                                            <img src="assests/pakistan.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                            <div class="mt-2 ml-2">
-                                                                
-                                                                <p class="uttaraParagraph">
-                                                                    UTTARA CC
-                                                                
-                                                                </p>
-                                                                <span class="uttaraParagraph"> 
-                                                                    127/7
-                                                                </span> 
-                                                                <small class="mr-2 uttaraOver">
-                                                                    (20.0 OVR)
-                                                                </small>
-                                                            </div>
-                                                             
-                                                        </div>
-                                                        <div class="VsImage">
-                                                          
-                                                            <img src="sports-360 resources/home/Group 6269.png" alt="">
-                                                        </div>
-                                                        
-                                                        
-                                                        <div class="d-flex">
-                                                           
-                                                       
-                                                            <div class="mt-2 ml-2">
-                                                                
-                                                                <p class=" text-right mr-2 cityParagraph">
-                                                                    CITY CLUB
-                                                                
-                                                                </p>
-                                                                <span class="cityParagraph"> 
-                                                                     132/6
-                                                                </span> 
-                                                                <small class="mr-1 cityOver">
-                                                                    (19.2 OVR)  
-                                                                </small>
-                                                            </div>
-                                                            <img src="assests/bd-flag.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                        </div>
-                                                    </div>
-                                                
-                                                        
-                                               
-    
-                                                <div class="p-3">
-                                                    <button type="button" class="btn btn-sm " style="background-color: rgb(78 78 143); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
-                                                        <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
-                                                        </i>
-                                                    </a></button>
-                                                </div>
-                                              <!-- 2nd local col-6 first card end-->
 
-                                                <!-- 2nd local col-6 second card start-->
-                                                <div class="px-3 d-flex justify-content-between">
-                                                    <p class="domesticDivision" style="font-weight: bold;">Dhaka First Division Cricket League 2020/2021</p>
-                                                    <button type="button" class="btn cardButton">
-                                                        <i class="fas fa-circle">
-                                                            
-                                                        </i> 
-                                                        LIVE
-                                                    </button>
-                                                    
-                                                </div>
-                                                <div class="p-3">
-                                                    <small style="color: #858796; font-weight: 700;">
-                                                        Match - 12th ODI <i class="fas fa-circle" style="font-size: 7px;"></i> 10:00 (BDT) <br>
-                                                        19 November, 2021 <i class="fas fa-circle" style="font-size: 7px;"></i> Bangabandhu National Stadium, Dhaka
-                                                    </small>
-                                                </div>
-    
-                                                
-                                                    <div class="d-flex justify-content-between p-3" style="line-height: 1.5px;">
-                                                       
-                                               
-                                                      
-                                                        <div class="d-flex">
-                                                            
-                                                            <img src="assests/pakistan.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                            <div class="mt-2 ml-2">
-                                                                
-                                                                <p class="uttaraParagraph">
-                                                                    UTTARA CC
-                                                                
-                                                                </p>
-                                                                <span class="uttaraParagraph"> 
-                                                                    127/7
-                                                                </span> 
-                                                                <small class="mr-2 uttaraOver">
-                                                                    (20.0 OVR)
-                                                                </small>
-                                                            </div>
-                                                             
-                                                        </div>
-                                                        <div class="VsImage">
-                                                          
-                                                            <img src="sports-360 resources/home/Group 6269.png" alt="">
-                                                        </div>
-                                                        
-                                                        
-                                                        <div class="d-flex">
-                                                           
-                                                       
-                                                            <div class="mt-2 ml-2">
-                                                                
-                                                                <p class=" text-right mr-2 cityParagraph">
-                                                                    CITY CLUB
-                                                                
-                                                                </p>
-                                                                <span class="cityParagraph"> 
-                                                                     132/6
-                                                                </span> 
-                                                                <small class="mr-1 cityOver">
-                                                                    (19.2 OVR)  
-                                                                </small>
-                                                            </div>
-                                                            <img src="assests/bd-flag.jpg" class="allImage" alt="" style="width: 60px; height: 38px; border: 1px solid gray;">
-                                                        </div>
-                                                    </div>
-                                                
-                                                        
-                                               
-    
-                                                <div class="p-3">
-                                                    <button type="button" class="btn btn-sm " style="background-color: rgb(78 78 143); color: white; font-weight: 600;">VIEW FULL SCORE CARD <a href="">
-                                                        <i class="fas fa-arrow-right fa-md ml-3"  style= "cursor: pointer; text-decoration: none; color: white;">
-                                                        </i>
-                                                    </a></button>
-                                                </div>
-                                                <!-- 2nd local col-6 second card end-->
-                                                
-                                            </div>
-                                        
-                                        </div>
-    
-                                     
-                                        
-                                </div>
-                                
-                            
-                                    <a href="http://" target="_blank" rel="noopener noreferrer" class="seeMore" style="text-decoration: none;">
-                                        <p class="text-center mt-3">
-                                            See More..
-                                        </p>
-                                    </a>
-                            
-                            </div>
-                                
-                                
-                        </div>
-    
+                <div class="col-xl-6 col-lg-6 col-md-6 mt-2">
+                  <!-- 2nd local col-6 first card -->
+                  <div class="px-3 d-flex justify-content-between">
+                    <p class="domesticDivision" style="font-weight: bold">
+                      Dhaka First Division Cricket League 2020/2021
+                    </p>
+                    <button type="button" class="btn cardButton">
+                      <i class="fas fa-circle"> </i>
+                      LIVE
+                    </button>
+                  </div>
+                  <div class="p-3">
+                    <small style="color: #858796; font-weight: 700">
+                      Match - 12th ODI
+                      <i class="fas fa-circle" style="font-size: 7px"></i> 10:00
+                      (BDT) <br />
+                      19 November, 2021
+                      <i class="fas fa-circle" style="font-size: 7px"></i>
+                      Bangabandhu National Stadium, Dhaka
+                    </small>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between p-3"
+                    style="line-height: 1.5px"
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="assests/pakistan.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                      <div class="mt-2 ml-2">
+                        <p class="uttaraParagraph">UTTARA CC</p>
+                        <span class="uttaraParagraph"> 127/7 </span>
+                        <small class="mr-2 uttaraOver"> (20.0 OVR) </small>
+                      </div>
                     </div>
-                  
-                    <!-- footer start -->
-                    <div  class="cardPadding" >
-                        <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12">
-                                <footer class="mt-5" style="background-color: rgb(16, 16, 99);">
-                                  
-                                    <div class="standard_social_links">
-                                        <div class="d-flex justify-content-end" >
-                                        <li class="rounded-btn btn-facebook">
-                                            <a href="#" id="scrollToTopBtn" style="font-size: 30px; color: white;">
-                                             <i class="fas fa-arrow-circle-up"></i>
-                                            </a>
-                                
-                                        </li>
-                                        
-                                    
-                                    
-                                        </div>
-                                    </div> 
-                                    <div class="footer-wrap">
-                                    
-                                    <div class="container first_class" style="padding: 10px 90px;">
-                                        <div class="row">
-                                        <div class="col-md-4 col-sm-6 sportsLogo">
-                                            <img src="assests/logo.png" alt="">
-                                            
-                                            <p class="mt-2" style="color: rgb(150, 147, 147); ">Get all the latest information on Cricket Events, Fairs. Sign up for our newsletter today.</p>
-                                            <p style="color: rgb(150, 147, 147);">+8802-9860352, +8802-9860352,</p>
-                                        </div>
-                        
-                                        <div class="col-md-4 col-sm-6" >
-                                            <!-- <div class="clearfix"></div> -->
-                                                <h5 style="color: white;" class="ml-5"> Find us at</h5>
-                                                <div class="col-md-12">
-                                                    <div class="standard_social_links">
-                                                        <div class="d-flex" >
-                                                        <li class=" btn-facebook"><a href="#" style="font-size: 30px;"><i class="fab fa-facebook-f ml-3"style="color: white;"></i></a>
-                                                
-                                                        </li>
-                                                        
-                                                        <li class=" btn-instagram"><a href="#"style="font-size: 30px;"><i class="fab fa-instagram ml-3" style="color: white;" aria-hidden="true"></i></a>
-                                                
-                                                        </li>
-            
-                                                        <li class=" btn-twitter"><a href="#"style="font-size: 30px;"><i class="fab fa-twitter  ml-4" style="color: white;" aria-hidden="true"></i></a>
-                                                
-                                                        </li>
-                                                    
-                                                    
-                                                        </div>
-                                                    </div>  
-                                                </div>
-                                            
-                                        </div>
-                        
-                                        <div class="col-md-4 col-sm-6">
-                                        <form class="newsletter">
-                                            <h5 style="color: white;">NEWSLETTER</h5>
-                                            <input type="text" placeholder=""> 
-                                                <button class="newsletter_submit_btn btn-primary btn-sm mt-4" type="submit">
-                                                    SEND
-                                                </button>  
-                                        </form>
-                                        
-                                                <div class=" mt-3" style="color: rgb(150, 147, 147);"> 
-                                                <p>
-                                                    <i class="far fa-copyright"></i> Copyright 2021 | All Rights Reserved by Sports360
-                                                </p>
-                                                
-                                                </div>
-                                        
-                                        </div>
-                                    
-                                        </div>
-                                    </div>
-                                
-                                   
-                                    </div>
-                                    
-                                    </footer>
-                            </div>
-                            
-                        </div>
+                    <div class="VsImage">
+                      <img
+                        src="sports-360 resources/home/Group 6269.png"
+                        alt=""
+                      />
                     </div>
-                    <!--footer end-->
-            
-        </section>
-        
 
-    
-    
-   
-<script src="js/mainCstom.js"></script>
-<script src="jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+                    <div class="d-flex">
+                      <div class="mt-2 ml-2">
+                        <p class="text-right mr-2 cityParagraph">CITY CLUB</p>
+                        <span class="cityParagraph"> 132/6 </span>
+                        <small class="mr-1 cityOver"> (19.2 OVR) </small>
+                      </div>
+                      <img
+                        src="assests/bd-flag.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                    </div>
+                  </div>
 
-</body>
+                  <div class="p-3">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="
+                        background-color: rgb(78 78 143);
+                        color: white;
+                        font-weight: 600;
+                      "
+                    >
+                      VIEW FULL SCORE CARD
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
+                  <!-- 2nd local col-6 first card end-->
+
+                  <!-- 2nd local col-6 second card start-->
+                  <div class="px-3 d-flex justify-content-between">
+                    <p class="domesticDivision" style="font-weight: bold">
+                      Dhaka First Division Cricket League 2020/2021
+                    </p>
+                    <button type="button" class="btn cardButton">
+                      <i class="fas fa-circle"> </i>
+                      LIVE
+                    </button>
+                  </div>
+                  <div class="p-3">
+                    <small style="color: #858796; font-weight: 700">
+                      Match - 12th ODI
+                      <i class="fas fa-circle" style="font-size: 7px"></i> 10:00
+                      (BDT) <br />
+                      19 November, 2021
+                      <i class="fas fa-circle" style="font-size: 7px"></i>
+                      Bangabandhu National Stadium, Dhaka
+                    </small>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between p-3"
+                    style="line-height: 1.5px"
+                  >
+                    <div class="d-flex">
+                      <img
+                        src="assests/pakistan.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                      <div class="mt-2 ml-2">
+                        <p class="uttaraParagraph">UTTARA CC</p>
+                        <span class="uttaraParagraph"> 127/7 </span>
+                        <small class="mr-2 uttaraOver"> (20.0 OVR) </small>
+                      </div>
+                    </div>
+                    <div class="VsImage">
+                      <img
+                        src="sports-360 resources/home/Group 6269.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="mt-2 ml-2">
+                        <p class="text-right mr-2 cityParagraph">CITY CLUB</p>
+                        <span class="cityParagraph"> 132/6 </span>
+                        <small class="mr-1 cityOver"> (19.2 OVR) </small>
+                      </div>
+                      <img
+                        src="assests/bd-flag.jpg"
+                        class="allImage"
+                        alt=""
+                        style="
+                          width: 60px;
+                          height: 38px;
+                          border: 1px solid gray;
+                        "
+                      />
+                    </div>
+                  </div>
+
+                  <div class="p-3">
+                    <button
+                      type="button"
+                      class="btn btn-sm"
+                      style="
+                        background-color: rgb(78 78 143);
+                        color: white;
+                        font-weight: 600;
+                      "
+                    >
+                      VIEW FULL SCORE CARD
+                      <a href="">
+                        <i
+                          class="fas fa-arrow-right fa-md ml-3"
+                          style="
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: white;
+                          "
+                        >
+                        </i>
+                      </a>
+                    </button>
+                  </div>
+                  <!-- 2nd local col-6 second card end-->
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="seeMore"
+              style="text-decoration: none"
+            >
+              <p class="text-center mt-3">See More..</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer start -->
+      <div class="cardPadding">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <footer class="mt-5" style="background-color: rgb(16, 16, 99)">
+              <div class="standard_social_links">
+                <div class="d-flex justify-content-end">
+                  <li class="rounded-btn btn-facebook">
+                    <a
+                      href="#"
+                      id="scrollToTopBtn"
+                      style="font-size: 30px; color: white"
+                    >
+                      <i class="fas fa-arrow-circle-up"></i>
+                    </a>
+                  </li>
+                </div>
+              </div>
+              <div class="footer-wrap">
+                <div class="container first_class" style="padding: 10px 90px">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-6 sportsLogo">
+                      <img src="assests/logo.png" alt="" />
+
+                      <p class="mt-2" style="color: rgb(150, 147, 147)">
+                        Get all the latest information on Cricket Events, Fairs.
+                        Sign up for our newsletter today.
+                      </p>
+                      <p style="color: rgb(150, 147, 147)">
+                        +8802-9860352, +8802-9860352,
+                      </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <!-- <div class="clearfix"></div> -->
+                      <h5 style="color: white" class="ml-5">Find us at</h5>
+                      <div class="col-md-12">
+                        <div class="standard_social_links">
+                          <div class="d-flex">
+                            <li class="btn-facebook">
+                              <a href="#" style="font-size: 30px"
+                                ><i
+                                  class="fab fa-facebook-f ml-3"
+                                  style="color: white"
+                                ></i
+                              ></a>
+                            </li>
+
+                            <li class="btn-instagram">
+                              <a href="#" style="font-size: 30px"
+                                ><i
+                                  class="fab fa-instagram ml-3"
+                                  style="color: white"
+                                  aria-hidden="true"
+                                ></i
+                              ></a>
+                            </li>
+
+                            <li class="btn-twitter">
+                              <a href="#" style="font-size: 30px"
+                                ><i
+                                  class="fab fa-twitter ml-4"
+                                  style="color: white"
+                                  aria-hidden="true"
+                                ></i
+                              ></a>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                      <form class="newsletter">
+                        <h5 style="color: white">NEWSLETTER</h5>
+                        <input type="text" placeholder="" />
+                        <button
+                          class="newsletter_submit_btn btn-primary btn-sm mt-4"
+                          type="submit"
+                        >
+                          SEND
+                        </button>
+                      </form>
+
+                      <div class="mt-3" style="color: rgb(150, 147, 147)">
+                        <p>
+                          <i class="far fa-copyright"></i> Copyright 2021 | All
+                          Rights Reserved by Sports360
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!--footer end-->
+    </section>
+
+    <script src="js/mainCstom.js"></script>
+    <script src="jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

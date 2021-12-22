@@ -1,191 +1,198 @@
-/* *{
-  margin:0; padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  text-transform: capitalize;
-  transition: all .2s linear;
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
+}
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.content{
-  min-height: 130vh;
-  background:url(bg.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-} */
+body {
+  width: 100%;
+  background: #e5e7eb;
+  position: relative;
 
-header .header-1{
+  background: white;
+}
+header .header-1 {
   /* display: flex;
   align-items: center;
   justify-content: space-between; */
   background: rgb(16, 16, 99);
   width: 100%;
-  padding:8px 20px;
+  padding: 8px 20px;
   z-index: 9;
 }
 
-header .header-1 .navbar ul{
+header .header-1 .navbar ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
 }
 
-header .header-1 .navbar ul li{
+header .header-1 .navbar ul li {
   margin: 10px;
 }
 
-header .header-1 .navbar ul li a{
-  color:#fff;
+header .header-1 .navbar ul li a {
   font-size: 20px;
+  text-decoration: none;
+  color: #fff8;
 }
 
-header .header-1 .navbar ul li a:hover{
-  color:#fff8;
+header .header-1 .navbar ul li a:hover {
+  color: #fff;
 }
 
-.sportsLogo img{
+.sportsLogo img {
   width: 9rem;
 }
 
-header .header-2{
+header .header-2 {
   /* display: flex;
   align-items: center;
   justify-content: space-between; */
-  background:crimson;
+  background: crimson;
   width: 100%;
-  padding:5px 20px;
+  padding: 5px 20px;
   z-index: 9;
 }
-.bodyContent{
+.bodyContent {
   z-index: 1;
- 
 }
-header .header-2 .navbar ul{
+header .header-2 .navbar ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
 }
 
-header .header-2 .navbar ul li{
-  margin:10px;
+header .header-2 .navbar ul li {
+  margin: 10px;
 }
 
-header .header-2 .navbar ul li a{
-  color:#fff;
+header .header-2 .navbar ul li a {
+  color: #fff8;
   font-size: 20px;
+  text-decoration: none;
 }
 
-header .header-2 .navbar ul li a:hover{
-  color:#fff8;
+header .header-2 .navbar ul li a:hover {
+  color: #fff;
 }
 
-header .header-2 .icons a{
+header .header-2 .icons a {
   font-size: 20px;
-  color:#fff;
-  margin:10px;
+  color: #fff;
+  margin: 10px;
 }
 
-header .header-2 .icons a:hover{
-  color:#fff8;
+header .header-2 .icons a:hover {
+  color: #fff8;
 }
 
-#menu2{
+#menu2 {
   font-size: 30px;
-  color:#fff;
+  color: #fff;
   cursor: pointer;
   display: none;
 }
 
-header .header-2.sticky{
+header .header-2.sticky {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   box-shadow: 0 3px 5px #333;
 }
-.dreamCardImage{
+.dreamCardImage {
   margin-top: -119px;
   /* padding: -5px 0px; */
-  transform: translate(30px,16px);
+  transform: translate(30px, 16px);
 }
-.dreamCardParagraph{
-  transform: translate(110px,50px);
+.dreamCardParagraph {
+  transform: translate(110px, 50px);
 }
-.cardHeaderLive{
-  background-color:  red !important;
+.cardHeaderLive {
+  background-color: red !important;
   color: white;
 }
-.cardHeaderResult{
-  background-color:  rgb(16, 16, 99) !important;
+.cardHeaderResult {
+  background-color: rgb(16, 16, 99) !important;
   color: white;
 }
-.cardHeaderUpcoming{
-  background-color:  #1cc88a !important;
+.cardHeaderUpcoming {
+  background-color: #1cc88a !important;
   color: white;
 }
 
-.cardPadding{
+.cardPadding {
   padding: 0px 45px;
-} 
- /* media queries  */
-.featured{
+}
+/* media queries  */
+.featured {
   font-weight: 600;
 }
-.england{
+.england {
   font-weight: 600;
 }
-.internationalCard{
+.internationalCard {
   border-top: 5px solid red;
 }
-.indiaParagraph{
-  font-weight: 600; 
+.indiaParagraph {
+  font-weight: 600;
   font-size: 13px;
 }
-.over{
-  font-weight: 600; 
+.over {
+  font-weight: 600;
   font-size: 11px;
 }
-.uttaraParagraph{
-  font-weight: 600; 
+.uttaraParagraph {
+  font-weight: 600;
   font-size: 13px;
 }
-.uttaraOver{
-  font-weight: 600; 
+.uttaraOver {
+  font-weight: 600;
   font-size: 11px;
 }
-.newZeleandParagraph{
-  font-weight: 600; 
+.newZeleandParagraph {
+  font-weight: 600;
   font-size: 13px;
   color: #858796;
 }
-.newZeleandParagraphOvr{
-  font-size: 11px; 
+.newZeleandParagraphOvr {
+  font-size: 11px;
   font-weight: 600;
   color: #858796;
 }
-.cityParagraph{
-  font-weight: 600; 
+.cityParagraph {
+  font-weight: 600;
   font-size: 13px;
   color: #858796;
 }
-.cityOver{
-  font-size: 11px; 
+.cityOver {
+  font-size: 11px;
   font-weight: 600;
   color: #858796;
 }
-.cardButton{
-  color: red; 
-  background-color: rgb(248, 180, 180); 
-  font-size: 15px; 
+.cardButton {
+  color: red;
+  background-color: rgb(248, 180, 180);
+  font-size: 15px;
   font-weight: bold;
 }
-.cardButtonResult{
+.cardButtonResult {
   color: rgb(16, 16, 99);
-  background-color: rgb(173, 169, 177); 
-  font-size: 15px; 
+  background-color: rgb(173, 169, 177);
+  font-size: 15px;
   font-weight: bold;
 }
-.horizontal-line{
+.horizontal-line {
   height: 300px;
   border-right: 2px solid #000900;
   position: absolute;
@@ -197,18 +204,18 @@ header .header-2.sticky{
   position: absolute;
   right: 50%;
 } */
-.matchesFont{
+.matchesFont {
   font-size: 14px;
   font-weight: 600;
 }
-.scoreDropdown{
+.scoreDropdown {
   background: white;
   color: rgb(41, 40, 40);
   border: 2px solid rgb(67, 59, 59);
   border-top-right-radius: 5px;
   font-size: 15px;
 }
-.scoreDropdown:hover{
+.scoreDropdown:hover {
   background: crimson;
   color: #fff;
 }
@@ -223,7 +230,7 @@ header .header-2.sticky{
   display: block;
   width: 100%;
   /* height: calc(1.5em + .75rem + 2px); */
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 13px;
   font-weight: 600;
   line-height: 1.5;
@@ -231,17 +238,17 @@ header .header-2.sticky{
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #494b4d;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.seeMore{
-  font-size: 16px; 
-  font-weight: 600; 
+.seeMore {
+  font-size: 16px;
+  font-weight: 600;
   text-decoration: none !important;
   color: rgb(102, 98, 98);
 }
 
-.internationalBottomLine{
+.internationalBottomLine {
   margin-top: -2px !important;
 }
 /* input {
@@ -337,9 +344,8 @@ input:checked + label:before {
   background:#666;
 } */
 /* drop down */
-@media (max-width:991px){
-
-  header .header-1 form #search{
+@media (max-width: 991px) {
+  header .header-1 form #search {
     width: 100%;
   }
   header .header-2 {
@@ -347,281 +353,266 @@ input:checked + label:before {
     width: 100%;
     padding: 10px 20px;
     z-index: 9;
-}
-/* .boddyWidth{
+  }
+  /* .boddyWidth{
   width: 100% !important;
 } */
-
 }
 /* .dreamCard{
   position: relative;
 } */
 
-
-@media (max-width:768px){
-
-  header .header-2 #menu2{
+@media (max-width: 768px) {
+  header .header-2 #menu2 {
     display: block;
   }
 
-  header .header-2 .navbar{
+  header .header-2 .navbar {
     position: fixed;
-    top:-1000px; left: 50%;
+    top: -1000px;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
   }
 
-  header .header-2 .navbar ul{
+  header .header-2 .navbar ul {
     flex-flow: column;
     width: 250px;
     border-radius: 5px;
-    padding:30px 10px;
-    background:crimson;
-    box-shadow: 0 0 0 100vh rgba(0,0,0,.5),
-    0 3px 5px #000;
+    padding: 30px 10px;
+    background: crimson;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.5), 0 3px 5px #000;
   }
 
-  header .header-2 .navbar ul li{
-    width:100%;
+  header .header-2 .navbar ul li {
+    width: 100%;
     text-align: center;
   }
 
-  header .header-2 .navbar ul li a{
+  header .header-2 .navbar ul li a {
     font-size: 25px;
     display: block;
   }
 
-  header .header-2 .navbar.nav-toggle{
-    top:55%;
+  header .header-2 .navbar.nav-toggle {
+    top: 55%;
     opacity: 1;
     z-index: 9;
   }
- 
- 
-
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-.resultCard{
-  margin-top: 1rem;
-}
-.upcomingCard{
-  margin-top: 2rem;
-}
+  .resultCard {
+    margin-top: 1rem;
+  }
+  .upcomingCard {
+    margin-top: 2rem;
+  }
 
-.sportsLogo img {
-  width: 4rem;
-}
-.navbar {
-
-  padding: 0rem 0rem;
-}
-.featured{
-  font-size: 15px;
-}
-/* .england{
+  .sportsLogo img {
+    width: 4rem;
+  }
+  .navbar {
+    padding: 0rem 0rem;
+  }
+  .featured {
+    font-size: 15px;
+  }
+  /* .england{
   font-size: 15px;
 } */
-.cardPadding {
-  padding: 0px 20px;
-}
-.internationalCard{
-  font-size: 13px;
-}
-.VsImage img{
-  height: 32px;
-}
-.indiaParagraph{
-  font-weight: 0;
-  font-size: 8px;
-}
-.over{
-  font-weight: 0;
-font-size: 6px !important;
-}
-.uttaraParagraph{
-  font-size: 8px;
-}
-.uttaraOver{
-  font-size: 6px;
-}
-.newZeleandParagraph{
-  font-size: 8px !important;
-}
-.newZeleandParagraphOvr{
-  font-size: 6px !important;
-}
-.cityParagraph{
-  font-size: 8px !important;
-}
-.cityOver{
-  font-size: 6px !important;
-}
-.cardTitle{
-  font-size: 15px;
-}
-.cardButton{
+  .cardPadding {
+    padding: 0px 20px;
+  }
+  .internationalCard {
+    font-size: 13px;
+  }
+  .VsImage img {
+    height: 32px;
+  }
+  .indiaParagraph {
+    font-weight: 0;
+    font-size: 8px;
+  }
+  .over {
+    font-weight: 0;
+    font-size: 6px !important;
+  }
+  .uttaraParagraph {
+    font-size: 8px;
+  }
+  .uttaraOver {
+    font-size: 6px;
+  }
+  .newZeleandParagraph {
+    font-size: 8px !important;
+  }
+  .newZeleandParagraphOvr {
+    font-size: 6px !important;
+  }
+  .cityParagraph {
+    font-size: 8px !important;
+  }
+  .cityOver {
+    font-size: 6px !important;
+  }
+  .cardTitle {
+    font-size: 15px;
+  }
+  .cardButton {
+    font-size: 8px !important;
+  }
+  .cardButtonResult {
+    font-size: 8px !important;
+  }
 
-  font-size: 8px !important; 
- 
-}
-.cardButtonResult{
-  font-size: 8px !important; 
-}
-
-.domesticDivision{
-  font-size: 10px;
-}
-.dreamCardParagraph {
-  transform: translate(0px,0px);
-}
-.dreamCardImage {
-  margin-top: 0px;
-  transform: translate(-140px, 16px);
-}
-.createYourTeam{
-  font-size: 15px;
-}
-.horizontal-line {
- display: none;
-}
-.horizontal-line2 {
-display: none;
-}
-.form-group {
-  /* margin-bottom: 1rem; */
-  /* padding: 0px 10px; */
-  /* margin: 0px 10px; */
-  width: 119px;
-  /* display: block; */
-}
-
+  .domesticDivision {
+    font-size: 10px;
+  }
+  .dreamCardParagraph {
+    transform: translate(0px, 0px);
+  }
+  .dreamCardImage {
+    margin-top: 0px;
+    transform: translate(-140px, 16px);
+  }
+  .createYourTeam {
+    font-size: 15px;
+  }
+  .horizontal-line {
+    display: none;
+  }
+  .horizontal-line2 {
+    display: none;
+  }
+  .form-group {
+    /* margin-bottom: 1rem; */
+    /* padding: 0px 10px; */
+    /* margin: 0px 10px; */
+    width: 119px;
+    /* display: block; */
+  }
 }
 
-
-@media (max-width:500px){
-
-  header .header-1{
+@media (max-width: 500px) {
+  header .header-1 {
     flex-flow: column;
   }
 }
 
-@media (max-width:360px){
+@media (max-width: 360px) {
   footer .newsletter input[type="text"] {
-    width: 154px !important;
+    width: 200px !important;
     background: #fff;
     color: #333;
     border: 1px solid #222;
     padding: 10px 1px;
     border-radius: 10px;
     margin-top: 12px;
-}
-.newsletter .newsletter_submit_btn {
-  background-color: rgb(62, 62, 119);
-  position: absolute;
-  right: 6px !important;
-  border: 0;
-  top: 31px !important;
-  font-size: 11px !important;
-  color: rgb(230, 223, 223);
-}
+  }
+  .newsletter .newsletter_submit_btn {
+    background-color: rgb(62, 62, 119);
+    position: absolute !important;
+    right: -33px !important;
+    border: 0;
+    top: 31px !important;
+    font-size: 11px !important;
+    color: rgb(230, 223, 223);
+  }
 }
 
-@media (max-width:320px){
-  .resultCard{
+@media (max-width: 320px) {
+  .resultCard {
     margin-top: 1rem;
   }
-  .upcomingCard{
+  .upcomingCard {
     margin-top: 2rem;
   }
-  
+
   .sportsLogo img {
     width: 4rem;
   }
   header .header-1 .navbar ul li {
     margin: 6px;
-}
+  }
   .navbar {
-  
     padding: 0rem 0rem;
   }
-  .allImage{
+  .allImage {
     width: 43px !important;
   }
-  .featured{
+  .featured {
     font-size: 15px;
   }
-  .england{
+  .england {
     font-size: 13px;
   }
   .cardPadding {
     padding: 0px 20px;
   }
-  .internationalCard{
+  .internationalCard {
     font-size: 13px;
   }
-  .VsImage img{
+  .VsImage img {
     height: 25px;
   }
-  .indiaParagraph{
+  .indiaParagraph {
     font-weight: 0;
     font-size: 8px;
   }
-  .over{
+  .over {
     font-weight: 0;
-  font-size: 6px !important;
-  }
-  .uttaraParagraph{
-    font-size: 8px;
-  }
-  .uttaraOver{
-    font-size: 6px;
-  }
-  .newZeleandParagraph{
-    font-size: 8px !important;
-  }
-  .newZeleandParagraphOvr{
-    font-size: 4px !important;
-  }
-  .cityParagraph{
-    font-size: 8px !important;
-  }
-  .cityOver{
     font-size: 6px !important;
   }
-  .cardTitle{
+  .uttaraParagraph {
+    font-size: 8px;
+  }
+  .uttaraOver {
+    font-size: 6px;
+  }
+  .newZeleandParagraph {
+    font-size: 8px !important;
+  }
+  .newZeleandParagraphOvr {
+    font-size: 4px !important;
+  }
+  .cityParagraph {
+    font-size: 8px !important;
+  }
+  .cityOver {
+    font-size: 6px !important;
+  }
+  .cardTitle {
     font-size: 15px;
   }
-  .cardButton{
-  
-    font-size: 8px !important; 
-   
+  .cardButton {
+    font-size: 8px !important;
   }
-  .cardButtonResult{
-    font-size: 8px !important; 
+  .cardButtonResult {
+    font-size: 8px !important;
   }
-  
-  .domesticDivision{
+
+  .domesticDivision {
     font-size: 10px;
   }
   .dreamCardParagraph {
-    transform: translate(0px,0px);
+    transform: translate(0px, 0px);
   }
   .dreamCardImage {
     margin-top: 0px;
     transform: translate(-94px, 16px);
   }
-  .dreamCardImage img{
+  .dreamCardImage img {
     width: 437px;
   }
-  .createYourTeam{
+  .createYourTeam {
     font-size: 15px;
   }
   .horizontal-line {
-   display: none;
+    display: none;
   }
   .horizontal-line2 {
-  display: none;
+    display: none;
   }
   footer .newsletter input[type="text"] {
     width: 154px !important;
@@ -631,113 +622,108 @@ display: none;
     padding: 10px 1px;
     border-radius: 10px;
     margin-top: 12px;
+  }
+  .newsletter .newsletter_submit_btn {
+    background-color: rgb(62, 62, 119);
+    position: absolute;
+    right: 4px !important;
+    border: 0;
+    top: 31px !important;
+    font-size: 11px !important;
+    color: rgb(230, 223, 223);
+  }
 }
-.newsletter .newsletter_submit_btn {
-  background-color: rgb(62, 62, 119);
-  position: absolute;
-  right: -31px !important;
-  border: 0;
-  top: 31px !important;
-  font-size: 11px !important;
-  color: rgb(230, 223, 223);
-}
-}
-
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width:1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .horizontal-line {
     height: 291px;
     border-right: 1px solid #dde3dd;
     position: absolute;
     right: 50%;
     top: 17%;
-}
-.horizontal-line2 {
-  height: 283px;
-  border-right: 1px solid #dde3dd;
-  position: absolute;
-  right: 50%;
-  top: 17%;
-}
-.england{
-  font-size: 10px;
-}
-.englandOver{
-  font-size: 10px;
-}
-.sportsLogo img {
-  width: 4rem;
-}
-.navbar {
+  }
+  .horizontal-line2 {
+    height: 283px;
+    border-right: 1px solid #dde3dd;
+    position: absolute;
+    right: 50%;
+    top: 17%;
+  }
+  .england {
+    font-size: 10px;
+  }
+  .englandOver {
+    font-size: 10px;
+  }
+  .sportsLogo img {
+    width: 4rem;
+  }
+  .navbar {
+    padding: 0rem 0rem;
+  }
+  .featured {
+    font-size: 15px;
+  }
 
-  padding: 0rem 0rem;
-}
-.featured{
-  font-size: 15px;
-}
+  .cardPadding {
+    padding: 0px 20px;
+  }
+  .internationalCard {
+    font-size: 16px;
+  }
+  .VsImage img {
+    height: 32px;
+  }
+  .indiaParagraph {
+    font-weight: 0;
+    font-size: 10px;
+  }
+  .over {
+    font-weight: 0;
+    font-size: 8px !important;
+  }
+  .uttaraParagraph {
+    font-size: 10px;
+  }
+  .uttaraOver {
+    font-size: 8px;
+  }
+  .newZeleandParagraph {
+    font-size: 10px !important;
+  }
+  .newZeleandParagraphOvr {
+    font-size: 8px !important;
+  }
+  .cityParagraph {
+    font-size: 10px !important;
+  }
+  .cityOver {
+    font-size: 8px !important;
+  }
+  .cardTitle {
+    font-size: 21px;
+  }
+  .cardButton {
+    font-size: 8px !important;
+  }
+  .cardButtonResult {
+    font-size: 8px !important;
+  }
 
-.cardPadding {
-  padding: 0px 20px;
-}
-.internationalCard{
-  font-size: 16px;
-}
-.VsImage img{
-  height: 32px;
-}
-.indiaParagraph{
-  font-weight: 0;
-  font-size: 10px;
-}
-.over{
-  font-weight: 0;
-font-size: 8px !important;
-}
-.uttaraParagraph{
-  font-size: 10px;
-}
-.uttaraOver{
-  font-size: 8px;
-}
-.newZeleandParagraph{
-  font-size: 10px !important;
-}
-.newZeleandParagraphOvr{
-  font-size: 8px !important;
-}
-.cityParagraph{
-  font-size: 10px !important;
-}
-.cityOver{
-  font-size: 8px !important;
-}
-.cardTitle{
-  font-size: 21px;
-}
-.cardButton{
-
-  font-size: 8px !important; 
- 
-}
-.cardButtonResult{
-  font-size: 8px !important; 
-}
-
-.domesticDivision{
-  font-size: 11px;
-}
-.dreamCardParagraph {
-  transform: translate(14px,52px);
-}
-.dreamCardImage {
-  margin-top: -122px;
-  transform: translate(-140px, 16px);
-}
-.createYourTeam{
-  font-size: 15px;
-}
-
+  .domesticDivision {
+    font-size: 11px;
+  }
+  .dreamCardParagraph {
+    transform: translate(14px, 52px);
+  }
+  .dreamCardImage {
+    margin-top: -122px;
+    transform: translate(-140px, 16px);
+  }
+  .createYourTeam {
+    font-size: 15px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -748,8 +734,7 @@ font-size: 8px !important;
     position: absolute;
     right: 50%;
     top: 20%;
-}
-
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -760,6 +745,5 @@ font-size: 8px !important;
     position: absolute;
     right: 50%;
     top: 20%;
-}
-
+  }
 }

@@ -1,270 +1,253 @@
+.scoreCard1Color {
+  background: rgb(16, 16, 99);
+  padding: 20px 0px 60px 0px;
+  /* min-height: 330px; */
+  /* position: relative; */
+}
+.scoretable {
+  transform: translateY(-54px);
+}
+.scoreParagraph {
+  color: gray;
+  font-size: 17px;
+  text-align: center;
+}
+.scoreParagraph2 {
+  color: white;
+  font-size: 21px;
+  text-align: center;
+}
+.circle {
+  font-size: 4px;
+  color: white;
+}
+.liveCircle {
+  color: red;
+}
+.bdParagraph {
+  color: white;
+}
+.bdImage {
+  width: 150px;
+  height: 100px;
+}
+.liveButton {
+  background: rgba(255, 0, 0, 0.364);
+  opacity: 1;
+  color: red;
 
-.scoreCard1Color{
-    background: rgb(16, 16, 99);
-    padding: 20px 0px 60px 0px;
-    /* min-height: 330px; */
-    /* position: relative; */
-
-}  
-.scoretable{
-    transform: translateY(-54px);
-}
-.scoreParagraph{
-    color: gray;
-    font-size: 17px;
-    text-align: center;
-}
-.scoreParagraph2{
-    color: white;
-    font-size: 21px;
-    text-align: center;
-}
-.circle{
-    font-size: 4px;
-    color: white;
-    
-}
-.liveCircle{
-
-    color: red;
-}
-.bdParagraph{
-    color: white;
-   
-}
-.bdImage{
-    width: 150px;
-    height: 100px;
-}
-.liveButton{
-    background: rgba(255, 0, 0, 0.364);
-    opacity: 1;
-    color: red;
-
-    padding: 5px 20px;
-    font-size: 20px;
-    font-weight: 600;
-    
-   
+  padding: 5px 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
 /* .run{
     font-size: 30px;
     font-weight: 600;
 } */
-.men{
-    font-size: 13px;
-    font-weight: 100;
+.men {
+  font-size: 13px;
+  font-weight: 100;
 }
-.menOvr{
-    font-size: 16px;
-    font-weight: 100;
+.menOvr {
+  font-size: 16px;
+  font-weight: 100;
 }
-h3{
-    font-size: 35px;
-    font-weight: 600;
+h3 {
+  font-size: 35px;
+  font-weight: 600;
 }
-h4{
-    font-size: 22px;
-    font-weight: 600;
+h4 {
+  font-size: 22px;
+  font-weight: 600;
 }
-.picturesOfCountries{
-    padding: 0px 140px;
+.picturesOfCountries {
+  padding: 0px 140px;
 }
-.scoreCardPadding{
-    padding: 0px 45px;
-   
+.scoreCardPadding {
+  padding: 0px 45px;
 }
-.scoreCardPadding2{
-    margin: -40px 0px;
+.scoreCardPadding2 {
+  margin: -40px 0px;
 }
 
 .tableRow {
-    display: flex;
-    margin-left:-5px;
-    margin-right:-5px;
-  }
-  
-  .column1 {
-    /* flex: 50%;
-    padding: 5px; */
-    flex: 50%;
-    /* padding: 5px 32px; */
-    padding: 5px 54px 5px 32px;
-  }
-  .column2 {
-    /* flex: 50%;
-    padding: 5px; */
-    flex: 50%;
-    /* padding: 5px 32px; */
-    padding: 5px 32px 5px 39px;
+  display: flex;
+  margin-left: -5px;
+  margin-right: -5px;
+}
 
-  }
+.column1 {
+  /* flex: 50%;
+    padding: 5px; */
+  flex: 50%;
+  /* padding: 5px 32px; */
+  padding: 5px 54px 5px 32px;
+}
+.column2 {
+  /* flex: 50%;
+    padding: 5px; */
+  flex: 50%;
+  /* padding: 5px 32px; */
+  padding: 5px 32px 5px 39px;
+}
 .column3 {
-    /* flex: 50%;
+  /* flex: 50%;
     padding: 5px; */
-    /* flex: 50%; */
-    /* padding: 5px 32px; */
-    padding: 5px 32px 5px 39px;
-}
-  
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    /* border: 1px solid #ddd; */
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 16px;
-    font-size: 13px;
-  }
-  .table thead th {
-    padding: .75rem;
-    vertical-align: top;
-    border-top: 0px;
-    color: rgb(179, 162, 162);
-    font-size: 13px;
-}
-.theading{
-    font-size: 12px !important;
-    font-weight: bold;
-    color: rgb(138, 127, 127);
-}
-.table td, .table th {
-    padding: 0.5rem;
-    
-}
-.nameColor{
-    color: rgb(16, 16, 99);
+  /* flex: 50%; */
+  /* padding: 5px 32px; */
+  padding: 5px 32px 5px 39px;
 }
 
-  
-  /* tr:nth-child(even) {
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  /* border: 1px solid #ddd; */
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+  font-size: 13px;
+}
+.table thead th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 0px;
+  color: rgb(179, 162, 162);
+  font-size: 13px;
+}
+.theading {
+  font-size: 12px !important;
+  font-weight: bold;
+  color: rgb(138, 127, 127);
+}
+.table td,
+.table th {
+  padding: 0.5rem;
+}
+.nameColor {
+  color: rgb(16, 16, 99);
+}
+
+/* tr:nth-child(even) {
     background-color: #f2f2f2;
   } */
-.PakRr{
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(186, 177, 177);
-    text-align: center;
+.PakRr {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(186, 177, 177);
+  text-align: center;
 }
-.circle2{
-    font-size: 7px;
+.circle2 {
+  font-size: 7px;
 }
 
- /* CSS of nav of Scorecard, Commentary, stats  */
+/* CSS of nav of Scorecard, Commentary, stats  */
 
-.scoreCardPadding .nav1{
-	position: relative;
-	/* margin: 270px auto 0; */
-	width: 100%;
-	height: 50px;
-	/* background: #34495e; */
-	/* border-radius: 8px; */
-	border-bottom: 5px solid rgb(167, 161, 161);
-	font-size: 15px;
-    font-weight: 600;
-	/* box-shadow: 0 2px 3px 0 rgba(0,0,0,.1); */
+.scoreCardPadding .nav1 {
+  position: relative;
+  /* margin: 270px auto 0; */
+  width: 100%;
+  height: 50px;
+  /* background: #34495e; */
+  /* border-radius: 8px; */
+  border-bottom: 5px solid rgb(167, 161, 161);
+  font-size: 15px;
+  font-weight: 600;
+  /* box-shadow: 0 2px 3px 0 rgba(0,0,0,.1); */
 }
 .scoreCardPadding .nav1 a {
-	font-size: 15px;
-	text-transform: uppercase;
-	color: gray;
-	text-decoration: none;
-	line-height: 50px;
-	position: relative;
-	z-index: 1;
-	display: inline-block;
-	text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: gray;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
 }
 .scoreCardPadding .nav1 a.active {
-	
-	color: red;
-
+  color: red;
 }
-.scoreCardPadding .nav1 a:nth-child(n).active::after{
-	position: absolute;
-	content: "";
-	height: 5px;
-	width: 100%;
-	background-color: red;
-    color: red;
-	left: 0;
-	bottom: 0px;
-    transition: all .5s ease 0s;
-	/* height: 100%; */
-	/* height: 5px; */
-	/* top: 0; */
-	/* bottom: 0; */
-	/* bottom: -10px; */
-	/* z-index: 0; */
+.scoreCardPadding .nav1 a:hover {
+  color: red;
+}
+.scoreCardPadding .nav1 a:nth-child(n).active::after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: red;
+  color: red;
+  left: 0;
+  bottom: 0px;
+  transition: all 0.5s ease 0s;
+  /* height: 100%; */
+  /* height: 5px; */
+  /* top: 0; */
+  /* bottom: 0; */
+  /* bottom: -10px; */
+  /* z-index: 0; */
 
-/* 	
+  /* 	
 	background: #1abc9c; */
-	/* border-radius: 8px; */
-	
+  /* border-radius: 8px; */
 }
 
-
-.scoreCardPadding .nav1 a:nth-child(1){
-	/* width: 100px; */
-    padding: 0px 83px;
-    
+.scoreCardPadding .nav1 a:nth-child(1) {
+  /* width: 100px; */
+  padding: 0px 83px;
 }
 /* hover~.animation */
-.scoreCardPadding .nav1 .start-home, a:nth-child(1):hover~.animation{
-	width: 100px;
-	left: 0;
+.scoreCardPadding .nav1 .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0;
 }
-.scoreCardPadding .nav1 a:nth-child(2){
-	/* width: 110px; */
-    padding: 0px 83px
+.scoreCardPadding .nav1 a:nth-child(2) {
+  /* width: 110px; */
+  padding: 0px 83px;
 }
-.scoreCardPadding .nav1 a:nth-child(2):hover~.animation{
-	width: 110px;
-	left: 100px;
+.scoreCardPadding .nav1 a:nth-child(2):hover ~ .animation {
+  width: 110px;
+  left: 100px;
 }
-.scoreCardPadding .nav1 a:nth-child(3){
-	/* width: 100px; */
-    padding: 0px 83px
+.scoreCardPadding .nav1 a:nth-child(3) {
+  /* width: 100px; */
+  padding: 0px 83px;
 }
-.scoreCardPadding .nav1 a:nth-child(3):hover~.animation{
-	width: 100px;
-	left: 210px;
+.scoreCardPadding .nav1 a:nth-child(3):hover ~ .animation {
+  width: 100px;
+  left: 210px;
 }
 /* end */
 
-  .splitButton{
-  
-    border: 1px solid red;
-    border-radius: 13px;
-    width: fit-content;
-    padding: 2px -10px;
-    position: absolute;
-    left: 40%;
-    padding: 0px 45px;
-    background: linear-gradient(
-        to right,
-        red 0%,
-        red 50%,
-        white 50%,
-        white 100%
-    );
-      
-  }
-
-.innings1{
-    font-size: 13px; 
-    font-weight: 600; 
-    /* color: white; */
-    color: white;
+.splitButton {
+  border: 1px solid red;
+  border-radius: 13px;
+  width: fit-content;
+  padding: 2px -10px;
+  position: absolute;
+  left: 40%;
+  padding: 0px 45px;
+  background: linear-gradient(to right, red 0%, red 50%, white 50%, white 100%);
 }
-.innings2{
-    font-size: 13px; 
-    font-weight: 600; 
-    /* color: black */
-    color: black;
+
+.innings1 {
+  font-size: 13px;
+  font-weight: 600;
+  /* color: white; */
+  color: white;
+}
+.innings2 {
+  font-size: 13px;
+  font-weight: 600;
+  /* color: black */
+  color: black;
 }
 /* .inningsButton{
     font-size: 11px; 
@@ -283,246 +266,240 @@ h4{
 } */
 
 /* Batting table css */
-.battingTable{
-    margin-top: 5rem;
+.battingTable {
+  margin-top: 5rem;
 }
-.batImage{
-    width: 25px;
-    height: 25px;
+.batImage {
+  width: 25px;
+  height: 25px;
 }
-.bating{
-    font-size: 15px ;
-    color: black;
+.bating {
+  font-size: 15px;
+  color: black;
 }
-.tBattingHeading{
-    /* padding: 0.25rem !important; */
-    font-size: 12px !important;
-    font-weight: bold;
-    color: rgb(138, 127, 127);
-    padding-left: 120px !important;
-     padding-top: 0.25rem !important;
-      padding-bottom: 0.25rem !important;
+.tBattingHeading {
+  /* padding: 0.25rem !important; */
+  font-size: 12px !important;
+  font-weight: bold;
+  color: rgb(138, 127, 127);
+  padding-left: 120px !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
 }
-.tBatingData{
-    padding-left: 120px !important;
+.tBatingData {
+  padding-left: 120px !important;
 }
-.cricketTableRow{
-    font-size: 9px;
-    font-weight: 600;
+.cricketTableRow {
+  font-size: 9px;
+  font-weight: 600;
 }
-.btable{
-    border-bottom: 2px solid rgb(211, 206, 206);
+.btable {
+  border-bottom: 2px solid rgb(211, 206, 206);
 }
 
-.extra{
-    font-size: 13px;
-    font-weight: 600;
-    color: rgb(16, 16, 99);
-  
+.extra {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(16, 16, 99);
 }
-.totalOvers{
-    /* font-size: 12px;
+.totalOvers {
+  /* font-size: 12px;
     font-weight: 600; */
-    color: rgb(16, 16, 99);
-    position: absolute;
-    /* margin-left: 710px; */
-    padding-left: 520px;
+  color: rgb(16, 16, 99);
+  position: absolute;
+  /* margin-left: 710px; */
+  padding-left: 520px;
 }
-.fallOfWicket{
-    font-size: 13px;
-    font-weight: 600;
-    color: black;
+.fallOfWicket {
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
 }
 
 /* Bowling Table*/
-.tbowlHeading{
-    /* padding: 0.25rem !important; */
-    font-size: 13px !important;
-    font-weight: bold;
-    color: rgb(138, 127, 127);
-    padding-left: 120px !important;
-    padding-top: 0.25rem !important;
-    padding-bottom: 0.25rem !important;
-   
+.tbowlHeading {
+  /* padding: 0.25rem !important; */
+  font-size: 13px !important;
+  font-weight: bold;
+  color: rgb(138, 127, 127);
+  padding-left: 120px !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
 }
-.tBowlData{
-    padding-left: 120px !important;
-    font-size: 13px !important;
+.tBowlData {
+  padding-left: 120px !important;
+  font-size: 13px !important;
 }
-.tbowlPlayerName{
-    font-size: 13px !important;
+.tbowlPlayerName {
+  font-size: 13px !important;
 }
 /* Match Details Start */
-.tMatchDetailsHeading{
-    font-size: 13px !important;
-    font-weight: bold;
-    color: rgb(138, 127, 127);
-    padding-left: 10px !important;
-    padding-top: 0.25rem !important;
-    padding-bottom: 0.25rem !important;
+.tMatchDetailsHeading {
+  font-size: 13px !important;
+  font-weight: bold;
+  color: rgb(138, 127, 127);
+  padding-left: 10px !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
 }
-.tMatchDetailData{
-    padding-left: 10px !important;
-    font-size: 13px !important;
+.tMatchDetailData {
+  padding-left: 10px !important;
+  font-size: 13px !important;
 }
-.cardBorder{
-    border: none !important;
+.cardBorder {
+  border: none !important;
 }
+/* .table-responsive{
+    display: table !important;
+} */
 
 /* Commentary tab page Css */
-.overwithWicket{
-    /* border: 1px solid red; */
-    border-left: 8px solid red;
-    background-color: rgb(245, 183, 183);
-    
+.overwithWicket {
+  /* border: 1px solid red; */
+  border-left: 8px solid red;
+  background-color: rgb(245, 183, 183);
 }
-.over{
-    font-size: 18px;
-    font-weight: 600;
+.over {
+  font-size: 18px;
+  font-weight: 600;
 }
-.runWc{
-    font-size: 15px;
-    font-weight: 600;
+.runWc {
+  font-size: 15px;
+  font-weight: 600;
 }
-.point{
-    font-weight: 600;
+.point {
+  font-weight: 600;
 }
-.pointParagraph{
-    font-size: 14px;
-    font-weight: 500;
-    
+.pointParagraph {
+  font-size: 14px;
+  font-weight: 500;
 }
-.pointParagraph2{
-    color: rgb(158, 146, 146);
+.pointParagraph2 {
+  color: rgb(158, 146, 146);
 }
-.image{
-    width: 25px;
-}
-.scrollCard{
-    max-height: 410px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-.scrollCard::-webkit-scrollbar{
-    width: 5px;
-}
-.scrollCard::-webkit-scrollbar-thumb{
-    /* display: none; */
-    
-    background: rgb(143, 134, 134);
-    border-radius: 6px;
-}
-.scrollCard::-webkit-scrollbar-thumb:hover{
-    background: rgb(143, 134, 134);
+.image {
+  width: 25px;
 }
 
-.btn-link{
-    width: 100%;
-    /* height: 60px; */
-    color: #000;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: none !important;
+.scrollCard {
+  height: 230vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: none;
 }
-.btn-link:hover{
-    color: #000;
+.scrollCard::-webkit-scrollbar {
+  width: 5px;
 }
-.btn-link:after{
-   
-    content: '\02C4';
-    color: gray;
-    width: 35px;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 5px;
-    right: 15px;
-    top: 11px;
-    position: absolute;
+.scrollCard::-webkit-scrollbar-thumb {
+  /* display: none; */
 
+  background: rgb(143, 134, 134);
+  border-radius: 6px;
 }
-.btn-link.collapsed:after{
-    content: '\02C5';
-    color: gray;
-    width: 35px;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 5px;
-    right: 15px;
-    top: 11px;
-    position: absolute;
+.scrollCard::-webkit-scrollbar-thumb:hover {
+  background: rgb(143, 134, 134);
 }
 
-.worm_btn-link{
-    width: 100%;
-    /* height: 60px; */
-    color: #000;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: none !important;
+.btn-link {
+  width: 100%;
+  /* height: 60px; */
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none !important;
 }
-.worm_btn-link:hover{
-    color: #000;
+.btn-link:hover {
+  color: #000;
 }
-.worm_btn-link:after{
-   
-    content: '\02C4';
-    color: gray;
-    width: 35px;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 5px;
-    right: 15px;
-    top: 11px;
-    position: absolute;
-
+.btn-link:after {
+  content: "\02C4";
+  color: gray;
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 15px;
+  top: 11px;
+  position: absolute;
 }
-.worm_btn-link.collapsed:after{
-    content: '\02C5';
-    color: gray;
-    width: 35px;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 5px;
-    right: 15px;
-    top: 11px;
-    position: absolute;
+.btn-link.collapsed:after {
+  content: "\02C5";
+  color: gray;
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 15px;
+  top: 11px;
+  position: absolute;
 }
 
+.worm_btn-link {
+  width: 100%;
+  /* height: 60px; */
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none !important;
+}
+.worm_btn-link:hover {
+  color: #000;
+}
+.worm_btn-link:after {
+  content: "\02C4";
+  color: gray;
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 15px;
+  top: 11px;
+  position: absolute;
+}
+.worm_btn-link.collapsed:after {
+  content: "\02C5";
+  color: gray;
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 15px;
+  top: 11px;
+  position: absolute;
+}
 
-.manhatan_btn-link{
-    width: 100%;
-    /* height: 60px; */
-    color: #000;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: none !important;
+.manhatan_btn-link {
+  width: 100%;
+  /* height: 60px; */
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none !important;
 }
-.manhatan_btn-link:hover{
-    color: #000;
+.manhatan_btn-link:hover {
+  color: #000;
 }
-.manhatan_btn-link:after{
-   
-    content: '\02C4';
-    color: gray;
-    width: 35px;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 5px;
-    right: 15px;
-    top: 11px;
-    position: absolute;
-
+.manhatan_btn-link:after {
+  content: "\02C4";
+  color: gray;
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 15px;
+  top: 11px;
+  position: absolute;
 }
-.manhatan_btn-link.collapsed:after{
-    content: '\02C5';
-    color: gray;
-    width: 35px;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 5px;
-    right: 15px;
-    top: 11px;
-    position: absolute;
+.manhatan_btn-link.collapsed:after {
+  content: "\02C5";
+  color: gray;
+  width: 35px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  right: 15px;
+  top: 11px;
+  position: absolute;
 }
 /* .btn-link::before{
     content: '';
@@ -532,42 +509,517 @@ h4{
     position: absolute;
 
 } */
-#headingOne{
-    border-bottom: 1px solid rgb(167, 162, 162);
-    background: white;
+#headingOne {
+  border-bottom: 1px solid rgb(167, 162, 162);
+  background: white;
 }
-.batsmanName{
-    font-size: 14px;
+.batsmanName {
+  font-size: 14px;
+  font-weight: bold;
+}
+.runWithBall {
+  color: rgb(209, 201, 201);
+}
+#runWithBall {
+  margin-left: 75%;
+}
+.partnershipBorder {
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+  height: 50px;
+}
+.progressRun {
+  margin-left: 43%;
+  color: rgb(157, 152, 152);
+}
+.progress {
+  height: 10px;
+  width: 150px;
+  margin-top: -12px;
+}
+/* .galleryCard{
+    min-height: 60vh;
+} */
+.progressBackground1 {
+  background: red;
+}
+.progressBackground2 {
+  background: rgb(16, 16, 99);
+}
+#contentWrapper {
+  /* position: relative; 
+     overflow: hidden;
+    height: 340vh; */
+  position: relative;
+  overflow: hidden;
+  min-height: 250vh;
+}
+.content {
+  position: absolute;
+  /* transform: translateX(310%); */
+  transform: translateX(350%);
+  width: -webkit-fill-available;
+}
+
+#scoreCardContent {
+  transform: translateX(0px);
+}
+
+@media (max-width: 575.98px) {
+  .picturesOfCountries {
+    padding: 0px 5px;
+  }
+  .liveButton {
+    padding: 5px 6px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .scoreParagraph {
+    font-size: 12px;
+  }
+  .bdImage {
+    width: 100px;
+    height: 60px;
+  }
+  h4 {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 21px !important;
+    font-weight: 400 !important;
+  }
+  .scoreParagraph2 {
+    font-size: 15px;
+  }
+  .ml-2,
+  .mx-2 {
+    margin-left: 0.4rem !important;
+  }
+
+  .scoreCardPadding .nav1 a:nth-child(1) {
+    padding: 0px 20px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(2) {
+    padding: 0px 20px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(3) {
+    padding: 0px 55px;
+  }
+  .splitButton {
+    position: absolute;
+    left: 26%;
+  }
+  .bating {
+    font-size: 11px;
+  }
+  .batImage {
+    width: 20px;
+    height: 20px;
+  }
+  .scoreCardPadding {
+    padding: 0px 23px;
+  }
+
+  .pl-3,
+  .px-3 {
+    padding-left: 0px !important;
+  }
+}
+
+@media (max-width: 574px) {
+  .picturesOfCountries {
+    padding: 0px 5px;
+  }
+  .liveButton {
+    padding: 0px 6px;
+    font-size: 9px;
+    font-weight: 100;
+  }
+  .scoreParagraph {
+    font-size: 12px;
+  }
+  .bdImage {
+    width: 65px;
+    height: 47px;
+  }
+  .menOvr {
+    font-size: 8px;
+    font-weight: 100;
+  }
+  h4 {
+    font-size: 9px;
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 13px !important;
+    font-weight: 100 !important;
+  }
+  .men {
+    font-size: 9px;
+    font-weight: 100;
+  }
+  .scoreParagraph2 {
+    font-size: 15px;
+  }
+  .tbowlPlayerName {
+    font-size: 10px !important;
+  }
+  .tBowlData {
+    font-size: 10px !important;
+  }
+  .tbowlHeading {
+    font-size: 11px !important;
+  }
+  .ml-2,
+  .mx-2 {
+    margin-left: 0.4rem !important;
+  }
+
+  .scoreCardPadding .nav1 a:nth-child(1) {
+    padding: 0px 16px;
+    font-size: 10px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(2) {
+    padding: 0px 41px;
+    font-size: 10px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(3) {
+    padding: 0px 37px;
+    font-size: 10px;
+  }
+  .splitButton {
+    position: absolute;
+    left: 15%;
+  }
+  .sportsLogo2 {
+    margin-left: -42px;
+  }
+  .batsmanName {
+    font-size: 7px;
     font-weight: bold;
-
-}
-.runWithBall{
-    color: rgb(209, 201, 201);
-    
-    
-
-}
-#runWithBall{
-    margin-left: 75%;
-}
-.partnershipBorder{
-    border-left: 5px solid red; 
-    border-right: 5px solid red;
-    height: 50px;
-}
-.progressRun{
-    margin-left: 43%;
-    color: rgb(157, 152, 152);
-}
-.progress{
-    height: 10px;
-    width: 150px;
+  }
+  .progress {
+    height: 6px;
+    width: 76px;
     margin-top: -12px;
-}
-.progressBackground1{
-    background: red;
-}
-.progressBackground2{
-    background: rgb(16, 16, 99);
+  }
+  .bating {
+    font-size: 11px;
+  }
+  .batImage {
+    width: 20px;
+    height: 20px;
+  }
+  .scoreCardPadding {
+    padding: 0px 23px;
+  }
+
+  .pl-3,
+  .px-3 {
+    padding-left: 0px !important;
+  }
+  .column1 {
+    flex: 100%;
+  }
+  .column2 {
+    flex: 100%;
+  }
+  th,
+  td {
+    font-size: 8px;
+  }
+  .table thead th {
+    font-size: 10px;
+  }
+  .theading {
+    font-size: 8px !important;
+  }
+  .PakRr {
+    font-size: 7px;
+    font-weight: 600;
+  }
 }
 
+@media (max-width: 575px) {
+  .scoreCardPadding .nav1 a:nth-child(1) {
+    padding: 0px 19px;
+    font-size: 10px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(2) {
+    padding: 0px 19px;
+    font-size: 10px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(3) {
+    padding: 0px 37px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 374px) {
+  .picturesOfCountries {
+    padding: 0px 5px;
+  }
+  .liveButton {
+    padding: 0px 6px;
+    font-size: 9px;
+    font-weight: 100;
+  }
+  .scoreParagraph {
+    font-size: 12px;
+  }
+  .bdImage {
+    width: 65px;
+    height: 47px;
+  }
+  .menOvr {
+    font-size: 8px;
+    font-weight: 100;
+  }
+  h4 {
+    font-size: 9px;
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 13px !important;
+    font-weight: 100 !important;
+  }
+  .men {
+    font-size: 9px;
+    font-weight: 100;
+  }
+  .scoreParagraph2 {
+    font-size: 15px;
+  }
+  .tbowlPlayerName {
+    font-size: 10px !important;
+  }
+  .tBowlData {
+    font-size: 10px !important;
+  }
+  .tbowlHeading {
+    font-size: 11px !important;
+  }
+  .ml-2,
+  .mx-2 {
+    margin-left: 0.4rem !important;
+  }
+
+  .scoreCardPadding .nav1 a:nth-child(1) {
+    padding: 0px 16px;
+    font-size: 10px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(2) {
+    padding: 0px 16px;
+    font-size: 10px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(3) {
+    padding: 0px 37px;
+    font-size: 10px;
+  }
+  .splitButton {
+    position: absolute;
+    left: 10%;
+  }
+  .sportsLogo2 {
+    margin-left: -42px;
+  }
+  .batsmanName {
+    font-size: 7px;
+    font-weight: bold;
+  }
+  .progress {
+    height: 6px;
+    width: 76px;
+    margin-top: -12px;
+  }
+  .bating {
+    font-size: 11px;
+  }
+  .batImage {
+    width: 20px;
+    height: 20px;
+  }
+  .scoreCardPadding {
+    padding: 0px 23px;
+  }
+
+  .pl-3,
+  .px-3 {
+    padding-left: 0px !important;
+  }
+  .column1 {
+    flex: 100%;
+  }
+  .column2 {
+    flex: 100%;
+  }
+  th,
+  td {
+    font-size: 8px;
+  }
+  .table thead th {
+    font-size: 10px;
+  }
+  .theading {
+    font-size: 8px !important;
+  }
+  .PakRr {
+    font-size: 7px;
+    font-weight: 600;
+  }
+  /* .totalOvers{
+        padding: 0px 130px;
+        
+    }
+    .totalRunOver{
+        font-size: 10px !important;
+    }
+    .extra{
+        font-size: 10px !important;
+    } */
+  /* #contentWrapper{
+        height: 414vh;
+    } */
+}
+
+@media (max-width: 320px) {
+  .picturesOfCountries {
+    padding: 0px 5px;
+  }
+  .liveButton {
+    padding: 0px 6px;
+    font-size: 9px;
+    font-weight: 100;
+  }
+  .scoreParagraph {
+    font-size: 12px;
+  }
+  .bdImage {
+    width: 65px;
+    height: 47px;
+  }
+  .menOvr {
+    font-size: 8px;
+    font-weight: 100;
+  }
+  h4 {
+    font-size: 9px;
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 13px !important;
+    font-weight: 100 !important;
+  }
+  .men {
+    font-size: 9px;
+    font-weight: 100;
+  }
+  .scoreParagraph2 {
+    font-size: 15px;
+  }
+  .ml-2,
+  .mx-2 {
+    margin-left: 0.4rem !important;
+  }
+
+  .scoreCardPadding .nav1 a:nth-child(1) {
+    padding: 0px 16px;
+    font-size: 10px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(2) {
+    padding: 0px 16px;
+    font-size: 10px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(3) {
+    padding: 0px 17px;
+    font-size: 10px;
+  }
+  .splitButton {
+    position: absolute;
+    left: 7%;
+  }
+  .sportsLogo2 {
+    margin-left: -42px;
+  }
+  .batsmanName {
+    font-size: 7px;
+    font-weight: bold;
+  }
+  .progress {
+    height: 6px;
+    width: 76px;
+    margin-top: -12px;
+  }
+  .bating {
+    font-size: 11px;
+  }
+  .batImage {
+    width: 20px;
+    height: 20px;
+  }
+  .scoreCardPadding {
+    padding: 0px 23px;
+  }
+
+  .pl-3,
+  .px-3 {
+    padding-left: 0px !important;
+  }
+  .column1 {
+    flex: 100%;
+  }
+  .column2 {
+    flex: 100%;
+  }
+  th,
+  td {
+    font-size: 8px;
+  }
+  .table thead th {
+    font-size: 10px;
+  }
+  .theading {
+    font-size: 8px !important;
+  }
+  .PakRr {
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .totalOvers {
+    padding: 0px 108px;
+  }
+  .totalRunOver {
+    font-size: 9px !important;
+  }
+  .extra {
+    font-size: 9px !important;
+  }
+  #contentWrapper {
+    min-height: 457vh !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .picturesOfCountries {
+    padding: 0px 28px;
+  }
+  .scoreCardPadding .nav1 a:nth-child(1) {
+    padding: 0px 43px;
+  }
+  .splitButton {
+    position: absolute;
+    left: 30%;
+  }
+  .card-text:last-child {
+    margin-bottom: 0;
+    font-size: 10px;
+  }
+  /* .totalOvers{
+        padding-left: 418px;
+    }
+    #contentWrapper{
+        min-height: 180vh !important;
+    } */
+}

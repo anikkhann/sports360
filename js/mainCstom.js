@@ -4,6 +4,16 @@ let menu2 = document.querySelector('#menu2')
 let navbar = document.querySelector('.navbar-2');
 let header2 = document.querySelector('.header-2');
 const items = document.querySelectorAll(".scoreCardPadding .nav1 a");
+
+let scoreCardContent = document.getElementById('scoreCardContent');
+let commentaryCardContent = document.getElementById('commentaryCardContent');
+let statsCardContent = document.getElementById('statsCardContent');
+
+let bt1 = document.getElementById('btn1');
+let bt2 = document.getElementById('btn2');
+let bt3 = document.getElementById('btn3');
+
+
 function navToggle(){
     menu2.classList.toggle('fa-times');
     navbar.classList.toggle('nav-toggle');
@@ -83,5 +93,31 @@ function scrollToTop() {
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
+
+// Score Card Tab Function
+function openScoreCard() {
+  // scoreCardContent.style.transform = "translateX(0)";
+  scoreCardContent.style.transform = "translateX(0)";
+  commentaryCardContent.style.transform = "translateX(300%)";
+  statsCardContent.style.transform = "translateX(300%)";
+}
+
+function openCommentaryCard() {
+  scoreCardContent.style.transform = "translateX(300%)";
+  commentaryCardContent.style.transform = "translateX(0)";
+  // commentaryCardContent.style.marginTop = "-237vh";
+  statsCardContent.style.transform = "translateX(300%)";
+}
+
+function openStatsCard() {
+  scoreCardContent.style.transform = "translateX(300%)";
+  commentaryCardContent.style.transform = "translateX(300%)";
+  statsCardContent.style.transform = "translateX(0)";
+  // statsCardContent.style.marginTop = "-487vh";
+}
+
+
+
+
 
 
